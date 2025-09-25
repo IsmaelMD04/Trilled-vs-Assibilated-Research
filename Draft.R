@@ -1,5 +1,6 @@
 library(fpp3)
-m <- read.csv("https://raw.githubusercontent.com/IsmaelMD04/Garcia-Gang/refs/heads/main/Ecuador2017Results(in).csv?token=GHSAT0AAAAAADJ4F77T2KZZ5E5P73MBWR2U2GVUH6A")
+library(RCurl)
+m <- read.csv("Ecuador2017Results(in).csv")
  
 
 View(m)
