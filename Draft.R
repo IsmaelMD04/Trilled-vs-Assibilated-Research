@@ -2,8 +2,8 @@ library(fpp3)
 library(tidyverse)
 m <- read.csv("Ecuador2017Results(in).csv")
 
-t <- m %>% select(-c(Start.Date, End.Date, IP.Address, Duration..in.seconds., Location.Latitude, 
-                     Location.Longitude, eth, Order))
+t <- m %>% select(-c(Start.Date, End.Date, Finished, IP.Address, Duration..in.seconds., Location.Latitude, 
+                     Location.Longitude, ends_with(".eth"), Order)) %>% filter(Progress >= 74)
 #The "." character is associated as a character space in string notation, so a more distinct "_" is better
 names(t) <- str_replace_all(names(t), '[.]', "_")
 
@@ -20,8 +20,6 @@ t2 <- t %>% pivot_longer(
   names_sep = "_"
 )
 t2 %>% View()
-
-t2 %>% select(eth) %>% unique() %>% View()
 
 #This is a test
 
