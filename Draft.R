@@ -1,28 +1,11 @@
 library(fpp3)
 library(tidyverse)
 m <- read.csv("Ecuador2017Results(in).csv")
-View(m)
 
-m2 <- m %>% select(Response.ID:Order, ends_with("fem"))
-View(m2)
-
-m3 <- m2 %>% pivot_longer(
-  cols = ends_with("fem"),
-  names_to = "Talker",
-  values_to = "Fem"
-)
-
-#Look at final two columns
-m3 %>% View()
-
-
-#--------------
-
-
-t <- m %>% select(Response.ID:Order, ends_with(c("fem","nice","conf","class","urban","origin","edu","age","eth")))
+t <- m %>% select(-c(Start.Date, End.Date, IP.Address, Duration..in.seconds., Location.Latitude, 
+                     Location.Longitude, Order))
 #The "." character is associated as a character space in string notation, so a more distinct "_" is better
 names(t) <- str_replace_all(names(t), '[.]', "_")
-View(t)
 
 
 #Makes 1,752 entries with pivoted values! Nice
@@ -37,3 +20,5 @@ t2 <- t %>% pivot_longer(
   names_sep = "_"
 )
 t2 %>% View()
+
+t2 %>% select(eth) %>% unique() %>% View()
