@@ -3,7 +3,7 @@ library(tidyverse)
 m <- read.csv("Ecuador2017Results(in).csv")
 
 t <- m %>% select(-c(Start.Date, End.Date, IP.Address, Duration..in.seconds., Location.Latitude, 
-                     Location.Longitude, Order))
+                     Location.Longitude, eth, Order))
 #The "." character is associated as a character space in string notation, so a more distinct "_" is better
 names(t) <- str_replace_all(names(t), '[.]', "_")
 
