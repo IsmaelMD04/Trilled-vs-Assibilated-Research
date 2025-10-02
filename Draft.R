@@ -41,8 +41,7 @@ m %>% pivot_longer(cols = Daniela.fem:Andres.edu)
 
 m2 %>% select(c(femininity,count))
 
-m2
-pivot_longer(
+m2 %>% pivot_longer(
   cols = starts_with("wk"),
   names_to = "week",
   names_prefix = "wk",
@@ -52,3 +51,21 @@ pivot_longer(
 
 
 relig_income %>% pivot_longer(!religion, names_to = "income", values_to = "count")
+
+
+#Chris 
+m %>% pivot_longer(
+  cols = ends_with(".fem"),
+  names_sep = c("femininity","niceness","confidence","class","urban","origin","education"),
+  names_prefix = "fem", 
+  values_to = "count"
+)
+
+m %>% pivot_longer(
+  cols = ends_with(".fem"),
+  names_to = "Talker",
+  values_to = "Fem"
+)
+
+
+
