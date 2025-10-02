@@ -22,3 +22,6 @@ t2 <- t %>% pivot_longer(
 t2 %>% View()
 
 t2 %>% select(eth) %>% unique() %>% View()
+
+#This is a test
+
