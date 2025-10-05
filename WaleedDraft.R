@@ -1,9 +1,12 @@
 library(fpp3)
 library(tidyverse)
-m <- read.csv("Ecuador2017Results(in).csv")
+m <- read.csv("Ecuador2017Results(in).csv", encoding = "utf-8")
 
-t <- m %>% select(-c(Start.Date, End.Date, Finished, IP.Address, Duration..in.seconds., Location.Latitude, 
-                     Location.Longitude, ends_with(".eth"), Order)) %>% filter(Progress >= 74)
+t <- m %>% 
+  select(-c(Start.Date, End.Date, Finished, Speaker, IP.Address, Duration..in.seconds., 
+            Location.Latitude, Location.Longitude, ends_with(".eth"))) %>% 
+  filter(Progress >= 74) %>%
+  rename(c(RespondentID = Response.ID, PredictedRegion = Region), RespondentOrigin = Origin)
 #The "." character is associated as a character space in string notation, so a more distinct "_" is better
 names(t) <- str_replace_all(names(t), '[.]', "_")
 
@@ -16,6 +19,9 @@ names(t) <- str_replace_all(names(t), '[.]', "_")
 #names_sep = "_" = divides column names into Talker and .value --> "Daniela_fem" --> Talker: Daniela and value column: fem
 t2 <- t %>% pivot_longer(
   cols = matches("[a-z]_[a-z]", ignore.case = FALSE),
-  names_to = c("Talker",".value"),
+  names_to = c("Speaker",".value"),
   names_sep = "_") %>% 
-  mutate(Response_ID = match(Response_ID, Response_ID %>% unique()))
+  mutate(RespondentID = match(RespondentID, RespondentID %>% unique())) %>%
+  relocate(PredictedRegion, .after = last_col())
+
+View(t2)
