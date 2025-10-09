@@ -1,5 +1,6 @@
 library(fpp3)
 library(tidyverse)
+library(stringr)
 m <- read.csv("Ecuador2017Results(in).csv")
 
 t <- m %>% select(-c(Start.Date, End.Date, Finished, IP.Address, Duration..in.seconds., Location.Latitude, 
@@ -17,9 +18,33 @@ names(t) <- str_replace_all(names(t), '[.]', "_")
 t2 <- t %>% pivot_longer(
   cols = matches("[a-z]_[a-z]", ignore.case = FALSE),
   names_to = c("Talker",".value"),
-  names_sep = "_"
-)
-t2 %>% View()
+  names_sep = "_") %>% 
+  mutate(Response_ID = match(Response_ID, Response_ID %>% unique())) %>%
+  relocate(Region, .after = last_col())
 
-#This is a test
-
+responder_Origins <- c("Espaí", "Cariamanga", "Loja", "Guayaquil", 
+                       "Honduras", "Machala", "Ambato", "Arenillas",
+                       "Huaquillas", "Argentina", "Cariamanga",
+                       "Catacocha", "Catamayo", "Zamora", "Quito", 
+                       "Cuenca", "Duran", "EEUU", "USA", "Puerto Rico",
+                       "Sucia", "San Juan Bosco", "Mexico", "Chile",
+                       "Inglaterra", "Colombia", "El Salvador",
+                       "Nicaragua", "Bolivia", "Pií", "Portovelo", 
+                       "Saraguro", "Esmeraldas", "Guachapala", "Palanda",
+                       "Gualaceo", "Guaranda", "Coimbra", "Ibarra", "Lago",
+                       "Agrio", "Santa Rosa", "El Oro", "Míçchala", 
+                       "Londres", "Macara", "Macas", "San Lucas", "Madrid",
+                       "Manta", "Portoviejo", "Jipijapa", "Canton",
+                       "Tulciç", "Puyo", "Riobamba",
+                       "Puerto el Carmen del Putumayo", "Gualaquiza",
+                       "Galíçpagos", "Latacunga", "Changaimina", "Oriente",
+                       "Tegucigalpa", "Alemania", "Holanda", 
+                       "Santo Domingo de los Tsíçchila", "Espana", "Costa",
+                       "Selva Alegre", "Shell", "Zapotillo", "Zaruma")
+t3 <- t2 %>% mutate(Origin = str_extract_all(Origin, 
+             regex(str_c(responder_Origins, collapse = "|"), 
+             ignore_case = TRUE)) %>% sapply((function(x) paste(unique(x),
+                                                                                                                collapse = ", "))))
+t3 <- t3 %>%
+  mutate(Origin = na_if(Origin, ""))
+t3 %>% View()
