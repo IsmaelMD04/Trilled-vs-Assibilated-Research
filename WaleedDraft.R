@@ -15,7 +15,7 @@ names(t) <- str_replace_all(names(t), '[.]', "_")
 #Speaker = The speakers (Daniela, Diego...)
 #.value = take the second part of the column name and use that as the value column(s)
 #names_sep = "_" = divides column names into Talker and .value --> "Daniela_fem" --> Talker: Daniela / Value: fem
-t %>% View()
+
 t2 <- t %>% pivot_longer(
   cols = matches("[a-z]_[a-z]", ignore.case = FALSE),
   names_to = c("Speaker",".value"),
@@ -56,5 +56,3 @@ t3 <- t2 %>% mutate(
 t3 <- t3 %>%
   mutate(RespondentBackground = na_if(RespondentBackground, ""))
 t3 %>% View()
-
-t3 %>% select(origin) %>% unique()
