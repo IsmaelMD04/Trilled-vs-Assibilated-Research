@@ -25,7 +25,13 @@ t2 <- t %>% pivot_longer(
   relocate(predictedOrigin, .after = last_col()) %>%
   mutate(predictedOrigin = str_replace_all(predictedOrigin %>% as.character(), 
                                   c("1" = "Quito", "2" = "Cuenca", 
-                                    "3" = "Loja", "4" = "Other")))
+                                    "3" = "Loja", "4" = "Other")),
+         edu = str_replace_all(edu %>% as.character(),
+                               c("1" = "Primary", "2" = "Secondary", "3" = "University", 
+                                 "4" = "Mastery", "5" = "Doctorate")),
+         age = str_replace_all(age %>% as.character(),
+                               c("1" = "15-19", "2" = "20-29", "3" = "30-39", 
+                                 "4" = "40-49", "5" = "50-59", "6" = "60+")))
 
 responder_Origins <- c("Espaí", "Cariamanga", "Loja", "Guayaquil", 
                        "Honduras", "Machala", "Ambato", "Arenillas",
