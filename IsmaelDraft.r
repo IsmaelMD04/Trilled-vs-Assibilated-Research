@@ -40,10 +40,13 @@ responder_Origins <- c("Espaí", "Cariamanga", "Loja", "Guayaquil",
                        "Tegucigalpa", "Alemania", "Holanda", 
                        "Santo Domingo de los Tsíçchila", "Espana", "Costa",
                        "Selva Alegre", "Shell", "Zapotillo", "Zaruma")
-t3 <- t2 %>% mutate(RespondentOrigin = str_extract_all(RespondentOrigin,
+t3 <- t2 %>% mutate(RespondentBackground = str_extract_all(RespondentBackground,
                    regex(str_c(responder_Origins, collapse = "|"), 
                    ignore_case = TRUE)) %>% sapply((function(x) paste(unique(x),
                    collapse = ", "))))
 t3 <- t3 %>%
-  mutate(RespondentOrigin = na_if(RespondentOrigin, ""))
+  mutate(RespondentBackground = na_if(RespondentBackground, ""))
+t3 <- t3 %>% mutate(RespondentBackground = coalesce(RespondentBackground, 
+             Region))
+t3 <- t3 %>% select(-c(Region))
 t3 %>% View()
