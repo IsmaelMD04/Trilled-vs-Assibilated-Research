@@ -23,11 +23,10 @@ t2 <- t %>% pivot_longer(
 
 responder_Origins <- c("Espaí", "Cariamanga", "Loja", "Guayaquil", 
                        "Honduras", "Machala", "Ambato", "Arenillas",
-                       "Huaquillas", "Argentina", "Cariamanga",
-                       "Catacocha", "Catamayo", "Zamora", "Quito", 
-                       "Cuenca", "Duran", "EEUU", "USA", "Puerto Rico",
-                       "Sucia", "San Juan Bosco", "Mexico", "Chile",
-                       "Inglaterra", "Colombia", "El Salvador",
+                       "Huaquillas", "Argentina", "Catacocha", "Catamayo", 
+                       "Zamora", "Quito", "Cuenca", "Duran", "EEUU", "USA", 
+                       "Puerto Rico", "Sucia", "San Juan Bosco", "Mexico", 
+                       "Chile", "Inglaterra", "Colombia", "El Salvador",
                        "Nicaragua", "Bolivia", "Pií", "Portovelo", 
                        "Saraguro", "Esmeraldas", "Guachapala", "Palanda",
                        "Gualaceo", "Guaranda", "Coimbra", "Ibarra", "Lago",
@@ -44,9 +43,14 @@ t3 <- t2 %>% mutate(RespondentBackground = str_extract_all(RespondentBackground,
                    regex(str_c(responder_Origins, collapse = "|"), 
                    ignore_case = TRUE)) %>% sapply((function(x) paste(unique(x),
                    collapse = ", "))))
+t3 <- t3 %>% mutate(RespondentBackground = str_replace_all(RespondentBackground 
+             %>% as.character(), c("Espaí" = "Spain", "Espana" = "Spain", 
+             "EEUU" = "USA", "Míçchala" = "Machala", "Galíçpagos" = "Galapagos",
+             "Alemania" = "Germany", "Holanda" = "Netherlands", "Madrid" = "Spain",
+             "Tsíçchila" = "Tsachilas")))
+t3 %>% View()
 t3 <- t3 %>%
   mutate(RespondentBackground = na_if(RespondentBackground, ""))
 t3 <- t3 %>% mutate(RespondentBackground = coalesce(RespondentBackground, 
              Region))
 t3 <- t3 %>% select(-c(Region))
-t3 %>% View()
