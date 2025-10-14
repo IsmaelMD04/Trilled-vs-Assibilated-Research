@@ -24,14 +24,24 @@ t2 <- t %>% pivot_longer(
   mutate(RespondentID = match(RespondentID, RespondentID %>% unique())) %>%
   relocate(predictedOrigin, .after = last_col()) %>%
   mutate(predictedOrigin = str_replace_all(predictedOrigin %>% as.character(), 
-                                  c("1" = "Quito", "2" = "Cuenca", 
-                                    "3" = "Loja", "4" = "Other")),
+                                  c("1" = "Quito", "2" = "Cuenca", "3" = "Loja", "4" = "Other")),
          edu = str_replace_all(edu %>% as.character(),
                                c("1" = "Primary", "2" = "Secondary", "3" = "University", 
                                  "4" = "Mastery", "5" = "Doctorate")),
          age = str_replace_all(age %>% as.character(),
                                c("1" = "15-19", "2" = "20-29", "3" = "30-39", 
-                                 "4" = "40-49", "5" = "50-59", "6" = "60+")))
+                                 "4" = "40-49", "5" = "50-59", "6" = "60+")),
+         trill = (str_replace_all(Speaker, c(
+                        "Sofia" = "0", "Andrea" = "0", "Andres" = "0", "Diego" = "0",
+                        "Isabel" = "1", "Daniela" = "1", "Carlos" = "1", "Pablo" = "1")
+                        )) %>% as.integer(),
+         Speaker = str_replace_all(Speaker, c(
+           "Sofia" = "F1", "Andrea" = "F2", "Andres" = "M1", "Diego" = "M2",
+           "Isabel" = "F1", "Daniela" = "F2", "Carlos" = "M1", "Pablo" = "M2"))
+         ) %>% 
+  relocate(trill, .before = which(colnames(t2) == "Speaker"))
+
+
 
 responder_Origins <- c("Espaí", "Cariamanga", "Loja", "Guayaquil", 
                        "Honduras", "Machala", "Ambato", "Arenillas",
@@ -62,3 +72,5 @@ t3 <- t2 %>% mutate(
 t3 <- t3 %>%
   mutate(RespondentBackground = na_if(RespondentBackground, ""))
 t3 %>% View()
+
+t3 %>% str()
