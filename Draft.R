@@ -53,6 +53,53 @@ responder_Origins <- c("Espaí", "Cariamanga", "Loja", "Guayaquil",
 t3 <- t2 %>% mutate(RespondentBackground = str_extract_all(RespondentBackground, 
              regex(str_c(responder_Origins, collapse = "|"), 
              ignore_case = TRUE)) %>% sapply((function(x) paste(unique(x), collapse = ", "))))
+t3 <- t3 %>% mutate(RespondentBackground = str_replace_all(RespondentBackground 
+             %>% as.character(), c("Espaí" = "Spain", "Espana" = "Spain", 
+             "EEUU" = "USA", "Míçchala" = "Machala", "Galíçpagos" = "Galapagos",
+             "Alemania" = "Germany", "Holanda" = "Netherlands", "Madrid" = "Spain",
+             "Tsíçchila" = "Tsachilas")))
+
+t3 <- t2 %>% mutate(
+  RespondentBackground = 
+    str_extract_all(RespondentBackground, regex(str_c(responder_Origins, collapse = "|"), ignore_case = TRUE)) %>%
+    sapply((function(x) paste(unique(x), collapse = ", "))),
+  lang_std = iconv(Language, from = "UTf-8", to = "ASCII//TRANSLIT") %>%
+    tolower() %>%
+    str_squish(),
+  mspanish  = str_detect(lang_std, "\\b(spanish|espanol|castellano)\\b"),
+  menglish  = str_detect(lang_std, "\\b(english|ingles)\\b"),
+  mspanglish = str_detect(lang_std, "\\bspanglish\\b"),
+  lang_g = case_when(
+    is.na(lang_std) | lang_std == "" ~ NA_character_,
+    mspanglish ~ "Both Spanish and English",
+    mspanish & menglish ~ "Both Spanish and English",
+    mspanish ~ "Spanish",
+    menglish ~ "English",
+    TRUE ~ "Other Language"
+  )
+)
+
 t3 <- t3 %>%
   mutate(RespondentBackground = na_if(RespondentBackground, ""))
+t3 <- t3 %>% mutate(RespondentBackground = coalesce(RespondentBackground, Region))
+t3 <- t3 %>% select(-c(Region))
 t3 %>% View()
+
+#writing csv for unique values of language since there's so much of them since questions are in free response form
+write.csv(data.frame(language_old = unique(t3$Language)), "Educador_language_cols.csv", row.names = FALSE)
+Ecuador_lang_cols <- read.csv("Educador_language_cols.csv")
+
+#first parameter of setNames represent the content, second represents the value you want it to link to 
+lang_replace <- setNames(Ecuador_lang_cols$language_excluding_Spanish, Ecuador_lang_cols$language_old)
+
+#create copy of t3 in case I mess up badly in previous attempts 
+t4 <- t3 
+
+#imply that t4$language holds the names from lang_replace
+t4$Language_excluding_Spanish <- as.character(lang_replace[t4$Language])
+
+
+#same steps but with quantity values
+lang_replace_num <- setNames(Ecuador_lang_cols$num_additional_languages, Ecuador_lang_cols$language_old)
+t4$Num_Additional_Languages <- as.character(lang_replace_num[t4$Language])
+view(t4)
