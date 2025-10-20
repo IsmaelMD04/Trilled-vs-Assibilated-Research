@@ -81,8 +81,13 @@ t3 <- t2 %>% mutate(
 
 t3 <- t3 %>%
   mutate(RespondentBackground = na_if(RespondentBackground, ""))
-<<<<<<< HEAD
 t3 %>% View()
+
+
+t3 <- t3 %>% mutate(RespondentBackground = coalesce(RespondentBackground, Region))
+t3 <- t3 %>% select(-c(Region))
+t3 %>% View()
+
 
 #writing csv for unique values of language since there's so much of them since questions are in free response form (running this code resets the csv file so I commented it out)
 #write.csv(data.frame(language_old = unique(t3$Language)), "Educador_language_cols.csv", row.names = FALSE)
@@ -90,35 +95,15 @@ Ecuador_lang_cols <- read.csv("Educador_language_cols.csv")
 
 #first parameter of setNames represent the content, second represents the value you want it to link to 
 lang_replace <- setNames(Ecuador_lang_cols$Languages_Excluding_Spanish, Ecuador_lang_cols$language_old)
-=======
-t3 <- t3 %>% mutate(RespondentBackground = coalesce(RespondentBackground, Region))
-t3 <- t3 %>% select(-c(Region))
-t3 %>% View()
-
-#writing csv for unique values of language since there's so much of them since questions are in free response form
-write.csv(data.frame(language_old = unique(t3$Language)), "Educador_language_cols.csv", row.names = FALSE)
-Ecuador_lang_cols <- read.csv("Educador_language_cols.csv")
-
-#first parameter of setNames represent the content, second represents the value you want it to link to 
-lang_replace <- setNames(Ecuador_lang_cols$language_excluding_Spanish, Ecuador_lang_cols$language_old)
->>>>>>> 5cc0e305c00c049f414559935023249b8c0ba0ef
 
 #create copy of t3 in case I mess up badly in previous attempts 
 t4 <- t3 
 
 #imply that t4$language holds the names from lang_replace
-<<<<<<< HEAD
 t4$Languages_excluding_Spanish <- as.character(lang_replace[t4$Language])
 
 
 #same steps but with quantity values
 lang_replace_num <- setNames(Ecuador_lang_cols$Num_Additional_Languages, Ecuador_lang_cols$language_old)
-=======
-t4$Language_excluding_Spanish <- as.character(lang_replace[t4$Language])
-
-
-#same steps but with quantity values
-lang_replace_num <- setNames(Ecuador_lang_cols$num_additional_languages, Ecuador_lang_cols$language_old)
->>>>>>> 5cc0e305c00c049f414559935023249b8c0ba0ef
 t4$Num_Additional_Languages <- as.character(lang_replace_num[t4$Language])
 view(t4)
