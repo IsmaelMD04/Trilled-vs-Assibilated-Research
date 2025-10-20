@@ -68,8 +68,3 @@ t4$Languages_excluding_Spanish <- as.character(lang_replace[t4$Language])
 lang_replace_num <- setNames(Ecuador_lang_cols$Num_Additional_Languages, Ecuador_lang_cols$language_old)
 t4$Num_Additional_Languages <- as.character(lang_replace_num[t4$Language])
 view(t4)
-
-#' Notes from the meeting:
-#' invert scale of masculine and femininity
-#' clean language col for more generalization
-#' 
