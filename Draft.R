@@ -67,24 +67,4 @@ t3 <- t3 %>%
   mutate(RespondentBackground = na_if(RespondentBackground, ""),
          RespondentBackground = coalesce(RespondentBackground, Region))
 
-
 t3 %>% View()
-
-#writing csv for unique values of language since there's so much of them since questions are in free response form (running this code resets the csv file so I commented it out)
-#write.csv(data.frame(language_old = unique(t3$Language)), "Educador_language_cols.csv", row.names = FALSE)
-Ecuador_lang_cols <- read.csv("Educador_language_cols.csv")
-
-#first parameter of setNames represent the content, second represents the value you want it to link to 
-lang_replace <- setNames(Ecuador_lang_cols$Languages_Excluding_Spanish, Ecuador_lang_cols$language_old)
-
-#create copy of t3 in case I mess up badly in previous attempts 
-t4 <- t3 
-
-#imply that t4$language holds the names from lang_replace
-t4$Languages_excluding_Spanish <- as.character(lang_replace[t4$Language])
-
-
-#same steps but with quantity values
-lang_replace_num <- setNames(Ecuador_lang_cols$Num_Additional_Languages, Ecuador_lang_cols$language_old)
-t4$Num_Additional_Languages <- as.character(lang_replace_num[t4$Language])
-view(t4)
