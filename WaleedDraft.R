@@ -4,7 +4,7 @@ library(stringr)
 m <- read.csv("Ecuador2017Results(in).csv")
 
 t <- m %>% 
-  select(-c(Start.Date, End.Date, Origin, Finished, Speaker, IP.Address, Duration..in.seconds., 
+  select(-c(Start.Date, End.Date, Order, Origin, Finished, Speaker, IP.Address, Duration..in.seconds., 
             Location.Latitude, Location.Longitude, ends_with(".eth"))) %>% 
   filter(Progress >= 74)
 
@@ -35,4 +35,22 @@ t2 <- t %>% pivot_longer(
   ) %>% 
   relocate(trill, .before = Speaker)
 
-t2 %>% View()
+Ecuador_lang_cols <- read.csv("Ecuador_language_cols.csv")
+
+#first parameter of setNames represent the content, second represents the value you want it to link to 
+lang_replace <- setNames(Ecuador_lang_cols$Languages_Excluding_Spanish, Ecuador_lang_cols$language_old)
+
+#create copy of t3 in case I mess up badly in previous attempts 
+t3 <- t2
+
+#imply that t3$language holds the names from lang_replace
+t3$Languages_excluding_Spanish <- as.character(lang_replace[t3$Language])
+
+
+#same steps but with quantity values
+lang_replace_num <- setNames(Ecuador_lang_cols$Num_Additional_Languages, Ecuador_lang_cols$language_old)
+t3$Num_Additional_Languages <- as.character(lang_replace_num[t3$Language])
+
+t3 <- t3 %>% select(-Language) %>% relocate(Languages_excluding_Spanish, .after = Region) %>% 
+  relocate(Num_Additional_Languages, .after = Languages_excluding_Spanish)
+t3 %>% View()
