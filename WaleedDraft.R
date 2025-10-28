@@ -1,6 +1,10 @@
 library(fpp3)
 library(tidyverse)
-library(stringr)
+library(ggmosaic)
+
+###Data Cleaning (Wrangling)###
+
+
 m <- read.csv("Ecuador2017Results(in).csv")
 
 t <- m %>% 
@@ -53,4 +57,15 @@ t3$Num_Additional_Languages <- as.character(lang_replace_num[t3$Language])
 
 t3 <- t3 %>% select(-Language) %>% relocate(Languages_excluding_Spanish, .after = Region) %>% 
   relocate(Num_Additional_Languages, .after = Languages_excluding_Spanish)
-t3 %>% View()
+
+
+###Data Visualization###
+
+#New step, new variable
+v1 <- t3
+
+#install.packages("ggmosaic") <-- required
+v1 %>% ggplot() + geom_mosaic(aes(x = product(Region), fill = predictedOrigin),
+                              offset = 0.015) +
+  scale_y_continuous(labels = scales::percent) + 
+  labs(title = "Listener Region Compared to Predicted Speaker Origin")
