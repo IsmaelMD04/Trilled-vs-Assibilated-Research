@@ -1,6 +1,7 @@
 library(fpp3)
 library(tidyverse)
 library(ggmosaic)
+library(scales)
 
 ###Data Cleaning (Wrangling)###
 
@@ -74,7 +75,9 @@ respondent_regions %>% ggplot(aes(x = '', y = proportion, fill = Region)) +
   geom_col() +
   geom_text(aes(label = percentage),
             position = position_stack(vjust = 0.5)) +
-  coord_polar(theta = 'y')
+  coord_polar(theta = 'y') +
+  labs(title = "Region of Respondents") +
+  theme_void() #removes unnecessary grids on the outside
  
 
 
