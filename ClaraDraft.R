@@ -158,6 +158,7 @@ t4 <- t4 |> select(-fem)
 t4 <- t4 |> mutate(speakerID = Speaker, 
                    speaker_gender = ifelse(str_starts(Speaker, 'F'), 'female', 'male'))
 t4 <- t4 |> select(-Speaker)
+t4 <- t4 |> select(-Speaker_ID)
 
 # picking only numeric variables
 fadata <- t4 |> select(masculinity, nice, class, urban, edu, age)
@@ -185,6 +186,4 @@ t4 <- t4 |> mutate(status = rowMeans(scale(select(., class, urban, edu)), na.rm 
 # 2 level logistic regression
 # glm(response ~ predictors, family = 'binomial')
 # create new variable that says if respondent correctly assigned speaker's origin 
-
-
 
