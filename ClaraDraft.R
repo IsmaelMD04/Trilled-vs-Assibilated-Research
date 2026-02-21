@@ -145,3 +145,23 @@ view(age_by_region)
 
 age_by_region %>% ggplot(aes(x = Region, y = proportion, fill = age_group)) + 
   geom_col(position = "fill") + labs(title = "Age distribution by region", x = "Region", y = "Proportion")
+
+# Begin factor analysis 
+# Apply regression on all dependent variables (fem - age, origin is kept categorical), 
+# group/average based on sway towards the other variables, and assess the effect of trill or not 
+
+# Invert femininity rating 
+# Split speaker into speaker and speaker gender variable 
+
+t4 <- t3 |> mutate(masculinity = 7 - fem)
+t4 <- t4 |> select(-fem)
+t4 <- t4 |> mutate(speakerID = Speaker, 
+                   speaker_gender = ifelse(str_starts(Speaker, 'F'), 'female', 'male'))
+t4 <- t4 |> select(-Speaker)
+t4 <- t4 |> select(-Speaker_ID)
+
+# picking only numeric variables
+fadata <- t4 |> select(masculinity, nice, class, urban, edu, age)
+str(fadata)
+colSums(is.na(fadata))
+summary(fadata)
