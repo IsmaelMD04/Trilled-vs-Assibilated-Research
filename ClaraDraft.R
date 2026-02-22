@@ -165,7 +165,6 @@ fadata <- t4 |> select(masculinity, nice, class, urban, edu, age)
 str(fadata)
 colSums(is.na(fadata))
 summary(fadata)
-<<<<<<< HEAD
 
 # dropping na
 fadata <- fadata |> drop_na()
@@ -188,5 +187,3 @@ t4 <- t4 |> mutate(status = rowMeans(scale(select(., class, urban, edu)), na.rm 
 # glm(response ~ predictors, family = 'binomial')
 # create new variable that says if respondent correctly assigned speaker's origin 
 
-=======
->>>>>>> 4d42eba0d281728023563e2774549d705a0e8a13
