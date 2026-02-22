@@ -1,8 +1,11 @@
-library(fpp3)
 library(tidyverse)
 library(ggmosaic)
+library(MASS)
+library(fpp3)
+library(dplyr)
+library(nnet)
 
-###Data Cleaning (Wrangling)###
+### Cleaning
 
 
 m <- read.csv("Ecuador2017Results(in).csv")
@@ -10,7 +13,7 @@ m <- read.csv("Ecuador2017Results(in).csv")
 t <- m %>% 
   select(-c(Start.Date, End.Date, Order, Origin, Finished, Speaker, IP.Address, Duration..in.seconds., 
             Location.Latitude, Location.Longitude, ends_with(".eth"))) %>% 
-  filter(Progress >= 74)
+  filter(Progress >= 100)
 
 #The "." character is associated as a character space in string notation, so a more distinct "_" is better
 names(t) <- str_replace_all(names(t), '[.]', "_")
@@ -59,13 +62,135 @@ t3 <- t3 %>% select(-Language) %>% relocate(Languages_excluding_Spanish, .after 
   relocate(Num_Additional_Languages, .after = Languages_excluding_Spanish)
 
 
-###Data Visualization###
+## Visualization 
+#Dumb down respondents and what region they're from so that it's not 8 sets for each respondent
+respondents <- t3 %>% group_by(RespondentID) %>% reframe(Region = Region) %>% unique()
 
-#New step, new variable
-v1 <- t3
+#install.packages("scales") <- used to convert proportions to percentages
+#calculate how many speakers from each region + proportions
+respondent_regions <- respondents %>% group_by(Region) %>% summarize(num_respondents = n()) %>% 
+  mutate(proportion = (num_respondents/sum(num_respondents))) %>% arrange(proportion) %>%
+  mutate(percentage = scales::percent(proportion))
 
-#install.packages("ggmosaic") <-- required
-v1 %>% ggplot() + geom_mosaic(aes(x = product(Region), fill = predictedOrigin),
-                              offset = 0.015) +
-  scale_y_continuous(labels = scales::percent) + 
-  labs(title = "Listener Region Compared to Predicted Speaker Origin")
+#Pie chart
+respondent_regions %>% ggplot(aes(x = '', y = proportion, fill = Region)) +
+  geom_col() +
+  geom_text(aes(label = percentage),
+            position = position_stack(vjust = 0.5)) +
+  coord_polar(theta = 'y')
+
+# View unique respondents and gender
+respondents_gender <- t3 %>%
+  group_by(RespondentID) %>%
+  summarize(Gender = dplyr::first(Gender), Region = dplyr::first(Region)) %>%
+  ungroup()
+
+gender_count <- respondents_gender %>%
+  group_by(Gender) %>%
+  summarize(num_respondents = n()) %>%
+  mutate(proportion = num_respondents / sum(num_respondents), percentage = scales::percent(proportion))
+
+
+# Simple bar chart to show comparison
+gender_count %>% 
+  ggplot(aes(x = Gender, y = num_respondents, fill = Gender)) + 
+  geom_col() + 
+  labs(title = "Respondents by gender", x = "Gender", y = "Number")
+
+# Look at gender by region
+gender_by_region <- respondents_gender %>%
+  group_by(Region, Gender) %>%
+  summarize(num_respondents = n(), .groups = "drop") %>%
+  group_by(Region) %>%
+  mutate(region_total = sum(num_respondents),
+         proportion = num_respondents / region_total,
+         percentage = scales::percent(proportion))
+
+
+gender_by_region %>%
+  ggplot(aes(x = Region, y = proportion, fill = Gender)) +
+  geom_col(position = 'fill') +
+  labs(title = "Gender distribution by region", x = "Region", y = "Proportion")
+
+# Unique respondents and age 
+respondents_age <- t3 %>%
+  group_by(RespondentID) %>%
+  summarize(age_group = dplyr::first(age), Region = dplyr::first(Region)) %>%
+  ungroup() 
+
+age_count <- respondents_age %>%
+  group_by(age_group) %>%
+  summarize(num_respondents = n()) %>%
+  mutate(proportion = num_respondents / sum(num_respondents),
+         percentage = scales::percent(proportion)) %>%
+  arrange(age_group)
+
+
+age_count %>% ggplot(aes(x = age_group, y = num_respondents, fill = age_group)) +
+  geom_col() + labs(title = 'Respondents by Age', x = 'Age group', y = 'Count')
+# Adjust chart so that each age group is visible on the axis
+
+# Age distribution by region
+age_by_region <- respondents_age %>%
+  group_by(Region, age_group) %>%
+  summarize(num_respondents = n(), .groups = "drop") %>%
+  group_by(Region) %>%
+  mutate(region_total = sum(num_respondents),
+         proportion = num_respondents / region_total,
+         percentage = scales::percent(proportion))
+
+
+age_by_region %>% ggplot(aes(x = Region, y = proportion, fill = age_group)) + 
+  geom_col(position = "fill") + labs(title = "Age distribution by region", x = "Region", y = "Proportion")
+
+# Begin factor analysis 
+# Apply regression on all dependent variables (fem - age, origin is kept categorical), 
+# group/average based on sway towards the other variables, and assess the effect of trill or not 
+
+# Invert femininity rating 
+# Split speaker into speaker and speaker gender variable 
+
+t4 <- t3 |> mutate(masculinity = 7 - fem)
+t4 <- t4 |> select(-fem)
+t4 <- t4 |> mutate(speakerID = Speaker, 
+                   speaker_gender = ifelse(str_starts(Speaker, 'F'), 'female', 'male'))
+t4 <- t4 |> select(-Speaker)
+
+# picking only numeric variables
+fadata <- t4 |> select(masculinity, nice, class, urban, edu, age)
+str(fadata)
+colSums(is.na(fadata))
+summary(fadata)
+
+# dropping na
+fadata <- fadata |> drop_na()
+
+fa <- factanal(fadata, factors = 2, rotation = 'varimax')
+fa
+# class, urban, and edu are a status factor 
+# higher masculinity = lower nice
+# more feminine = higher nice
+# age isn't strong 
+
+# Factor 1: Status
+# Factor 2: "Gendered Affect" or something 
+
+t4 <- t4 |> mutate(status = rowMeans(scale(select(t4, class, urban, edu)), na.rm = TRUE))
+
+# mixed effect/ random effect 
+# linear model (status ~ trill + listener_id)
+# 2 level logistic regression
+# glm(response ~ predictors, family = 'binomial')
+# create new variable that says if respondent correctly assigned speaker's origin 
+
+#Created a new, simplier dataset with base columns
+t5 <- t4 %>% select(c(Gender, trill, nice, conf, status, age, 
+                      predictedOrigin, masculinity, speakerID, speaker_gender))
+
+#A simply model describing nice in terms of trill, conf, and status and the interactions
+mod <- lm(nice ~ (trill + conf + status)^2 , data = t5)
+summary(mod)
+
+#Ran stepAIC to improve the model.
+mod2 <- MASS::stepAIC(mod, direction = "backward")
+summary(mod2)
