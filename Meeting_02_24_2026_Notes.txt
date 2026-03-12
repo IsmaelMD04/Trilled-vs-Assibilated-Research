@@ -1,0 +1,16 @@
+Solve stepAIC issue
+  MASS:stepAIC has a hard time working with glmer models
+  Find a package to step glmer models
+Don't load MASS! Just run MASS::stepAIC()
+
+#PCA is better to minimize number of predictors, 
+  #whereas factor analysis provides more interpretable, grouped variables.
+  
+#Look into variable selection techniques
+
+#Model nice on variables outside of personality traits, essentially variables not affected by trill
+
+#Try fixed effect or random effect for speaker_id
+#Use random effect on listener/respondent_id
+
+#Figure out if we wanna meet next week.

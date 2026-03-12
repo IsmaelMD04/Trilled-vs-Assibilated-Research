@@ -1,0 +1,1537 @@
+Progress,RespondentID,Age,Gender,Region,Languages_excluding_Spanish,Num_Additional_Languages,trill,Speaker,fem,nice,conf,class,urban,edu,age,predictedOrigin
+100,1,23,male,Loja,English,1,1,F2,6,6,6,5,5,3,3,Cuenca
+100,1,23,male,Loja,English,1,0,M2,6,6,6,6,6,4,3,Loja
+100,1,23,male,Loja,English,1,1,F1,4,4,4,4,3,2,3,Cuenca
+100,1,23,male,Loja,English,1,0,M1,6,5,6,6,6,3,3,Quito
+100,1,23,male,Loja,English,1,0,F1,4,4,4,4,3,2,4,Loja
+100,1,23,male,Loja,English,1,1,M2,5,5,6,5,5,4,4,Quito
+100,1,23,male,Loja,English,1,1,M1,5,5,6,5,5,3,3,Loja
+100,1,23,male,Loja,English,1,0,F2,4,4,4,4,3,2,2,Cuenca
+100,2,25,male,Quito,English,1,1,F2,4,5,4,4,4,2,2,Other
+100,2,25,male,Quito,English,1,0,M2,5,5,4,5,4,2,4,Cuenca
+100,2,25,male,Quito,English,1,1,F1,5,5,4,4,4,2,4,Loja
+100,2,25,male,Quito,English,1,0,M1,5,4,5,4,5,3,2,Cuenca
+100,2,25,male,Quito,English,1,0,F1,5,5,4,4,4,2,3,Other
+100,2,25,male,Quito,English,1,1,M2,5,4,4,4,4,2,3,Loja
+100,2,25,male,Quito,English,1,1,M1,4,4,5,4,4,3,3,Loja
+100,2,25,male,Quito,English,1,0,F2,5,5,4,5,5,2,3,Loja
+100,3,20,female,Coast,English,1,1,F2,2,6,4,2,2,1,3,Quito
+100,3,20,female,Coast,English,1,0,M2,6,4,6,3,5,3,3,Other
+100,3,20,female,Coast,English,1,1,F1,6,5,5,3,3,3,4,Other
+100,3,20,female,Coast,English,1,0,M1,3,3,3,3,3,4,3,Quito
+100,3,20,female,Coast,English,1,0,F1,3,1,1,4,1,5,3,Other
+100,3,20,female,Coast,English,1,1,M2,2,3,1,1,1,4,3,Cuenca
+100,3,20,female,Coast,English,1,1,M1,6,4,5,3,2,3,2,Loja
+100,3,20,female,Coast,English,1,0,F2,3,2,2,2,3,3,2,Quito
+100,4,24,female,Coast,English,1,1,F2,5,5,5,5,5,2,3,Other
+100,4,24,female,Coast,English,1,0,M2,6,5,5,4,5,2,5,Quito
+100,4,24,female,Coast,English,1,1,F1,6,5,5,4,4,2,3,Cuenca
+100,4,24,female,Coast,English,1,0,M1,6,5,5,4,4,3,2,Other
+100,4,24,female,Coast,English,1,0,F1,6,5,6,4,5,2,3,Cuenca
+100,4,24,female,Coast,English,1,1,M2,6,5,4,5,6,2,4,Quito
+100,4,24,female,Coast,English,1,1,M1,5,6,5,5,6,3,2,Quito
+100,4,24,female,Coast,English,1,0,F2,4,5,6,4,3,2,2,Quito
+100,5,33,male,Cuenca,English,1,1,F2,2,3,5,4,5,3,2,Quito
+100,5,33,male,Cuenca,English,1,0,M2,5,5,3,4,6,3,3,Cuenca
+100,5,33,male,Cuenca,English,1,1,F1,2,3,4,5,5,3,5,Loja
+100,5,33,male,Cuenca,English,1,0,M1,5,2,3,4,5,3,2,Quito
+100,5,33,male,Cuenca,English,1,0,F1,2,4,5,5,5,3,3,Cuenca
+100,5,33,male,Cuenca,English,1,1,M2,4,4,4,4,5,3,3,Cuenca
+100,5,33,male,Cuenca,English,1,1,M1,3,3,3,4,5,2,2,Quito
+100,5,33,male,Cuenca,English,1,0,F2,3,3,2,4,5,2,3,Other
+100,6,21,male,Loja,English,1,1,F2,6,6,6,6,6,3,3,Loja
+100,6,21,male,Loja,English,1,0,M2,6,6,6,6,6,3,3,Cuenca
+100,6,21,male,Loja,English,1,1,F1,6,6,6,6,6,3,4,Cuenca
+100,6,21,male,Loja,English,1,0,M1,6,6,6,6,6,3,3,Cuenca
+100,6,21,male,Loja,English,1,0,F1,5,5,4,5,4,3,2,Quito
+100,6,21,male,Loja,English,1,1,M2,4,3,3,3,3,3,3,Other
+100,6,21,male,Loja,English,1,1,M1,6,6,6,4,3,3,3,Other
+100,6,21,male,Loja,English,1,0,F2,6,5,4,4,4,3,3,Other
+100,7,37,male,Cuenca,"English, French",2,1,F2,5,5,5,3,3,2,2,Loja
+100,7,37,male,Cuenca,"English, French",2,0,M2,6,5,5,3,2,2,3,Loja
+100,7,37,male,Cuenca,"English, French",2,1,F1,6,5,5,3,2,2,2,Other
+100,7,37,male,Cuenca,"English, French",2,0,M1,6,5,5,4,5,3,3,Cuenca
+100,7,37,male,Cuenca,"English, French",2,0,F1,6,4,3,2,2,2,4,Cuenca
+100,7,37,male,Cuenca,"English, French",2,1,M2,6,3,5,2,1,2,4,Loja
+100,7,37,male,Cuenca,"English, French",2,1,M1,6,4,5,4,5,3,3,Loja
+100,7,37,male,Cuenca,"English, French",2,0,F2,6,4,5,2,1,2,3,Other
+100,8,24,male,Quito,"English, Quechua",2,1,F2,4,4,4,3,3,3,3,Loja
+100,8,24,male,Quito,"English, Quechua",2,0,M2,5,5,5,4,4,3,4,Loja
+100,8,24,male,Quito,"English, Quechua",2,1,F1,5,5,5,4,4,3,5,Quito
+100,8,24,male,Quito,"English, Quechua",2,0,M1,4,4,3,3,3,3,2,Cuenca
+100,8,24,male,Quito,"English, Quechua",2,0,F1,5,5,5,5,5,3,5,Quito
+100,8,24,male,Quito,"English, Quechua",2,1,M2,5,5,5,5,5,3,4,Quito
+100,8,24,male,Quito,"English, Quechua",2,1,M1,5,3,4,4,4,3,2,Cuenca
+100,8,24,male,Quito,"English, Quechua",2,0,F2,5,5,4,3,2,2,3,Other
+100,9,21,male,Loja,English,1,1,F2,5,3,3,3,3,2,4,Other
+100,9,21,male,Loja,English,1,0,M2,6,3,5,4,6,3,4,Cuenca
+100,9,21,male,Loja,English,1,1,F1,6,4,5,5,3,4,5,Loja
+100,9,21,male,Loja,English,1,0,M1,6,4,5,6,6,3,2,Loja
+100,9,21,male,Loja,English,1,0,F1,5,5,5,5,5,3,5,Loja
+100,9,21,male,Loja,English,1,1,M2,5,4,5,6,6,4,3,Cuenca
+100,9,21,male,Loja,English,1,1,M1,5,6,6,6,6,3,4,Loja
+100,9,21,male,Loja,English,1,0,F2,4,3,3,3,2,2,4,Loja
+100,10,21,male,Loja,,0,1,F2,3,3,3,3,3,1,3,Quito
+100,10,21,male,Loja,,0,0,M2,4,4,4,4,4,2,3,Other
+100,10,21,male,Loja,,0,1,F1,3,3,3,3,3,1,2,Other
+100,10,21,male,Loja,,0,0,M1,4,4,4,4,4,3,3,Loja
+100,10,21,male,Loja,,0,0,F1,4,4,3,3,3,1,5,Quito
+100,10,21,male,Loja,,0,1,M2,4,4,3,3,3,2,4,Quito
+100,10,21,male,Loja,,0,1,M1,4,4,4,4,4,3,3,Loja
+100,10,21,male,Loja,,0,0,F2,4,4,4,3,3,2,3,Quito
+100,11,24,male,Loja,English,1,1,F2,6,6,3,4,3,3,3,Loja
+100,11,24,male,Loja,English,1,0,M2,6,5,5,5,5,3,3,Cuenca
+100,11,24,male,Loja,English,1,1,F1,4,6,4,3,2,1,3,Loja
+100,11,24,male,Loja,English,1,0,M1,6,3,3,4,5,3,3,Cuenca
+100,11,24,male,Loja,English,1,0,F1,3,5,3,3,3,2,4,Cuenca
+100,11,24,male,Loja,English,1,1,M2,6,4,3,4,5,3,3,Cuenca
+100,11,24,male,Loja,English,1,1,M1,6,1,3,5,5,3,2,Loja
+100,11,24,male,Loja,English,1,0,F2,4,4,5,3,2,2,2,Cuenca
+100,12,23,female,Quito,,0,1,F2,6,5,6,4,4,3,3,Cuenca
+100,12,23,female,Quito,,0,0,M2,6,5,6,6,6,3,3,Quito
+100,12,23,female,Quito,,0,1,F1,6,5,6,4,4,3,4,Loja
+100,12,23,female,Quito,,0,0,M1,6,5,6,4,4,3,3,Loja
+100,12,23,female,Quito,,0,0,F1,6,5,6,4,6,3,4,Quito
+100,12,23,female,Quito,,0,1,M2,6,5,6,5,5,3,3,Other
+100,12,23,female,Quito,,0,1,M1,6,5,5,5,5,3,3,Loja
+100,12,23,female,Quito,,0,0,F2,6,5,6,5,1,2,3,Cuenca
+100,13,18,female,Loja,English,1,1,F2,6,6,6,2,2,2,4,Loja
+100,13,18,female,Loja,English,1,0,M2,6,5,5,5,5,4,4,Loja
+100,13,18,female,Loja,English,1,1,F1,5,5,5,5,5,3,6,Loja
+100,13,18,female,Loja,English,1,0,M1,6,6,3,5,3,4,3,Loja
+100,13,18,female,Loja,English,1,0,F1,6,5,5,5,6,2,5,Loja
+100,13,18,female,Loja,English,1,1,M2,6,6,6,5,6,4,4,Loja
+100,13,18,female,Loja,English,1,1,M1,5,4,3,2,4,3,3,Loja
+100,13,18,female,Loja,English,1,0,F2,4,6,6,3,6,2,4,Loja
+100,14,29,female,Cuenca,,0,1,F2,4,5,4,4,6,3,3,Loja
+100,14,29,female,Cuenca,,0,0,M2,5,4,5,4,5,2,3,Cuenca
+100,14,29,female,Cuenca,,0,1,F1,3,3,4,4,4,2,5,Loja
+100,14,29,female,Cuenca,,0,0,M1,4,2,6,5,6,3,2,Cuenca
+100,14,29,female,Cuenca,,0,0,F1,3,1,3,3,4,2,5,Cuenca
+100,14,29,female,Cuenca,,0,1,M2,6,4,5,4,5,3,5,Loja
+100,14,29,female,Cuenca,,0,1,M1,6,4,5,5,6,2,3,Quito
+100,14,29,female,Cuenca,,0,0,F2,3,1,4,2,3,2,3,Loja
+100,15,23,female,Coast,,0,1,F2,5,5,5,4,5,3,3,Loja
+100,15,23,female,Coast,,0,0,M2,6,6,6,5,6,3,4,Loja
+100,15,23,female,Coast,,0,1,F1,5,5,5,4,4,2,3,Loja
+100,15,23,female,Coast,,0,0,M1,5,4,5,4,5,2,1,Loja
+100,15,23,female,Coast,,0,0,F1,5,5,5,5,5,2,3,Loja
+100,15,23,female,Coast,,0,1,M2,6,5,5,4,5,3,4,Loja
+100,15,23,female,Coast,,0,1,M1,5,5,5,4,5,3,2,Quito
+100,15,23,female,Coast,,0,0,F2,5,5,5,4,5,2,3,Loja
+100,16,39,male,Cuenca,English,1,1,F2,6,2,2,2,2,2,2,Quito
+100,16,39,male,Cuenca,English,1,0,M2,6,4,4,6,6,3,3,Loja
+100,16,39,male,Cuenca,English,1,1,F1,5,6,5,4,5,2,5,Loja
+100,16,39,male,Cuenca,English,1,0,M1,5,5,3,4,5,3,2,Other
+100,16,39,male,Cuenca,English,1,0,F1,6,6,6,5,5,2,5,Loja
+100,16,39,male,Cuenca,English,1,1,M2,3,3,5,6,6,4,3,Quito
+100,16,39,male,Cuenca,English,1,1,M1,4,3,3,4,6,3,3,Cuenca
+100,16,39,male,Cuenca,English,1,0,F2,6,2,2,1,1,2,3,Loja
+100,17,22,female,Loja,English,1,1,F2,4,4,4,4,4,3,2,Other
+100,17,22,female,Loja,English,1,0,M2,6,5,5,5,5,3,3,Loja
+100,17,22,female,Loja,English,1,1,F1,4,4,4,4,4,3,3,Loja
+100,17,22,female,Loja,English,1,0,M1,5,5,5,5,5,3,2,Other
+100,17,22,female,Loja,English,1,0,F1,4,4,4,4,4,3,2,Quito
+100,17,22,female,Loja,English,1,1,M2,6,6,6,5,6,4,3,Loja
+100,17,22,female,Loja,English,1,1,M1,5,5,5,5,5,3,2,Loja
+100,17,22,female,Loja,English,1,0,F2,3,3,3,3,3,3,2,Quito
+100,18,21,female,Loja,English,1,1,F2,5,5,5,2,2,1,4,Other
+100,18,21,female,Loja,English,1,0,M2,5,5,5,4,4,2,3,Cuenca
+100,18,21,female,Loja,English,1,1,F1,5,5,5,3,2,1,4,Cuenca
+100,18,21,female,Loja,English,1,0,M1,5,5,4,3,3,2,1,Other
+100,18,21,female,Loja,English,1,0,F1,5,5,5,2,2,1,4,Other
+100,18,21,female,Loja,English,1,1,M2,5,5,5,4,5,3,3,Loja
+100,18,21,female,Loja,English,1,1,M1,5,4,4,4,4,2,1,Loja
+100,18,21,female,Loja,English,1,0,F2,5,5,5,3,2,1,4,Other
+100,19,20,male,Coast,English,1,1,F2,5,4,6,3,3,2,3,Quito
+100,19,20,male,Coast,English,1,0,M2,5,5,6,4,5,3,4,Loja
+100,19,20,male,Coast,English,1,1,F1,5,5,6,5,6,4,5,Loja
+100,19,20,male,Coast,English,1,0,M1,5,6,6,6,6,4,4,Quito
+100,19,20,male,Coast,English,1,0,F1,5,4,5,5,5,3,4,Quito
+100,19,20,male,Coast,English,1,1,M2,5,5,4,4,4,3,3,Cuenca
+100,19,20,male,Coast,English,1,1,M1,5,4,5,5,6,4,4,Loja
+100,19,20,male,Coast,English,1,0,F2,5,4,6,3,3,2,3,Quito
+100,20,21,female,Loja,English,1,1,F2,5,4,4,3,3,3,2,Cuenca
+100,20,21,female,Loja,English,1,0,M2,6,1,6,5,6,4,3,Loja
+100,20,21,female,Loja,English,1,1,F1,6,6,6,6,6,5,4,Quito
+100,20,21,female,Loja,English,1,0,M1,6,6,6,6,5,4,3,Cuenca
+100,20,21,female,Loja,English,1,0,F1,6,6,6,5,5,5,4,Quito
+100,20,21,female,Loja,English,1,1,M2,6,6,6,6,6,4,3,Loja
+100,20,21,female,Loja,English,1,1,M1,6,6,6,5,5,4,2,Quito
+100,20,21,female,Loja,English,1,0,F2,6,6,4,3,3,4,3,Cuenca
+100,21,20,female,Loja,English,1,1,F2,3,3,4,4,4,4,3,Loja
+100,21,20,female,Loja,English,1,0,M2,5,4,3,4,4,3,3,Cuenca
+100,21,20,female,Loja,English,1,1,F1,3,4,3,3,2,2,3,Other
+100,21,20,female,Loja,English,1,0,M1,5,4,4,5,4,3,2,Loja
+100,21,20,female,Loja,English,1,0,F1,2,3,3,3,2,2,4,Other
+100,21,20,female,Loja,English,1,1,M2,5,4,4,4,4,3,4,Loja
+100,21,20,female,Loja,English,1,1,M1,5,4,4,4,4,3,2,Loja
+100,21,20,female,Loja,English,1,0,F2,2,4,3,2,2,3,3,Other
+100,22,33,male,Cuenca,,0,1,F2,5,5,5,5,5,3,2,Cuenca
+100,22,33,male,Cuenca,,0,0,M2,5,5,5,5,5,2,3,Cuenca
+100,22,33,male,Cuenca,,0,1,F1,4,3,3,3,3,2,3,Loja
+100,22,33,male,Cuenca,,0,0,M1,4,4,4,4,5,3,2,Cuenca
+100,22,33,male,Cuenca,,0,0,F1,2,3,3,3,3,1,3,Loja
+100,22,33,male,Cuenca,,0,1,M2,5,5,5,5,5,3,4,Cuenca
+100,22,33,male,Cuenca,,0,1,M1,5,5,5,5,5,3,2,Quito
+100,22,33,male,Cuenca,,0,0,F2,1,4,5,4,4,3,2,Cuenca
+100,23,20,female,Coast,English,1,1,F2,5,5,5,2,3,1,2,Other
+100,23,20,female,Coast,English,1,0,M2,5,4,3,4,4,2,4,Cuenca
+100,23,20,female,Coast,English,1,1,F1,4,4,4,3,3,2,4,Quito
+100,23,20,female,Coast,English,1,0,M1,4,4,4,5,5,2,3,Quito
+100,23,20,female,Coast,English,1,0,F1,4,4,3,4,3,2,3,Cuenca
+100,23,20,female,Coast,English,1,1,M2,5,5,5,5,5,3,4,Other
+100,23,20,female,Coast,English,1,1,M1,4,6,6,4,5,2,4,Loja
+100,23,20,female,Coast,English,1,0,F2,5,3,4,3,3,2,3,Cuenca
+100,24,34,female,Cuenca,,0,1,F2,5,5,5,5,5,4,3,Loja
+100,24,34,female,Cuenca,,0,0,M2,5,5,5,5,5,4,4,Loja
+100,24,34,female,Cuenca,,0,1,F1,5,5,5,5,5,4,6,Loja
+100,24,34,female,Cuenca,,0,0,M1,5,5,5,5,5,4,3,Loja
+100,24,34,female,Cuenca,,0,0,F1,5,5,5,5,5,3,6,Cuenca
+100,24,34,female,Cuenca,,0,1,M2,4,4,4,4,4,3,4,Loja
+100,24,34,female,Cuenca,,0,1,M1,5,5,5,5,5,4,3,Loja
+100,24,34,female,Cuenca,,0,0,F2,5,5,5,5,5,4,3,Loja
+100,25,21,male,Coast,English,1,1,F2,5,5,5,4,3,3,3,Loja
+100,25,21,male,Coast,English,1,0,M2,6,5,6,5,4,3,3,Other
+100,25,21,male,Coast,English,1,1,F1,5,5,5,4,1,2,3,Loja
+100,25,21,male,Coast,English,1,0,M1,6,4,6,5,6,4,3,Quito
+100,25,21,male,Coast,English,1,0,F1,6,5,5,3,2,2,4,Loja
+100,25,21,male,Coast,English,1,1,M2,6,5,5,5,5,3,3,Cuenca
+100,25,21,male,Coast,English,1,1,M1,6,5,5,4,5,3,3,Quito
+100,25,21,male,Coast,English,1,0,F2,6,4,3,4,2,3,3,Loja
+100,26,21,female,Coast,,0,1,F2,5,5,5,5,5,2,4,Quito
+100,26,21,female,Coast,,0,0,M2,6,5,6,4,4,2,3,Loja
+100,26,21,female,Coast,,0,1,F1,6,6,6,5,5,2,3,Other
+100,26,21,female,Coast,,0,0,M1,5,5,6,4,6,3,2,Cuenca
+100,26,21,female,Coast,,0,0,F1,6,5,4,4,4,2,3,Cuenca
+100,26,21,female,Coast,,0,1,M2,6,5,6,4,5,2,3,Cuenca
+100,26,21,female,Coast,,0,1,M1,6,5,5,5,5,3,2,Loja
+100,26,21,female,Coast,,0,0,F2,5,5,5,3,3,2,3,Quito
+100,27,38,male,Cuenca,,0,1,F2,3,4,4,4,3,3,3,Quito
+100,27,38,male,Cuenca,,0,0,M2,4,4,4,4,4,3,3,Cuenca
+100,27,38,male,Cuenca,,0,1,F1,3,4,4,4,5,2,3,Loja
+100,27,38,male,Cuenca,,0,0,M1,4,4,4,3,4,3,2,Cuenca
+100,27,38,male,Cuenca,,0,0,F1,4,3,4,4,4,2,4,Other
+100,27,38,male,Cuenca,,0,1,M2,4,3,4,4,4,3,3,Cuenca
+100,27,38,male,Cuenca,,0,1,M1,4,3,4,4,4,3,2,Cuenca
+100,27,38,male,Cuenca,,0,0,F2,3,4,4,3,3,2,2,Loja
+100,28,22,female,Loja,English,1,1,F2,3,3,4,4,3,3,3,Loja
+100,28,22,female,Loja,English,1,0,M2,3,4,5,5,5,4,4,Loja
+100,28,22,female,Loja,English,1,1,F1,3,4,4,4,5,2,4,Loja
+100,28,22,female,Loja,English,1,0,M1,3,4,5,4,4,3,2,Loja
+100,28,22,female,Loja,English,1,0,F1,3,4,4,3,4,2,4,Loja
+100,28,22,female,Loja,English,1,1,M2,3,4,5,4,5,4,4,Loja
+100,28,22,female,Loja,English,1,1,M1,4,4,5,4,5,3,2,Loja
+100,28,22,female,Loja,English,1,0,F2,3,5,5,3,2,3,3,Loja
+100,29,27,male,Cuenca,English,1,1,F2,2,3,3,2,2,2,3,Loja
+100,29,27,male,Cuenca,English,1,0,M2,4,4,3,4,4,3,3,Cuenca
+100,29,27,male,Cuenca,English,1,1,F1,2,4,3,4,5,2,4,Loja
+100,29,27,male,Cuenca,English,1,0,M1,3,3,3,3,3,2,2,Quito
+100,29,27,male,Cuenca,English,1,0,F1,3,4,3,4,4,3,4,Cuenca
+100,29,27,male,Cuenca,English,1,1,M2,4,4,3,4,4,2,3,Other
+100,29,27,male,Cuenca,English,1,1,M1,4,4,3,3,3,2,3,Loja
+100,29,27,male,Cuenca,English,1,0,F2,4,4,4,4,4,3,3,Quito
+100,30,21,male,Loja,English,1,1,F2,3,3,4,2,2,2,3,Other
+100,30,21,male,Loja,English,1,0,M2,5,5,5,5,5,4,3,Quito
+100,30,21,male,Loja,English,1,1,F1,5,4,5,5,5,4,4,Cuenca
+100,30,21,male,Loja,English,1,0,M1,4,5,4,4,5,3,2,Loja
+100,30,21,male,Loja,English,1,0,F1,3,5,6,4,5,3,5,Cuenca
+100,30,21,male,Loja,English,1,1,M2,5,5,5,5,5,4,4,Quito
+100,30,21,male,Loja,English,1,1,M1,5,5,5,5,5,3,2,Loja
+100,30,21,male,Loja,English,1,0,F2,4,4,3,3,2,2,2,Other
+100,31,24,female,Quito,"English, Portuguese",2,1,F2,1,3,4,4,6,3,2,Quito
+100,31,24,female,Quito,"English, Portuguese",2,0,M2,3,5,5,5,6,4,3,Quito
+100,31,24,female,Quito,"English, Portuguese",2,1,F1,3,3,4,5,5,2,4,Other
+100,31,24,female,Quito,"English, Portuguese",2,0,M1,4,4,5,5,5,3,2,Cuenca
+100,31,24,female,Quito,"English, Portuguese",2,0,F1,2,3,3,4,4,2,3,Other
+100,31,24,female,Quito,"English, Portuguese",2,1,M2,3,4,4,5,4,2,3,Cuenca
+100,31,24,female,Quito,"English, Portuguese",2,1,M1,3,4,4,4,4,3,3,Quito
+100,31,24,female,Quito,"English, Portuguese",2,0,F2,4,4,4,5,5,3,3,Other
+100,32,37,female,Quito,English,1,1,F2,1,1,3,1,1,1,2,Other
+100,32,37,female,Quito,English,1,0,M2,4,4,3,4,4,3,2,Other
+100,32,37,female,Quito,English,1,1,F1,2,3,5,5,5,3,3,Quito
+100,32,37,female,Quito,English,1,0,M1,4,4,4,4,4,2,2,Other
+100,32,37,female,Quito,English,1,0,F1,2,4,2,5,5,3,2,Cuenca
+100,32,37,female,Quito,English,1,1,M2,2,5,4,4,5,3,3,Quito
+100,32,37,female,Quito,English,1,1,M1,4,3,3,4,5,3,2,Quito
+100,32,37,female,Quito,English,1,0,F2,2,2,1,1,1,1,2,Other
+100,33,26,male,Loja,English,1,1,F2,4,3,4,3,2,1,4,Loja
+100,33,26,male,Loja,English,1,0,M2,5,4,3,4,4,3,3,Loja
+100,33,26,male,Loja,English,1,1,F1,4,3,3,3,3,2,4,Loja
+100,33,26,male,Loja,English,1,0,M1,4,3,4,4,5,3,2,Cuenca
+100,33,26,male,Loja,English,1,0,F1,3,3,3,3,3,2,4,Loja
+100,33,26,male,Loja,English,1,1,M2,5,5,3,3,4,3,3,Loja
+100,33,26,male,Loja,English,1,1,M1,5,3,3,3,4,3,2,Cuenca
+100,33,26,male,Loja,English,1,0,F2,3,4,5,3,2,1,4,Loja
+100,34,23,male,Loja,English,1,1,F2,5,4,5,4,6,2,2,Loja
+100,34,23,male,Loja,English,1,0,M2,5,5,5,5,5,3,2,Loja
+100,34,23,male,Loja,English,1,1,F1,3,3,3,3,3,3,2,Loja
+100,34,23,male,Loja,English,1,0,M1,5,5,5,5,5,2,1,Loja
+100,34,23,male,Loja,English,1,0,F1,2,2,2,2,2,3,2,Loja
+100,34,23,male,Loja,English,1,1,M2,5,5,5,5,5,3,2,Loja
+100,34,23,male,Loja,English,1,1,M1,5,5,5,5,5,3,2,Other
+100,34,23,male,Loja,English,1,0,F2,4,4,4,4,4,3,2,Loja
+100,35,20,female,Loja,English,1,1,F2,5,5,5,5,5,4,3,Loja
+100,35,20,female,Loja,English,1,0,M2,4,4,5,5,4,3,3,Quito
+100,35,20,female,Loja,English,1,1,F1,4,4,4,4,4,3,4,Other
+100,35,20,female,Loja,English,1,0,M1,5,5,5,5,5,2,3,Cuenca
+100,35,20,female,Loja,English,1,0,F1,4,4,4,4,4,3,4,Quito
+100,35,20,female,Loja,English,1,1,M2,4,4,4,4,4,4,4,Quito
+100,35,20,female,Loja,English,1,1,M1,4,4,4,4,4,4,3,Cuenca
+100,35,20,female,Loja,English,1,0,F2,4,4,4,4,4,3,3,Cuenca
+100,36,33,female,Coast,English,1,1,F2,5,4,3,4,4,3,3,Cuenca
+100,36,33,female,Coast,English,1,0,M2,4,4,5,4,5,3,3,Quito
+100,36,33,female,Coast,English,1,1,F1,4,4,3,3,3,1,2,Other
+100,36,33,female,Coast,English,1,0,M1,5,4,5,4,6,3,2,Cuenca
+100,36,33,female,Coast,English,1,0,F1,5,4,4,4,3,3,3,Loja
+100,36,33,female,Coast,English,1,1,M2,5,5,5,5,5,3,3,Other
+100,36,33,female,Coast,English,1,1,M1,4,4,5,4,5,3,3,Loja
+100,36,33,female,Coast,English,1,0,F2,5,4,5,3,4,3,3,Quito
+100,37,22,male,Cuenca,English,1,1,F2,4,4,4,4,4,3,3,Loja
+100,37,22,male,Cuenca,English,1,0,M2,3,4,4,4,4,3,3,Cuenca
+100,37,22,male,Cuenca,English,1,1,F1,3,4,3,3,2,2,4,Loja
+100,37,22,male,Cuenca,English,1,0,M1,3,3,2,3,3,3,3,Cuenca
+100,37,22,male,Cuenca,English,1,0,F1,3,3,4,3,3,2,4,Loja
+100,37,22,male,Cuenca,English,1,1,M2,4,5,3,3,3,3,4,Cuenca
+100,37,22,male,Cuenca,English,1,1,M1,3,5,5,5,5,2,3,Cuenca
+100,37,22,male,Cuenca,English,1,0,F2,3,4,3,3,3,2,3,Cuenca
+100,38,40,male,Quito,English,1,1,F2,3,5,4,4,4,2,3,Loja
+100,38,40,male,Quito,English,1,0,M2,5,5,5,4,4,3,4,Loja
+100,38,40,male,Quito,English,1,1,F1,3,4,4,3,4,2,4,Loja
+100,38,40,male,Quito,English,1,0,M1,5,5,5,4,4,3,3,Loja
+100,38,40,male,Quito,English,1,0,F1,3,5,4,3,3,1,4,Cuenca
+100,38,40,male,Quito,English,1,1,M2,4,5,5,4,6,3,3,Loja
+100,38,40,male,Quito,English,1,1,M1,5,5,5,3,4,3,3,Loja
+100,38,40,male,Quito,English,1,0,F2,3,4,5,3,4,3,4,Loja
+100,39,34,male,Coast,,0,1,F2,2,5,1,2,2,2,3,Loja
+100,39,34,male,Coast,,0,0,M2,5,5,1,2,2,2,4,Cuenca
+100,39,34,male,Coast,,0,1,F1,2,5,1,1,1,1,4,Cuenca
+100,39,34,male,Coast,,0,0,M1,2,1,4,5,6,3,3,Quito
+100,39,34,male,Coast,,0,0,F1,2,5,2,2,2,1,5,Cuenca
+100,39,34,male,Coast,,0,1,M2,5,5,5,2,2,2,4,Other
+100,39,34,male,Coast,,0,1,M1,5,1,4,4,6,3,3,Quito
+100,39,34,male,Coast,,0,0,F2,2,2,3,3,3,2,3,Loja
+100,40,25,male,Loja,English,1,1,F2,5,4,5,3,4,1,3,Loja
+100,40,25,male,Loja,English,1,0,M2,5,6,5,5,5,3,3,Quito
+100,40,25,male,Loja,English,1,1,F1,5,5,4,5,5,3,3,Loja
+100,40,25,male,Loja,English,1,0,M1,5,5,6,6,6,3,3,Cuenca
+100,40,25,male,Loja,English,1,0,F1,5,4,5,5,5,3,3,Loja
+100,40,25,male,Loja,English,1,1,M2,6,5,6,5,5,3,4,Cuenca
+100,40,25,male,Loja,English,1,1,M1,5,5,5,5,5,3,3,Quito
+100,40,25,male,Loja,English,1,0,F2,4,3,4,3,3,2,3,Loja
+100,41,20,female,Loja,,0,1,F2,1,1,1,1,1,3,2,Quito
+100,41,20,female,Loja,,0,0,M2,6,6,6,4,5,2,4,Loja
+100,41,20,female,Loja,,0,1,F1,4,4,4,3,6,2,4,Loja
+100,41,20,female,Loja,,0,0,M1,4,5,3,4,6,3,3,Cuenca
+100,41,20,female,Loja,,0,0,F1,4,3,4,3,3,2,4,Other
+100,41,20,female,Loja,,0,1,M2,6,5,6,4,6,3,4,Loja
+100,41,20,female,Loja,,0,1,M1,5,5,4,5,5,3,3,Cuenca
+100,41,20,female,Loja,,0,0,F2,4,5,5,3,3,3,3,Quito
+100,42,21,male,Loja,,0,1,F2,5,3,3,3,3,2,2,Quito
+100,42,21,male,Loja,,0,0,M2,5,4,4,5,5,2,3,Quito
+100,42,21,male,Loja,,0,1,F1,4,4,4,4,5,3,3,Loja
+100,42,21,male,Loja,,0,0,M1,4,4,4,3,5,2,2,Quito
+100,42,21,male,Loja,,0,0,F1,5,5,5,5,5,3,4,Loja
+100,42,21,male,Loja,,0,1,M2,4,5,4,5,5,2,4,Quito
+100,42,21,male,Loja,,0,1,M1,4,5,5,5,6,2,3,Loja
+100,42,21,male,Loja,,0,0,F2,4,5,4,3,3,1,3,Loja
+100,43,25,male,Loja,,0,1,F2,6,5,4,6,6,4,3,Other
+100,43,25,male,Loja,,0,0,M2,5,4,3,3,3,3,5,Cuenca
+100,43,25,male,Loja,,0,1,F1,5,2,3,4,5,2,2,Other
+100,43,25,male,Loja,,0,0,M1,5,5,6,5,6,5,4,Loja
+100,43,25,male,Loja,,0,0,F1,3,5,4,3,3,3,3,Cuenca
+100,43,25,male,Loja,,0,1,M2,5,5,6,4,6,3,3,Cuenca
+100,43,25,male,Loja,,0,1,M1,6,4,6,6,6,4,4,Loja
+100,43,25,male,Loja,,0,0,F2,3,3,4,5,2,2,2,Quito
+100,44,22,male,Quito,English,1,1,F2,6,6,6,5,6,4,2,Cuenca
+100,44,22,male,Quito,English,1,0,M2,6,6,6,6,4,3,3,Cuenca
+100,44,22,male,Quito,English,1,1,F1,6,6,6,6,6,3,3,Cuenca
+100,44,22,male,Quito,English,1,0,M1,6,6,5,4,5,2,2,Cuenca
+100,44,22,male,Quito,English,1,0,F1,6,6,6,6,6,3,4,Cuenca
+100,44,22,male,Quito,English,1,1,M2,6,6,6,6,5,3,2,Cuenca
+100,44,22,male,Quito,English,1,1,M1,6,6,6,6,6,4,2,Quito
+100,44,22,male,Quito,English,1,0,F2,6,6,6,4,4,2,3,Loja
+100,45,41,female,Coast,English,1,1,F2,5,5,5,4,4,2,4,Quito
+100,45,41,female,Coast,English,1,0,M2,6,6,6,5,5,4,3,Loja
+100,45,41,female,Coast,English,1,1,F1,5,5,5,4,4,3,4,Cuenca
+100,45,41,female,Coast,English,1,0,M1,6,6,6,5,5,4,4,Loja
+100,45,41,female,Coast,English,1,0,F1,6,6,6,5,5,3,5,Cuenca
+100,45,41,female,Coast,English,1,1,M2,6,6,6,5,5,3,3,Loja
+100,45,41,female,Coast,English,1,1,M1,6,4,5,5,5,4,3,Loja
+100,45,41,female,Coast,English,1,0,F2,4,4,4,3,3,2,3,Other
+100,46,21,female,Loja,English,1,1,F2,4,4,5,4,3,3,3,Other
+100,46,21,female,Loja,English,1,0,M2,4,4,4,4,4,3,4,Quito
+100,46,21,female,Loja,English,1,1,F1,5,5,5,5,5,3,4,Loja
+100,46,21,female,Loja,English,1,0,M1,4,4,4,4,3,2,2,Other
+100,46,21,female,Loja,English,1,0,F1,4,4,5,3,3,2,4,Cuenca
+100,46,21,female,Loja,English,1,1,M2,5,5,5,5,6,4,4,Quito
+100,46,21,female,Loja,English,1,1,M1,4,4,5,5,5,3,2,Loja
+100,46,21,female,Loja,English,1,0,F2,4,4,4,3,1,4,3,Quito
+100,47,22,female,Loja,,0,1,F2,6,4,6,4,3,2,3,Quito
+100,47,22,female,Loja,,0,0,M2,6,4,2,3,3,2,3,Loja
+100,47,22,female,Loja,,0,1,F1,5,5,6,5,6,3,4,Quito
+100,47,22,female,Loja,,0,0,M1,6,5,6,5,6,4,3,Quito
+100,47,22,female,Loja,,0,0,F1,2,4,6,5,6,3,4,Quito
+100,47,22,female,Loja,,0,1,M2,6,4,1,3,4,2,2,Loja
+100,47,22,female,Loja,,0,1,M1,6,6,6,5,6,4,3,Loja
+100,47,22,female,Loja,,0,0,F2,4,4,6,4,5,2,3,Quito
+100,48,24,female,Loja,N/A,1,1,F2,2,3,2,2,2,1,3,Quito
+100,48,24,female,Loja,N/A,1,0,M2,4,4,4,4,5,3,4,Loja
+100,48,24,female,Loja,N/A,1,1,F1,3,3,3,3,3,2,3,Other
+100,48,24,female,Loja,N/A,1,0,M1,5,4,4,4,5,3,2,Loja
+100,48,24,female,Loja,N/A,1,0,F1,2,3,3,2,2,2,4,Loja
+100,48,24,female,Loja,N/A,1,1,M2,4,4,4,4,4,3,4,Loja
+100,48,24,female,Loja,N/A,1,1,M1,4,4,4,4,5,3,2,Loja
+100,48,24,female,Loja,N/A,1,0,F2,2,3,3,2,2,2,3,Loja
+100,49,21,male,Cuenca,English,1,1,F2,4,4,3,4,3,2,2,Other
+100,49,21,male,Cuenca,English,1,0,M2,3,4,3,3,4,2,4,Cuenca
+100,49,21,male,Cuenca,English,1,1,F1,3,3,3,4,4,3,4,Loja
+100,49,21,male,Cuenca,English,1,0,M1,3,4,4,4,3,2,2,Cuenca
+100,49,21,male,Cuenca,English,1,0,F1,3,3,4,4,4,3,4,Cuenca
+100,49,21,male,Cuenca,English,1,1,M2,3,4,4,4,4,3,4,Cuenca
+100,49,21,male,Cuenca,English,1,1,M1,3,4,4,4,4,2,3,Loja
+100,49,21,male,Cuenca,English,1,0,F2,3,3,3,3,3,2,2,Other
+100,50,24,male,Loja,,0,1,F2,5,4,3,2,2,2,3,Other
+100,50,24,male,Loja,,0,0,M2,5,5,5,4,4,3,4,Quito
+100,50,24,male,Loja,,0,1,F1,4,3,4,4,3,2,4,Other
+100,50,24,male,Loja,,0,0,M1,5,5,4,3,4,3,4,Loja
+100,50,24,male,Loja,,0,0,F1,4,4,3,4,4,2,5,Loja
+100,50,24,male,Loja,,0,1,M2,5,4,4,3,3,3,4,Loja
+100,50,24,male,Loja,,0,1,M1,5,4,5,4,4,3,4,Loja
+100,50,24,male,Loja,,0,0,F2,3,3,3,2,2,2,3,Other
+100,51,22,male,Quito,English,1,1,F2,3,3,3,3,2,2,3,Quito
+100,51,22,male,Quito,English,1,0,M2,5,3,2,4,5,3,3,Loja
+100,51,22,male,Quito,English,1,1,F1,3,4,3,2,3,2,4,Other
+100,51,22,male,Quito,English,1,0,M1,4,5,5,2,2,2,3,Cuenca
+100,51,22,male,Quito,English,1,0,F1,5,3,4,2,2,2,5,Other
+100,51,22,male,Quito,English,1,1,M2,5,5,5,5,5,3,4,Quito
+100,51,22,male,Quito,English,1,1,M1,5,5,3,5,4,3,3,Cuenca
+100,51,22,male,Quito,English,1,0,F2,3,5,4,2,2,2,4,Cuenca
+100,52,23,female,Loja,English,1,1,F2,1,1,1,2,2,1,2,Cuenca
+100,52,23,female,Loja,English,1,0,M2,6,4,5,5,5,3,4,Cuenca
+100,52,23,female,Loja,English,1,1,F1,5,4,5,5,6,4,5,Loja
+100,52,23,female,Loja,English,1,0,M1,4,2,2,2,4,2,4,Cuenca
+100,52,23,female,Loja,English,1,0,F1,2,3,1,4,1,3,4,Quito
+100,52,23,female,Loja,English,1,1,M2,1,3,1,4,1,3,3,Quito
+100,52,23,female,Loja,English,1,1,M1,6,4,5,5,6,4,2,Loja
+100,52,23,female,Loja,English,1,0,F2,1,6,1,1,2,2,2,Other
+100,53,24,male,Coast,,0,1,F2,4,4,3,3,3,2,2,Quito
+100,53,24,male,Coast,,0,0,M2,5,4,3,4,4,2,3,Cuenca
+100,53,24,male,Coast,,0,1,F1,4,5,2,3,3,2,5,Loja
+100,53,24,male,Coast,,0,0,M1,4,3,4,4,4,3,3,Quito
+100,53,24,male,Coast,,0,0,F1,4,4,2,3,3,2,5,Loja
+100,53,24,male,Coast,,0,1,M2,5,4,4,3,4,3,4,Quito
+100,53,24,male,Coast,,0,1,M1,5,4,4,4,4,3,3,Other
+100,53,24,male,Coast,,0,0,F2,5,4,3,3,3,2,3,Quito
+100,54,20,female,Loja,"English, Spanish",2,1,F2,4,4,6,4,5,4,2,Loja
+100,54,20,female,Loja,"English, Spanish",2,0,M2,4,4,4,4,5,3,4,Loja
+100,54,20,female,Loja,"English, Spanish",2,1,F1,4,4,4,3,4,3,3,Other
+100,54,20,female,Loja,"English, Spanish",2,0,M1,5,4,4,3,5,3,2,Loja
+100,54,20,female,Loja,"English, Spanish",2,0,F1,5,4,5,4,4,2,4,Other
+100,54,20,female,Loja,"English, Spanish",2,1,M2,6,4,5,4,6,2,5,Other
+100,54,20,female,Loja,"English, Spanish",2,1,M1,5,4,5,4,4,3,3,Loja
+100,54,20,female,Loja,"English, Spanish",2,0,F2,4,6,6,6,3,2,4,Loja
+100,55,35,female,Quito,"English, Portuguese",2,1,F2,4,4,3,3,4,2,3,Loja
+100,55,35,female,Quito,"English, Portuguese",2,0,M2,5,5,5,5,5,3,4,Loja
+100,55,35,female,Quito,"English, Portuguese",2,1,F1,4,4,4,4,4,3,4,Loja
+100,55,35,female,Quito,"English, Portuguese",2,0,M1,5,4,3,4,4,3,3,Loja
+100,55,35,female,Quito,"English, Portuguese",2,0,F1,3,5,3,3,3,2,4,Loja
+100,55,35,female,Quito,"English, Portuguese",2,1,M2,5,3,3,4,2,3,4,Quito
+100,55,35,female,Quito,"English, Portuguese",2,1,M1,5,4,4,4,5,4,4,Quito
+100,55,35,female,Quito,"English, Portuguese",2,0,F2,3,3,2,4,3,2,3,Loja
+100,56,21,female,Loja,,0,1,F2,3,2,2,2,2,1,3,Cuenca
+100,56,21,female,Loja,,0,0,M2,5,5,5,4,5,2,3,Quito
+100,56,21,female,Loja,,0,1,F1,4,3,3,3,2,1,3,Loja
+100,56,21,female,Loja,,0,0,M1,3,4,3,3,2,1,3,Loja
+100,56,21,female,Loja,,0,0,F1,2,1,3,3,4,2,3,Loja
+100,56,21,female,Loja,,0,1,M2,4,3,5,4,3,3,4,Quito
+100,56,21,female,Loja,,0,1,M1,4,5,4,3,4,2,3,Quito
+100,56,21,female,Loja,,0,0,F2,3,2,3,2,1,2,2,Loja
+100,57,42,male,Cuenca,English,1,1,F2,2,4,2,2,2,2,3,Other
+100,57,42,male,Cuenca,English,1,0,M2,6,5,5,3,5,2,4,Other
+100,57,42,male,Cuenca,English,1,1,F1,5,5,5,4,5,2,5,Loja
+100,57,42,male,Cuenca,English,1,0,M1,6,4,4,4,5,3,4,Cuenca
+100,57,42,male,Cuenca,English,1,0,F1,5,5,4,4,5,3,5,Loja
+100,57,42,male,Cuenca,English,1,1,M2,6,5,5,4,6,2,4,Other
+100,57,42,male,Cuenca,English,1,1,M1,6,5,5,4,6,3,3,Cuenca
+100,57,42,male,Cuenca,English,1,0,F2,3,4,3,3,4,2,3,Other
+100,58,29,female,Quito,English,1,1,F2,2,5,4,3,3,3,3,Loja
+100,58,29,female,Quito,English,1,0,M2,6,4,5,5,5,3,4,Quito
+100,58,29,female,Quito,English,1,1,F1,5,6,5,4,5,3,5,Quito
+100,58,29,female,Quito,English,1,0,M1,2,4,2,3,3,2,2,Other
+100,58,29,female,Quito,English,1,0,F1,3,5,5,5,6,3,4,Cuenca
+100,58,29,female,Quito,English,1,1,M2,5,5,5,5,6,3,4,Quito
+100,58,29,female,Quito,English,1,1,M1,2,3,2,4,2,2,2,Loja
+100,58,29,female,Quito,English,1,0,F2,5,4,2,4,2,3,3,Loja
+100,59,26,male,Coast,"Chinese, English, French, Italian",4,1,F2,3,4,5,3,5,2,2,Loja
+100,59,26,male,Coast,"Chinese, English, French, Italian",4,0,M2,5,4,5,2,3,2,4,Other
+100,59,26,male,Coast,"Chinese, English, French, Italian",4,1,F1,3,4,5,4,4,2,3,Loja
+100,59,26,male,Coast,"Chinese, English, French, Italian",4,0,M1,5,5,5,5,4,3,2,Other
+100,59,26,male,Coast,"Chinese, English, French, Italian",4,0,F1,4,4,4,2,3,2,3,Other
+100,59,26,male,Coast,"Chinese, English, French, Italian",4,1,M2,4,4,4,2,4,2,4,Other
+100,59,26,male,Coast,"Chinese, English, French, Italian",4,1,M1,4,4,4,5,5,3,2,Other
+100,59,26,male,Coast,"Chinese, English, French, Italian",4,0,F2,2,5,5,3,3,2,3,Other
+100,60,29,female,Loja,English,1,1,F2,3,3,2,3,3,2,3,Other
+100,60,29,female,Loja,English,1,0,M2,4,4,4,4,4,3,3,Loja
+100,60,29,female,Loja,English,1,1,F1,4,4,3,3,3,3,5,Loja
+100,60,29,female,Loja,English,1,0,M1,5,5,5,5,5,3,3,Loja
+100,60,29,female,Loja,English,1,0,F1,6,6,5,5,5,4,5,Quito
+100,60,29,female,Loja,English,1,1,M2,5,4,4,4,4,3,4,Loja
+100,60,29,female,Loja,English,1,1,M1,5,4,4,4,4,3,3,Loja
+100,60,29,female,Loja,English,1,0,F2,3,3,3,2,2,2,3,Quito
+100,61,25,female,Loja,,1,1,F2,2,4,3,2,2,3,3,Quito
+100,61,25,female,Loja,,1,0,M2,4,4,4,6,4,3,4,Loja
+100,61,25,female,Loja,,1,1,F1,3,4,4,4,4,2,4,Loja
+100,61,25,female,Loja,,1,0,M1,6,5,5,5,5,3,3,Loja
+100,61,25,female,Loja,,1,0,F1,6,5,5,5,5,3,5,Loja
+100,61,25,female,Loja,,1,1,M2,4,4,4,5,5,3,4,Loja
+100,61,25,female,Loja,,1,1,M1,4,4,5,4,5,3,3,Loja
+100,61,25,female,Loja,,1,0,F2,3,5,4,2,2,3,3,Loja
+100,62,32,male,Coast,"English, French",2,1,F2,3,3,6,4,4,3,2,Other
+100,62,32,male,Coast,"English, French",2,0,M2,6,5,6,4,4,3,4,Quito
+100,62,32,male,Coast,"English, French",2,1,F1,3,4,5,4,4,2,4,Loja
+100,62,32,male,Coast,"English, French",2,0,M1,4,4,5,5,5,4,3,Cuenca
+100,62,32,male,Coast,"English, French",2,0,F1,3,4,5,4,4,2,4,Loja
+100,62,32,male,Coast,"English, French",2,1,M2,6,6,6,5,5,3,4,Quito
+100,62,32,male,Coast,"English, French",2,1,M1,4,5,6,4,5,4,3,Quito
+100,62,32,male,Coast,"English, French",2,0,F2,3,4,4,4,5,3,3,Quito
+100,63,20,female,Coast,,0,1,F2,6,6,6,6,6,3,2,Quito
+100,63,20,female,Coast,,0,0,M2,6,6,6,6,6,3,2,Loja
+100,63,20,female,Coast,,0,1,F1,6,6,6,6,6,4,3,Loja
+100,63,20,female,Coast,,0,0,M1,6,6,6,6,6,3,2,Cuenca
+100,63,20,female,Coast,,0,0,F1,6,6,6,6,6,4,4,Loja
+100,63,20,female,Coast,,0,1,M2,6,6,6,6,6,3,3,Loja
+100,63,20,female,Coast,,0,1,M1,6,6,6,6,6,3,2,Loja
+100,63,20,female,Coast,,0,0,F2,6,6,6,1,6,3,2,Quito
+100,64,22,female,Loja,English,1,1,F2,5,5,5,4,5,4,2,Loja
+100,64,22,female,Loja,English,1,0,M2,5,6,5,5,5,4,4,Loja
+100,64,22,female,Loja,English,1,1,F1,3,5,4,3,3,3,4,Other
+100,64,22,female,Loja,English,1,0,M1,5,5,3,4,4,3,2,Loja
+100,64,22,female,Loja,English,1,0,F1,5,5,4,3,3,2,4,Cuenca
+100,64,22,female,Loja,English,1,1,M2,5,5,4,4,5,3,4,Loja
+100,64,22,female,Loja,English,1,1,M1,4,5,4,3,3,3,2,Loja
+100,64,22,female,Loja,English,1,0,F2,5,5,4,4,3,3,3,Quito
+100,65,23,female,Loja,English,1,1,F2,4,3,3,4,2,3,3,Quito
+100,65,23,female,Loja,English,1,0,M2,4,2,5,3,1,3,2,Loja
+100,65,23,female,Loja,English,1,1,F1,4,2,2,3,2,1,3,Cuenca
+100,65,23,female,Loja,English,1,0,M1,1,4,2,4,2,3,2,Cuenca
+100,65,23,female,Loja,English,1,0,F1,3,2,3,2,2,2,2,Cuenca
+100,65,23,female,Loja,English,1,1,M2,3,4,4,4,4,2,3,Cuenca
+100,65,23,female,Loja,English,1,1,M1,4,3,2,2,3,2,2,Cuenca
+100,65,23,female,Loja,English,1,0,F2,3,3,3,2,2,2,2,Cuenca
+100,66,21,female,Quito,English,1,1,F2,4,4,3,2,2,2,3,Other
+100,66,21,female,Quito,English,1,0,M2,5,4,5,5,5,3,4,Quito
+100,66,21,female,Quito,English,1,1,F1,4,4,2,2,2,1,3,Other
+100,66,21,female,Quito,English,1,0,M1,3,3,4,4,4,3,2,Cuenca
+100,66,21,female,Quito,English,1,0,F1,3,4,2,2,2,1,4,Loja
+100,66,21,female,Quito,English,1,1,M2,6,4,5,4,4,2,3,Quito
+100,66,21,female,Quito,English,1,1,M1,3,4,2,3,4,3,2,Cuenca
+100,66,21,female,Quito,English,1,0,F2,4,4,3,3,3,2,2,Other
+100,67,28,female,Cuenca,English,1,1,F2,4,4,3,3,3,2,2,Quito
+100,67,28,female,Cuenca,English,1,0,M2,5,5,5,4,4,3,4,Cuenca
+100,67,28,female,Cuenca,English,1,1,F1,5,3,4,5,5,3,4,Loja
+100,67,28,female,Cuenca,English,1,0,M1,4,3,3,3,3,3,3,Cuenca
+100,67,28,female,Cuenca,English,1,0,F1,5,3,3,4,4,3,3,Loja
+100,67,28,female,Cuenca,English,1,1,M2,4,4,4,4,4,3,4,Other
+100,67,28,female,Cuenca,English,1,1,M1,4,3,4,4,4,3,3,Cuenca
+100,67,28,female,Cuenca,English,1,0,F2,4,4,3,3,3,2,2,Loja
+100,68,23,female,Coast,,0,1,F2,1,2,2,2,2,3,3,Quito
+100,68,23,female,Coast,,0,0,M2,4,2,5,5,6,2,4,Quito
+100,68,23,female,Coast,,0,1,F1,5,4,3,1,1,1,5,Quito
+100,68,23,female,Coast,,0,0,M1,5,4,5,1,1,3,3,Cuenca
+100,68,23,female,Coast,,0,0,F1,5,5,3,3,3,3,6,Cuenca
+100,68,23,female,Coast,,0,1,M2,3,3,4,3,4,3,4,Loja
+100,68,23,female,Coast,,0,1,M1,3,3,4,3,3,3,3,Cuenca
+100,68,23,female,Coast,,0,0,F2,5,3,4,4,4,3,2,Quito
+100,69,48,female,Cuenca,,0,1,F2,5,4,5,4,4,2,3,Other
+100,69,48,female,Cuenca,,0,0,M2,6,5,6,5,5,3,4,Other
+100,69,48,female,Cuenca,,0,1,F1,5,4,4,5,5,3,4,Other
+100,69,48,female,Cuenca,,0,0,M1,5,4,5,4,4,3,2,Other
+100,69,48,female,Cuenca,,0,0,F1,6,4,4,5,5,2,5,Other
+100,69,48,female,Cuenca,,0,1,M2,6,5,6,5,6,3,4,Other
+100,69,48,female,Cuenca,,0,1,M1,6,4,4,4,4,3,2,Other
+100,69,48,female,Cuenca,,0,0,F2,6,4,4,3,3,2,3,Other
+100,70,28,male,Quito,English,1,1,F2,4,4,4,4,5,3,2,Other
+100,70,28,male,Quito,English,1,0,M2,6,3,4,2,2,3,4,Other
+100,70,28,male,Quito,English,1,1,F1,5,4,4,4,5,3,5,Other
+100,70,28,male,Quito,English,1,0,M1,5,2,2,4,5,3,2,Cuenca
+100,70,28,male,Quito,English,1,0,F1,5,2,4,2,2,2,4,Loja
+100,70,28,male,Quito,English,1,1,M2,5,3,3,2,2,2,4,Other
+100,70,28,male,Quito,English,1,1,M1,5,2,3,4,3,3,2,Loja
+100,70,28,male,Quito,English,1,0,F2,5,2,3,2,2,3,2,Loja
+100,71,23,female,Loja,English,1,1,F2,2,3,3,2,2,2,1,Other
+100,71,23,female,Loja,English,1,0,M2,4,3,3,4,4,3,2,Other
+100,71,23,female,Loja,English,1,1,F1,3,3,2,2,2,2,1,Quito
+100,71,23,female,Loja,English,1,0,M1,3,4,4,3,3,3,2,Other
+100,71,23,female,Loja,English,1,0,F1,3,3,3,3,3,3,3,Other
+100,71,23,female,Loja,English,1,1,M2,4,3,3,3,4,3,3,Other
+100,71,23,female,Loja,English,1,1,M1,4,4,3,3,3,2,1,Other
+100,71,23,female,Loja,English,1,0,F2,3,2,2,3,3,2,1,Loja
+100,72,31,female,Quito,English,2,1,F2,3,3,5,3,3,3,3,Other
+100,72,31,female,Quito,English,2,0,M2,5,4,3,4,4,2,3,Quito
+100,72,31,female,Quito,English,2,1,F1,5,4,4,3,3,2,3,Quito
+100,72,31,female,Quito,English,2,0,M1,4,4,4,4,4,2,3,Other
+100,72,31,female,Quito,English,2,0,F1,4,3,3,3,3,3,4,Other
+100,72,31,female,Quito,English,2,1,M2,5,4,4,3,4,3,3,Loja
+100,72,31,female,Quito,English,2,1,M1,4,4,4,4,4,3,3,Other
+100,72,31,female,Quito,English,2,0,F2,4,3,4,3,4,3,3,Cuenca
+100,73,38,male,Cuenca,English,1,1,F2,4,4,3,3,3,2,3,Loja
+100,73,38,male,Cuenca,English,1,0,M2,4,4,4,4,4,2,3,Quito
+100,73,38,male,Cuenca,English,1,1,F1,4,4,4,3,4,2,3,Loja
+100,73,38,male,Cuenca,English,1,0,M1,4,4,4,4,4,3,3,Loja
+100,73,38,male,Cuenca,English,1,0,F1,4,2,4,4,5,2,5,Cuenca
+100,73,38,male,Cuenca,English,1,1,M2,5,4,4,4,4,2,3,Loja
+100,73,38,male,Cuenca,English,1,1,M1,5,4,5,4,5,3,3,Quito
+100,73,38,male,Cuenca,English,1,0,F2,4,4,4,4,4,3,3,Loja
+100,74,24,female,Loja,English,1,1,F2,3,4,5,2,3,3,2,Other
+100,74,24,female,Loja,English,1,0,M2,5,6,4,4,6,3,4,Cuenca
+100,74,24,female,Loja,English,1,1,F1,4,4,6,6,6,3,6,Loja
+100,74,24,female,Loja,English,1,0,M1,4,4,4,4,6,3,2,Loja
+100,74,24,female,Loja,English,1,0,F1,4,4,5,4,4,3,5,Loja
+100,74,24,female,Loja,English,1,1,M2,5,5,5,4,4,3,4,Cuenca
+100,74,24,female,Loja,English,1,1,M1,4,4,3,4,4,3,2,Loja
+100,74,24,female,Loja,English,1,0,F2,4,4,3,4,4,2,2,Loja
+100,75,23,female,Coast,,0,1,F2,4,4,5,4,4,3,2,Cuenca
+100,75,23,female,Coast,,0,0,M2,5,5,5,4,4,3,3,Quito
+100,75,23,female,Coast,,0,1,F1,4,3,4,3,3,3,3,Quito
+100,75,23,female,Coast,,0,0,M1,5,5,6,4,4,3,2,Loja
+100,75,23,female,Coast,,0,0,F1,4,4,4,4,3,3,4,Quito
+100,75,23,female,Coast,,0,1,M2,6,5,6,5,4,4,3,Loja
+100,75,23,female,Coast,,0,1,M1,4,5,4,4,5,3,2,Loja
+100,75,23,female,Coast,,0,0,F2,2,3,3,3,2,3,3,Quito
+100,76,19,male,Cuenca,English,1,1,F2,4,4,3,3,3,2,2,Cuenca
+100,76,19,male,Cuenca,English,1,0,M2,4,4,3,3,3,2,3,Quito
+100,76,19,male,Cuenca,English,1,1,F1,3,4,3,3,3,2,3,Cuenca
+100,76,19,male,Cuenca,English,1,0,M1,4,4,4,4,4,2,2,Cuenca
+100,76,19,male,Cuenca,English,1,0,F1,4,4,3,3,3,2,3,Cuenca
+100,76,19,male,Cuenca,English,1,1,M2,4,4,4,3,3,2,3,Cuenca
+100,76,19,male,Cuenca,English,1,1,M1,4,4,4,4,4,2,2,Cuenca
+100,76,19,male,Cuenca,English,1,0,F2,4,4,4,4,4,2,2,Cuenca
+100,77,22,male,Cuenca,,0,1,F2,6,6,6,2,2,2,2,Loja
+100,77,22,male,Cuenca,,0,0,M2,5,5,5,6,6,3,3,Cuenca
+100,77,22,male,Cuenca,,0,1,F1,3,3,3,5,5,3,4,Cuenca
+100,77,22,male,Cuenca,,0,0,M1,6,6,5,3,3,2,1,Cuenca
+100,77,22,male,Cuenca,,0,0,F1,5,5,4,4,4,3,4,Cuenca
+100,77,22,male,Cuenca,,0,1,M2,5,5,5,5,5,2,4,Other
+100,77,22,male,Cuenca,,0,1,M1,6,6,6,6,6,2,1,Other
+100,77,22,male,Cuenca,,0,0,F2,5,5,5,5,5,1,2,Cuenca
+100,78,19,female,Loja,English,1,1,F2,3,3,3,2,3,3,2,Other
+100,78,19,female,Loja,English,1,0,M2,4,4,4,5,5,5,4,Loja
+100,78,19,female,Loja,English,1,1,F1,4,4,3,3,2,2,4,Other
+100,78,19,female,Loja,English,1,0,M1,4,5,5,6,5,5,4,Loja
+100,78,19,female,Loja,English,1,0,F1,4,4,4,3,3,3,3,Cuenca
+100,78,19,female,Loja,English,1,1,M2,5,4,5,5,6,4,5,Loja
+100,78,19,female,Loja,English,1,1,M1,3,4,4,5,4,4,4,Quito
+100,78,19,female,Loja,English,1,0,F2,4,4,3,3,2,2,2,Other
+100,79,30,female,Loja,,0,1,F2,3,5,3,3,3,2,3,Loja
+100,79,30,female,Loja,,0,0,M2,6,6,6,6,5,4,4,Loja
+100,79,30,female,Loja,,0,1,F1,6,6,6,3,5,3,4,Loja
+100,79,30,female,Loja,,0,0,M1,6,6,6,4,4,3,3,Loja
+100,79,30,female,Loja,,0,0,F1,6,5,6,5,6,3,4,Loja
+100,79,30,female,Loja,,0,1,M2,6,5,5,6,5,3,3,Loja
+100,79,30,female,Loja,,0,1,M1,6,5,5,5,4,3,3,Loja
+100,79,30,female,Loja,,0,0,F2,4,6,5,3,3,2,3,Loja
+100,80,21,female,Loja,,0,1,F2,6,5,5,5,5,3,2,Loja
+100,80,21,female,Loja,,0,0,M2,6,5,3,3,3,3,4,Loja
+100,80,21,female,Loja,,0,1,F1,6,5,4,3,2,2,2,Other
+100,80,21,female,Loja,,0,0,M1,6,5,4,4,4,3,3,Cuenca
+100,80,21,female,Loja,,0,0,F1,6,6,4,3,3,2,2,Cuenca
+100,80,21,female,Loja,,0,1,M2,6,6,2,5,5,3,4,Loja
+100,80,21,female,Loja,,0,1,M1,6,6,3,4,5,2,1,Cuenca
+100,80,21,female,Loja,,0,0,F2,6,6,2,3,3,2,1,Other
+100,81,21,female,Loja,English,1,1,F2,4,4,3,3,4,3,2,Loja
+100,81,21,female,Loja,English,1,0,M2,5,4,5,5,4,3,3,Cuenca
+100,81,21,female,Loja,English,1,1,F1,4,4,4,3,4,3,3,Quito
+100,81,21,female,Loja,English,1,0,M1,4,3,3,4,4,3,2,Quito
+100,81,21,female,Loja,English,1,0,F1,5,4,5,4,5,3,3,Loja
+100,81,21,female,Loja,English,1,1,M2,5,5,6,4,5,3,3,Cuenca
+100,81,21,female,Loja,English,1,1,M1,5,4,6,4,5,3,2,Cuenca
+100,81,21,female,Loja,English,1,0,F2,5,4,5,3,4,3,2,Quito
+100,82,22,male,Loja,"English, Portuguese, Romanian",3,1,F2,3,4,3,3,2,1,4,Cuenca
+100,82,22,male,Loja,"English, Portuguese, Romanian",3,0,M2,5,4,4,5,5,3,4,Quito
+100,82,22,male,Loja,"English, Portuguese, Romanian",3,1,F1,3,3,4,3,4,2,5,Cuenca
+100,82,22,male,Loja,"English, Portuguese, Romanian",3,0,M1,5,5,5,4,6,3,2,Quito
+100,82,22,male,Loja,"English, Portuguese, Romanian",3,0,F1,4,4,4,4,4,2,5,Quito
+100,82,22,male,Loja,"English, Portuguese, Romanian",3,1,M2,3,5,5,5,5,3,4,Quito
+100,82,22,male,Loja,"English, Portuguese, Romanian",3,1,M1,3,4,3,4,4,3,2,Loja
+100,82,22,male,Loja,"English, Portuguese, Romanian",3,0,F2,4,4,5,3,4,2,4,Other
+100,83,20,male,Cuenca,,0,1,F2,3,3,4,4,4,3,2,Quito
+100,83,20,male,Cuenca,,0,0,M2,5,3,5,5,6,3,3,Cuenca
+100,83,20,male,Cuenca,,0,1,F1,3,3,4,4,5,2,3,Cuenca
+100,83,20,male,Cuenca,,0,0,M1,5,4,4,3,5,3,3,Quito
+100,83,20,male,Cuenca,,0,0,F1,2,3,4,4,5,2,3,Cuenca
+100,83,20,male,Cuenca,,0,1,M2,5,4,6,5,6,3,3,Cuenca
+100,83,20,male,Cuenca,,0,1,M1,3,4,4,5,5,3,2,Quito
+100,83,20,male,Cuenca,,0,0,F2,3,4,3,4,3,2,3,Loja
+100,84,21,female,Loja,English,1,1,F2,3,3,4,4,4,3,2,Loja
+100,84,21,female,Loja,English,1,0,M2,4,4,5,4,5,4,4,Quito
+100,84,21,female,Loja,English,1,1,F1,4,4,4,4,4,4,5,Loja
+100,84,21,female,Loja,English,1,0,M1,5,5,5,5,4,4,3,Quito
+100,84,21,female,Loja,English,1,0,F1,4,4,4,4,5,3,5,Cuenca
+100,84,21,female,Loja,English,1,1,M2,5,5,5,4,5,4,5,Loja
+100,84,21,female,Loja,English,1,1,M1,5,5,5,5,5,4,3,Cuenca
+100,84,21,female,Loja,English,1,0,F2,4,4,4,3,3,3,3,Quito
+100,85,22,female,Quito,,0,1,F2,5,4,6,4,3,4,3,Other
+100,85,22,female,Quito,,0,0,M2,6,5,6,4,5,4,4,Quito
+100,85,22,female,Quito,,0,1,F1,5,5,4,3,3,2,4,Quito
+100,85,22,female,Quito,,0,0,M1,5,4,3,4,4,3,3,Cuenca
+100,85,22,female,Quito,,0,0,F1,4,5,3,4,4,2,4,Cuenca
+100,85,22,female,Quito,,0,1,M2,5,3,6,5,5,4,4,Quito
+100,85,22,female,Quito,,0,1,M1,5,3,5,5,5,4,3,Quito
+100,85,22,female,Quito,,0,0,F2,4,5,6,3,3,4,3,Other
+100,86,19,male,Coast,English,1,1,F2,3,4,4,3,3,3,3,Quito
+100,86,19,male,Coast,English,1,0,M2,4,4,4,3,4,4,4,Loja
+100,86,19,male,Coast,English,1,1,F1,3,3,5,4,4,3,6,Other
+100,86,19,male,Coast,English,1,0,M1,3,3,4,4,2,3,3,Quito
+100,86,19,male,Coast,English,1,0,F1,2,3,3,2,3,2,4,Cuenca
+100,86,19,male,Coast,English,1,1,M2,4,3,5,4,4,3,4,Loja
+100,86,19,male,Coast,English,1,1,M1,3,3,4,5,4,3,2,Other
+100,86,19,male,Coast,English,1,0,F2,3,4,3,3,3,2,3,Cuenca
+100,87,37,male,Quito,English,1,1,F2,5,5,4,3,3,3,3,Loja
+100,87,37,male,Quito,English,1,0,M2,4,5,3,2,2,2,4,Loja
+100,87,37,male,Quito,English,1,1,F1,4,4,3,3,3,3,3,Loja
+100,87,37,male,Quito,English,1,0,M1,5,5,4,4,4,3,3,Loja
+100,87,37,male,Quito,English,1,0,F1,3,4,4,3,3,3,3,Cuenca
+100,87,37,male,Quito,English,1,1,M2,5,4,5,4,4,3,3,Loja
+100,87,37,male,Quito,English,1,1,M1,5,5,5,5,5,3,2,Loja
+100,87,37,male,Quito,English,1,0,F2,3,5,4,3,3,3,3,Loja
+100,88,29,male,Loja,English,1,1,F2,6,6,5,4,3,3,5,Loja
+100,88,29,male,Loja,English,1,0,M2,5,5,4,4,4,4,4,Quito
+100,88,29,male,Loja,English,1,1,F1,5,4,4,5,5,2,5,Loja
+100,88,29,male,Loja,English,1,0,M1,5,5,5,3,4,4,3,Quito
+100,88,29,male,Loja,English,1,0,F1,6,4,3,4,4,2,5,Loja
+100,88,29,male,Loja,English,1,1,M2,5,5,5,4,4,4,4,Loja
+100,88,29,male,Loja,English,1,1,M1,4,4,4,4,3,3,3,Loja
+100,88,29,male,Loja,English,1,0,F2,5,5,5,3,3,3,3,Cuenca
+100,89,21,female,Loja,"English, French",1,1,F2,3,4,4,2,3,2,3,Loja
+100,89,21,female,Loja,"English, French",1,0,M2,5,3,3,4,4,3,5,Loja
+100,89,21,female,Loja,"English, French",1,1,F1,5,4,3,4,5,3,4,Loja
+100,89,21,female,Loja,"English, French",1,0,M1,5,2,2,4,4,3,2,Other
+100,89,21,female,Loja,"English, French",1,0,F1,5,3,3,5,4,3,5,Cuenca
+100,89,21,female,Loja,"English, French",1,1,M2,4,4,4,3,3,3,4,Loja
+100,89,21,female,Loja,"English, French",1,1,M1,4,4,4,4,5,3,2,Loja
+100,89,21,female,Loja,"English, French",1,0,F2,4,4,3,2,2,2,3,Loja
+100,90,20,female,Coast,French,1,1,F2,4,4,3,3,4,3,3,Other
+100,90,20,female,Coast,French,1,0,M2,4,4,5,3,4,3,3,Other
+100,90,20,female,Coast,French,1,1,F1,4,4,5,3,3,3,3,Other
+100,90,20,female,Coast,French,1,0,M1,4,4,5,4,4,3,2,Quito
+100,90,20,female,Coast,French,1,0,F1,4,4,4,4,3,3,3,Other
+100,90,20,female,Coast,French,1,1,M2,4,3,4,3,5,3,3,Other
+100,90,20,female,Coast,French,1,1,M1,5,4,6,4,4,3,2,Other
+100,90,20,female,Coast,French,1,0,F2,4,4,6,3,1,3,3,Other
+100,91,33,male,Cuenca,English,1,1,F2,6,1,6,6,6,3,2,Loja
+100,91,33,male,Cuenca,English,1,0,M2,6,5,4,3,1,2,2,Cuenca
+100,91,33,male,Cuenca,English,1,1,F1,5,6,6,5,6,2,4,Cuenca
+100,91,33,male,Cuenca,English,1,0,M1,6,6,6,4,6,3,2,Cuenca
+100,91,33,male,Cuenca,English,1,0,F1,6,4,6,4,6,3,4,Cuenca
+100,91,33,male,Cuenca,English,1,1,M2,6,4,5,4,1,3,3,Loja
+100,91,33,male,Cuenca,English,1,1,M1,6,4,6,4,6,3,2,Loja
+100,91,33,male,Cuenca,English,1,0,F2,6,6,5,4,6,3,2,Loja
+100,92,39,male,Quito,Portuguese,1,1,F2,5,5,5,5,4,2,3,Loja
+100,92,39,male,Quito,Portuguese,1,0,M2,5,5,5,5,5,2,4,Other
+100,92,39,male,Quito,Portuguese,1,1,F1,5,5,5,5,4,2,4,Other
+100,92,39,male,Quito,Portuguese,1,0,M1,5,5,5,5,5,3,4,Other
+100,92,39,male,Quito,Portuguese,1,0,F1,5,5,5,4,5,2,4,Quito
+100,92,39,male,Quito,Portuguese,1,1,M2,5,4,5,4,5,3,3,Cuenca
+100,92,39,male,Quito,Portuguese,1,1,M1,5,5,4,4,4,3,2,Loja
+100,92,39,male,Quito,Portuguese,1,0,F2,5,5,5,4,4,3,2,Loja
+100,93,19,male,Coast,French,1,1,F2,5,4,6,4,5,2,2,Other
+100,93,19,male,Coast,French,1,0,M2,4,4,3,4,4,2,3,Loja
+100,93,19,male,Coast,French,1,1,F1,4,3,5,3,3,2,3,Quito
+100,93,19,male,Coast,French,1,0,M1,4,3,4,4,5,2,2,Quito
+100,93,19,male,Coast,French,1,0,F1,4,4,4,4,4,2,3,Quito
+100,93,19,male,Coast,French,1,1,M2,4,3,4,4,4,2,3,Quito
+100,93,19,male,Coast,French,1,1,M1,4,3,3,3,4,2,1,Loja
+100,93,19,male,Coast,French,1,0,F2,5,4,5,5,2,3,2,Loja
+100,94,23,male,Cuenca,English,1,1,F2,5,3,3,3,3,2,2,Quito
+100,94,23,male,Cuenca,English,1,0,M2,5,4,4,3,4,2,4,Quito
+100,94,23,male,Cuenca,English,1,1,F1,5,4,5,5,5,3,5,Cuenca
+100,94,23,male,Cuenca,English,1,0,M1,4,3,4,3,3,3,2,Cuenca
+100,94,23,male,Cuenca,English,1,0,F1,5,4,5,5,5,4,5,Quito
+100,94,23,male,Cuenca,English,1,1,M2,5,4,4,3,3,2,4,Other
+100,94,23,male,Cuenca,English,1,1,M1,4,3,4,4,4,3,3,Quito
+100,94,23,male,Cuenca,English,1,0,F2,5,4,3,3,3,1,2,Other
+100,95,24,female,Cuenca,English,1,1,F2,5,3,3,4,4,3,4,Cuenca
+100,95,24,female,Cuenca,English,1,0,M2,5,3,4,4,4,3,3,Cuenca
+100,95,24,female,Cuenca,English,1,1,F1,5,4,4,4,4,2,3,Cuenca
+100,95,24,female,Cuenca,English,1,0,M1,4,4,4,2,2,2,3,Cuenca
+100,95,24,female,Cuenca,English,1,0,F1,6,3,3,3,6,3,3,Cuenca
+100,95,24,female,Cuenca,English,1,1,M2,3,4,2,4,5,3,2,Cuenca
+100,95,24,female,Cuenca,English,1,1,M1,5,4,5,5,5,2,2,Cuenca
+100,95,24,female,Cuenca,English,1,0,F2,6,1,3,3,4,2,2,Cuenca
+100,96,37,female,Cuenca,,0,1,F2,4,5,3,2,5,2,2,Loja
+100,96,37,female,Cuenca,,0,0,M2,6,5,6,5,6,3,3,Cuenca
+100,96,37,female,Cuenca,,0,1,F1,4,5,4,5,4,3,2,Quito
+100,96,37,female,Cuenca,,0,0,M1,4,5,3,3,3,3,2,Cuenca
+100,96,37,female,Cuenca,,0,0,F1,5,5,4,4,5,3,2,Quito
+100,96,37,female,Cuenca,,0,1,M2,3,3,4,4,4,3,3,Cuenca
+100,96,37,female,Cuenca,,0,1,M1,4,3,3,4,4,3,3,Loja
+100,96,37,female,Cuenca,,0,0,F2,5,5,4,3,3,2,3,Other
+100,97,20,male,Loja,English,1,1,F2,6,5,5,4,4,3,2,Other
+100,97,20,male,Loja,English,1,0,M2,5,4,5,4,4,3,2,Cuenca
+100,97,20,male,Loja,English,1,1,F1,5,5,5,5,5,4,3,Quito
+100,97,20,male,Loja,English,1,0,M1,4,5,5,4,4,3,2,Cuenca
+100,97,20,male,Loja,English,1,0,F1,5,4,5,5,5,4,3,Other
+100,97,20,male,Loja,English,1,1,M2,5,4,5,4,4,3,3,Quito
+100,97,20,male,Loja,English,1,1,M1,4,5,4,5,5,3,3,Loja
+100,97,20,male,Loja,English,1,0,F2,5,4,5,4,4,3,2,Cuenca
+100,98,25,male,Loja,,0,1,F2,6,3,2,2,2,2,3,Loja
+100,98,25,male,Loja,,0,0,M2,5,6,5,5,5,3,4,Other
+100,98,25,male,Loja,,0,1,F1,4,3,3,3,4,3,5,Cuenca
+100,98,25,male,Loja,,0,0,M1,5,3,3,4,5,3,2,Other
+100,98,25,male,Loja,,0,0,F1,4,2,4,5,5,3,5,Cuenca
+100,98,25,male,Loja,,0,1,M2,6,3,4,3,1,2,4,Loja
+100,98,25,male,Loja,,0,1,M1,5,3,5,5,5,2,3,Other
+100,98,25,male,Loja,,0,0,F2,4,4,4,2,2,2,3,Other
+100,99,35,male,Cuenca,,1,1,F2,2,4,3,3,3,2,2,Loja
+100,99,35,male,Cuenca,,1,0,M2,5,3,4,3,4,2,3,Cuenca
+100,99,35,male,Cuenca,,1,1,F1,5,4,2,3,3,1,4,Quito
+100,99,35,male,Cuenca,,1,0,M1,4,2,3,4,3,2,1,Cuenca
+100,99,35,male,Cuenca,,1,0,F1,4,4,3,4,3,2,4,Cuenca
+100,99,35,male,Cuenca,,1,1,M2,5,3,4,5,4,3,3,Loja
+100,99,35,male,Cuenca,,1,1,M1,3,5,4,5,4,3,2,Loja
+100,99,35,male,Cuenca,,1,0,F2,5,4,4,2,2,1,2,Loja
+100,100,31,male,Coast,"English, Italian",2,1,F2,6,6,6,5,5,3,2,Loja
+100,100,31,male,Coast,"English, Italian",2,0,M2,6,4,6,5,5,3,4,Quito
+100,100,31,male,Coast,"English, Italian",2,1,F1,5,4,5,4,5,3,5,Other
+100,100,31,male,Coast,"English, Italian",2,0,M1,4,6,5,4,5,2,1,Loja
+100,100,31,male,Coast,"English, Italian",2,0,F1,4,5,6,4,5,4,5,Other
+100,100,31,male,Coast,"English, Italian",2,1,M2,6,6,5,5,5,2,3,Other
+100,100,31,male,Coast,"English, Italian",2,1,M1,4,5,6,6,6,3,2,Cuenca
+100,100,31,male,Coast,"English, Italian",2,0,F2,6,6,5,5,6,3,3,Cuenca
+100,101,24,female,Loja,English,1,1,F2,4,4,5,3,3,2,2,Loja
+100,101,24,female,Loja,English,1,0,M2,5,5,4,3,2,3,4,Other
+100,101,24,female,Loja,English,1,1,F1,5,5,5,5,6,3,4,Other
+100,101,24,female,Loja,English,1,0,M1,5,4,4,3,3,2,2,Quito
+100,101,24,female,Loja,English,1,0,F1,5,5,4,4,3,2,4,Other
+100,101,24,female,Loja,English,1,1,M2,5,5,5,3,3,3,3,Quito
+100,101,24,female,Loja,English,1,1,M1,5,5,4,3,3,2,3,Other
+100,101,24,female,Loja,English,1,0,F2,4,5,4,3,2,2,2,Loja
+100,102,24,male,Loja,,0,1,F2,5,4,5,4,4,3,3,Loja
+100,102,24,male,Loja,,0,0,M2,5,5,5,4,4,3,4,Loja
+100,102,24,male,Loja,,0,1,F1,4,4,4,4,4,2,5,Other
+100,102,24,male,Loja,,0,0,M1,4,4,4,4,4,3,3,Loja
+100,102,24,male,Loja,,0,0,F1,4,4,4,4,4,2,4,Loja
+100,102,24,male,Loja,,0,1,M2,4,5,4,4,4,3,4,Loja
+100,102,24,male,Loja,,0,1,M1,4,4,4,4,4,3,2,Loja
+100,102,24,male,Loja,,0,0,F2,4,4,4,4,4,3,3,Loja
+100,103,20,male,Loja,,0,1,F2,5,4,4,4,4,3,3,Other
+100,103,20,male,Loja,,0,0,M2,5,5,5,4,5,3,3,Cuenca
+100,103,20,male,Loja,,0,1,F1,5,4,5,4,4,3,3,Loja
+100,103,20,male,Loja,,0,0,M1,6,5,6,4,6,3,2,Loja
+100,103,20,male,Loja,,0,0,F1,5,3,4,3,4,2,4,Other
+100,103,20,male,Loja,,0,1,M2,5,4,5,5,6,4,3,Cuenca
+100,103,20,male,Loja,,0,1,M1,6,6,6,4,6,4,2,Loja
+100,103,20,male,Loja,,0,0,F2,5,3,4,3,3,3,3,Other
+100,104,22,female,Coast,,0,1,F2,3,3,2,1,1,2,3,Other
+100,104,22,female,Coast,,0,0,M2,5,5,2,3,2,2,4,Cuenca
+100,104,22,female,Coast,,0,1,F1,3,4,2,2,2,2,5,Loja
+100,104,22,female,Coast,,0,0,M1,4,4,1,3,3,3,2,Other
+100,104,22,female,Coast,,0,0,F1,3,3,4,4,4,2,6,Cuenca
+100,104,22,female,Coast,,0,1,M2,3,4,2,3,3,3,5,Loja
+100,104,22,female,Coast,,0,1,M1,3,4,3,3,4,3,2,Loja
+100,104,22,female,Coast,,0,0,F2,4,4,2,2,3,2,4,Other
+100,105,20,female,Coast,English,1,1,F2,6,6,6,6,6,4,2,Cuenca
+100,105,20,female,Coast,English,1,0,M2,6,6,6,6,6,5,3,Loja
+100,105,20,female,Coast,English,1,1,F1,6,6,6,6,6,4,4,Loja
+100,105,20,female,Coast,English,1,0,M1,6,6,6,6,6,3,2,Loja
+100,105,20,female,Coast,English,1,0,F1,6,6,6,6,6,4,4,Loja
+100,105,20,female,Coast,English,1,1,M2,6,6,6,6,6,5,4,Loja
+100,105,20,female,Coast,English,1,1,M1,6,6,6,6,6,3,2,Loja
+100,105,20,female,Coast,English,1,0,F2,6,6,6,6,6,3,2,Quito
+100,106,20,female,Loja,English,1,1,F2,3,3,4,3,3,3,3,Loja
+100,106,20,female,Loja,English,1,0,M2,5,5,5,5,5,4,5,Loja
+100,106,20,female,Loja,English,1,1,F1,4,5,4,2,2,3,3,Loja
+100,106,20,female,Loja,English,1,0,M1,4,3,4,3,4,3,2,Other
+100,106,20,female,Loja,English,1,0,F1,4,4,3,2,2,3,3,Other
+100,106,20,female,Loja,English,1,1,M2,5,4,5,4,4,4,4,Loja
+100,106,20,female,Loja,English,1,1,M1,4,4,3,4,4,3,2,Loja
+100,106,20,female,Loja,English,1,0,F2,4,4,3,2,1,2,3,Other
+100,107,27,male,Coast,English,1,1,F2,3,2,3,3,3,3,3,Cuenca
+100,107,27,male,Coast,English,1,0,M2,4,3,3,3,4,2,3,Cuenca
+100,107,27,male,Coast,English,1,1,F1,3,3,3,4,3,2,3,Cuenca
+100,107,27,male,Coast,English,1,0,M1,4,3,4,4,3,3,2,Quito
+100,107,27,male,Coast,English,1,0,F1,3,3,4,3,3,3,4,Cuenca
+100,107,27,male,Coast,English,1,1,M2,4,3,4,4,4,2,3,Cuenca
+100,107,27,male,Coast,English,1,1,M1,4,4,4,4,4,3,3,Loja
+100,107,27,male,Coast,English,1,0,F2,3,3,4,3,3,2,3,Cuenca
+100,108,23,female,Loja,English,1,1,F2,5,5,6,5,6,4,3,Loja
+100,108,23,female,Loja,English,1,0,M2,4,4,5,5,5,4,3,Loja
+100,108,23,female,Loja,English,1,1,F1,4,4,6,5,6,3,4,Loja
+100,108,23,female,Loja,English,1,0,M1,5,4,5,4,4,3,3,Loja
+100,108,23,female,Loja,English,1,0,F1,3,3,5,4,3,2,4,Loja
+100,108,23,female,Loja,English,1,1,M2,5,5,4,5,5,3,3,Loja
+100,108,23,female,Loja,English,1,1,M1,5,5,6,5,6,4,2,Loja
+100,108,23,female,Loja,English,1,0,F2,4,3,5,4,4,3,2,Loja
+100,109,36,male,Quito,,0,1,F2,5,5,5,3,3,2,3,Loja
+100,109,36,male,Quito,,0,0,M2,5,4,5,4,4,2,3,Cuenca
+100,109,36,male,Quito,,0,1,F1,5,4,3,5,4,2,4,Quito
+100,109,36,male,Quito,,0,0,M1,5,5,4,4,4,2,2,Loja
+100,109,36,male,Quito,,0,0,F1,4,4,4,3,4,2,3,Loja
+100,109,36,male,Quito,,0,1,M2,4,3,4,4,4,2,4,Cuenca
+100,109,36,male,Quito,,0,1,M1,5,4,4,4,4,2,3,Quito
+100,109,36,male,Quito,,0,0,F2,4,5,4,3,3,2,3,Loja
+100,110,21,female,Coast,English,1,1,F2,5,5,2,2,2,2,3,Loja
+100,110,21,female,Coast,English,1,0,M2,5,5,5,4,5,3,4,Loja
+100,110,21,female,Coast,English,1,1,F1,5,5,4,5,5,2,4,Other
+100,110,21,female,Coast,English,1,0,M1,5,5,5,4,6,3,3,Cuenca
+100,110,21,female,Coast,English,1,0,F1,5,5,3,2,1,2,4,Other
+100,110,21,female,Coast,English,1,1,M2,5,5,4,4,5,2,4,Loja
+100,110,21,female,Coast,English,1,1,M1,5,5,5,5,4,3,3,Other
+100,110,21,female,Coast,English,1,0,F2,4,5,5,4,5,2,3,Cuenca
+100,111,31,female,Cuenca,,0,1,F2,4,5,5,5,5,2,3,Loja
+100,111,31,female,Cuenca,,0,0,M2,5,6,5,5,6,3,4,Loja
+100,111,31,female,Cuenca,,0,1,F1,5,5,5,6,6,3,6,Cuenca
+100,111,31,female,Cuenca,,0,0,M1,6,6,5,4,6,3,4,Loja
+100,111,31,female,Cuenca,,0,0,F1,5,1,6,6,6,3,6,Cuenca
+100,111,31,female,Cuenca,,0,1,M2,6,6,6,4,6,3,4,Loja
+100,111,31,female,Cuenca,,0,1,M1,6,6,6,5,6,4,4,Quito
+100,111,31,female,Cuenca,,0,0,F2,5,6,4,4,4,2,4,Loja
+100,112,29,female,Quito,,0,1,F2,5,4,5,4,4,4,4,Loja
+100,112,29,female,Quito,,0,0,M2,6,5,5,6,5,5,4,Loja
+100,112,29,female,Quito,,0,1,F1,5,4,4,5,4,5,4,Loja
+100,112,29,female,Quito,,0,0,M1,5,5,5,5,5,5,4,Loja
+100,112,29,female,Quito,,0,0,F1,5,5,5,3,3,3,4,Loja
+100,112,29,female,Quito,,0,1,M2,6,5,5,6,6,5,4,Loja
+100,112,29,female,Quito,,0,1,M1,5,5,5,5,5,5,3,Loja
+100,112,29,female,Quito,,0,0,F2,5,5,5,3,4,3,3,Loja
+100,113,24,female,Quito,"English, Portuguese",2,1,F2,3,3,3,2,2,2,3,Loja
+100,113,24,female,Quito,"English, Portuguese",2,0,M2,5,5,5,5,5,4,4,Loja
+100,113,24,female,Quito,"English, Portuguese",2,1,F1,5,5,5,5,5,4,3,Loja
+100,113,24,female,Quito,"English, Portuguese",2,0,M1,5,5,5,5,5,4,4,Loja
+100,113,24,female,Quito,"English, Portuguese",2,0,F1,6,6,6,6,6,3,4,Loja
+100,113,24,female,Quito,"English, Portuguese",2,1,M2,6,6,6,6,6,4,4,Loja
+100,113,24,female,Quito,"English, Portuguese",2,1,M1,5,5,5,5,5,4,4,Loja
+100,113,24,female,Quito,"English, Portuguese",2,0,F2,4,4,4,4,4,2,3,Loja
+100,114,23,male,Loja,English,1,1,F2,6,5,5,2,2,2,3,Other
+100,114,23,male,Loja,English,1,0,M2,6,6,6,5,5,4,4,Loja
+100,114,23,male,Loja,English,1,1,F1,6,6,5,3,3,2,4,Other
+100,114,23,male,Loja,English,1,0,M1,6,6,6,5,5,4,3,Loja
+100,114,23,male,Loja,English,1,0,F1,5,5,5,3,3,2,4,Other
+100,114,23,male,Loja,English,1,1,M2,6,6,6,5,5,4,4,Loja
+100,114,23,male,Loja,English,1,1,M1,6,6,6,5,5,4,3,Loja
+100,114,23,male,Loja,English,1,0,F2,5,5,5,2,2,2,3,Other
+100,115,25,female,Coast,,0,1,F2,6,6,6,5,5,3,2,Quito
+100,115,25,female,Coast,,0,0,M2,6,6,6,6,6,4,3,Loja
+100,115,25,female,Coast,,0,1,F1,6,5,5,5,5,2,2,Other
+100,115,25,female,Coast,,0,0,M1,4,4,4,4,4,3,2,Cuenca
+100,115,25,female,Coast,,0,0,F1,5,5,5,5,5,2,3,Loja
+100,115,25,female,Coast,,0,1,M2,5,5,5,5,5,2,3,Loja
+100,115,25,female,Coast,,0,1,M1,5,5,5,5,5,3,2,Cuenca
+100,115,25,female,Coast,,0,0,F2,4,4,4,4,4,2,2,Cuenca
+100,116,27,female,Cuenca,English,1,1,F2,4,5,6,5,5,3,3,Cuenca
+100,116,27,female,Cuenca,English,1,0,M2,5,5,6,5,6,4,4,Cuenca
+100,116,27,female,Cuenca,English,1,1,F1,4,5,5,5,5,3,3,Cuenca
+100,116,27,female,Cuenca,English,1,0,M1,4,5,4,4,4,2,3,Quito
+100,116,27,female,Cuenca,English,1,0,F1,4,4,5,5,5,3,4,Cuenca
+100,116,27,female,Cuenca,English,1,1,M2,5,6,6,5,5,3,3,Cuenca
+100,116,27,female,Cuenca,English,1,1,M1,4,5,5,5,5,3,3,Loja
+100,116,27,female,Cuenca,English,1,0,F2,4,5,5,5,5,3,4,Cuenca
+100,117,22,male,Loja,English,1,1,F2,5,5,6,3,3,2,2,Loja
+100,117,22,male,Loja,English,1,0,M2,6,4,4,2,2,1,5,Loja
+100,117,22,male,Loja,English,1,1,F1,6,5,6,5,6,3,5,Loja
+100,117,22,male,Loja,English,1,0,M1,6,4,5,3,4,2,3,Loja
+100,117,22,male,Loja,English,1,0,F1,6,5,5,4,6,3,6,Loja
+100,117,22,male,Loja,English,1,1,M2,5,4,5,2,2,1,5,Loja
+100,117,22,male,Loja,English,1,1,M1,5,4,6,4,4,3,2,Loja
+100,117,22,male,Loja,English,1,0,F2,5,5,5,3,3,2,2,Loja
+100,118,20,female,Loja,,0,1,F2,6,4,4,3,3,2,4,Quito
+100,118,20,female,Loja,,0,0,M2,6,4,4,3,3,2,3,Cuenca
+100,118,20,female,Loja,,0,1,F1,6,6,4,3,4,2,4,Cuenca
+100,118,20,female,Loja,,0,0,M1,6,5,5,3,3,3,2,Other
+100,118,20,female,Loja,,0,0,F1,6,6,6,3,3,2,5,Quito
+100,118,20,female,Loja,,0,1,M2,6,5,5,3,4,2,4,Cuenca
+100,118,20,female,Loja,,0,1,M1,6,6,6,3,4,3,2,Loja
+100,118,20,female,Loja,,0,0,F2,6,3,3,3,3,2,3,Quito
+100,119,25,female,Cuenca,,0,1,F2,4,5,4,3,2,2,3,Cuenca
+100,119,25,female,Cuenca,,0,0,M2,6,4,5,3,3,2,3,Cuenca
+100,119,25,female,Cuenca,,0,1,F1,4,5,4,4,6,3,4,Other
+100,119,25,female,Cuenca,,0,0,M1,4,5,4,3,2,3,2,Cuenca
+100,119,25,female,Cuenca,,0,0,F1,3,5,6,5,5,4,5,Cuenca
+100,119,25,female,Cuenca,,0,1,M2,2,4,3,3,4,2,2,Other
+100,119,25,female,Cuenca,,0,1,M1,2,4,5,4,4,3,2,Quito
+100,119,25,female,Cuenca,,0,0,F2,3,5,5,2,2,2,3,Cuenca
+100,120,21,female,Loja,French,1,1,F2,4,4,4,3,3,2,2,Loja
+100,120,21,female,Loja,French,1,0,M2,5,5,4,3,4,1,4,Loja
+100,120,21,female,Loja,French,1,1,F1,5,5,4,2,2,1,4,Cuenca
+100,120,21,female,Loja,French,1,0,M1,5,5,3,4,4,1,2,Cuenca
+100,120,21,female,Loja,French,1,0,F1,5,5,4,2,2,1,5,Cuenca
+100,120,21,female,Loja,French,1,1,M2,6,5,4,4,4,3,3,Loja
+100,120,21,female,Loja,French,1,1,M1,5,5,3,4,5,2,2,Loja
+100,120,21,female,Loja,French,1,0,F2,5,5,4,3,3,1,3,Loja
+100,121,20,male,Loja,,0,1,F2,3,2,2,3,2,3,4,Other
+100,121,20,male,Loja,,0,0,M2,5,3,5,4,5,3,4,Cuenca
+100,121,20,male,Loja,,0,1,F1,3,2,1,4,4,3,4,Loja
+100,121,20,male,Loja,,0,0,M1,5,5,6,5,6,3,3,Loja
+100,121,20,male,Loja,,0,0,F1,2,2,1,3,2,3,4,Other
+100,121,20,male,Loja,,0,1,M2,6,5,6,5,6,4,3,Loja
+100,121,20,male,Loja,,0,1,M1,4,4,2,3,4,3,3,Cuenca
+100,121,20,male,Loja,,0,0,F2,4,3,3,3,2,3,3,Other
+100,122,23,female,Loja,English,1,1,F2,2,3,2,2,2,2,4,Other
+100,122,23,female,Loja,English,1,0,M2,3,3,3,3,2,2,4,Loja
+100,122,23,female,Loja,English,1,1,F1,3,3,3,3,3,2,5,Loja
+100,122,23,female,Loja,English,1,0,M1,3,3,3,3,3,3,3,Loja
+100,122,23,female,Loja,English,1,0,F1,3,3,3,3,3,2,5,Loja
+100,122,23,female,Loja,English,1,1,M2,4,3,4,2,2,2,4,Loja
+100,122,23,female,Loja,English,1,1,M1,2,3,3,4,4,3,3,Loja
+100,122,23,female,Loja,English,1,0,F2,3,3,4,3,3,2,3,Loja
+100,123,28,male,Loja,Quechua,1,1,F2,4,3,4,2,2,2,3,Quito
+100,123,28,male,Loja,Quechua,1,0,M2,4,3,2,2,1,1,4,Loja
+100,123,28,male,Loja,Quechua,1,1,F1,4,4,3,2,2,1,5,Cuenca
+100,123,28,male,Loja,Quechua,1,0,M1,4,5,4,3,5,3,3,Quito
+100,123,28,male,Loja,Quechua,1,0,F1,4,4,3,2,2,1,5,Cuenca
+100,123,28,male,Loja,Quechua,1,1,M2,5,4,5,3,3,1,4,Other
+100,123,28,male,Loja,Quechua,1,1,M1,5,4,6,5,5,4,3,Loja
+100,123,28,male,Loja,Quechua,1,0,F2,4,4,4,4,4,2,3,Cuenca
+100,124,21,male,Loja,English,1,1,F2,4,4,4,3,2,2,3,Loja
+100,124,21,male,Loja,English,1,0,M2,5,5,5,4,4,2,3,Cuenca
+100,124,21,male,Loja,English,1,1,F1,5,5,4,4,5,2,4,Cuenca
+100,124,21,male,Loja,English,1,0,M1,6,5,5,4,5,4,3,Cuenca
+100,124,21,male,Loja,English,1,0,F1,5,4,4,3,3,2,3,Quito
+100,124,21,male,Loja,English,1,1,M2,5,5,5,4,5,2,3,Loja
+100,124,21,male,Loja,English,1,1,M1,5,5,5,5,6,4,3,Loja
+100,124,21,male,Loja,English,1,0,F2,5,4,5,5,5,2,3,Loja
+100,125,20,male,Loja,English,1,1,F2,6,5,6,5,6,3,3,Other
+100,125,20,male,Loja,English,1,0,M2,6,5,6,5,6,3,3,Other
+100,125,20,male,Loja,English,1,1,F1,6,5,6,5,6,3,3,Quito
+100,125,20,male,Loja,English,1,0,M1,6,5,6,5,6,3,3,Quito
+100,125,20,male,Loja,English,1,0,F1,6,5,6,5,6,4,3,Quito
+100,125,20,male,Loja,English,1,1,M2,6,5,6,5,6,3,2,Quito
+100,125,20,male,Loja,English,1,1,M1,6,5,6,5,6,4,2,Loja
+100,125,20,male,Loja,English,1,0,F2,6,5,6,5,6,3,3,Quito
+100,126,22,male,Cuenca,English,1,1,F2,5,4,5,3,4,2,3,Other
+100,126,22,male,Cuenca,English,1,0,M2,6,4,6,4,6,3,3,Cuenca
+100,126,22,male,Cuenca,English,1,1,F1,6,3,5,6,6,2,4,Loja
+100,126,22,male,Cuenca,English,1,0,M1,5,4,5,3,5,2,2,Quito
+100,126,22,male,Cuenca,English,1,0,F1,6,3,5,6,6,2,4,Cuenca
+100,126,22,male,Cuenca,English,1,1,M2,5,5,6,5,6,3,3,Cuenca
+100,126,22,male,Cuenca,English,1,1,M1,4,5,4,4,6,3,3,Quito
+100,126,22,male,Cuenca,English,1,0,F2,5,4,5,3,4,2,3,Other
+100,127,21,female,Coast,,0,1,F2,4,4,5,3,3,2,3,Loja
+100,127,21,female,Coast,,0,0,M2,6,5,4,3,6,2,3,Cuenca
+100,127,21,female,Coast,,0,1,F1,4,4,1,2,4,1,4,Other
+100,127,21,female,Coast,,0,0,M1,6,6,6,5,6,3,3,Loja
+100,127,21,female,Coast,,0,0,F1,3,5,1,2,2,1,4,Cuenca
+100,127,21,female,Coast,,0,1,M2,5,5,4,4,6,2,4,Loja
+100,127,21,female,Coast,,0,1,M1,4,6,6,5,6,3,3,Cuenca
+100,127,21,female,Coast,,0,0,F2,4,5,5,3,2,2,4,Loja
+100,128,21,female,Loja,English,1,1,F2,3,4,4,2,2,2,4,Cuenca
+100,128,21,female,Loja,English,1,0,M2,3,3,1,3,3,3,4,Cuenca
+100,128,21,female,Loja,English,1,1,F1,3,3,2,3,3,2,4,Loja
+100,128,21,female,Loja,English,1,0,M1,3,3,2,4,4,3,2,Quito
+100,128,21,female,Loja,English,1,0,F1,3,4,2,3,3,2,4,Cuenca
+100,128,21,female,Loja,English,1,1,M2,3,4,1,3,4,2,4,Cuenca
+100,128,21,female,Loja,English,1,1,M1,3,3,2,4,3,3,2,Loja
+100,128,21,female,Loja,English,1,0,F2,3,4,4,3,3,2,4,Quito
+100,129,26,female,Cuenca,English,1,1,F2,3,3,3,4,3,3,2,Quito
+100,129,26,female,Cuenca,English,1,0,M2,4,4,4,4,4,2,3,Other
+100,129,26,female,Cuenca,English,1,1,F1,3,3,3,3,3,2,5,Loja
+100,129,26,female,Cuenca,English,1,0,M1,3,3,3,3,3,2,3,Other
+100,129,26,female,Cuenca,English,1,0,F1,3,3,4,3,4,2,4,Loja
+100,129,26,female,Cuenca,English,1,1,M2,4,3,4,4,3,3,4,Cuenca
+100,129,26,female,Cuenca,English,1,1,M1,3,3,4,3,3,3,2,Loja
+100,129,26,female,Cuenca,English,1,0,F2,2,2,2,2,3,2,3,Loja
+100,130,22,male,Coast,French,1,1,F2,6,5,6,4,6,4,2,Quito
+100,130,22,male,Coast,French,1,0,M2,6,6,6,4,4,3,3,Cuenca
+100,130,22,male,Coast,French,1,1,F1,5,4,6,4,6,3,5,Loja
+100,130,22,male,Coast,French,1,0,M1,5,3,3,4,3,2,4,Cuenca
+100,130,22,male,Coast,French,1,0,F1,5,4,6,4,6,3,4,Loja
+100,130,22,male,Coast,French,1,1,M2,5,5,6,5,4,2,4,Loja
+100,130,22,male,Coast,French,1,1,M1,6,3,4,4,4,2,3,Loja
+100,130,22,male,Coast,French,1,0,F2,6,5,6,5,6,4,3,Cuenca
+100,131,24,female,Cuenca,English,1,1,F2,3,4,4,3,3,1,3,Loja
+100,131,24,female,Cuenca,English,1,0,M2,5,6,5,3,3,2,3,Cuenca
+100,131,24,female,Cuenca,English,1,1,F1,3,4,3,3,4,2,5,Cuenca
+100,131,24,female,Cuenca,English,1,0,M1,3,3,3,3,3,3,2,Quito
+100,131,24,female,Cuenca,English,1,0,F1,4,3,4,4,4,2,4,Cuenca
+100,131,24,female,Cuenca,English,1,1,M2,3,3,3,4,4,2,4,Cuenca
+100,131,24,female,Cuenca,English,1,1,M1,5,3,4,4,6,3,2,Quito
+100,131,24,female,Cuenca,English,1,0,F2,3,4,3,2,2,2,3,Loja
+100,132,22,male,Quito,English,1,1,F2,6,6,6,3,2,3,4,Quito
+100,132,22,male,Quito,English,1,0,M2,6,3,5,5,5,4,5,Loja
+100,132,22,male,Quito,English,1,1,F1,6,5,5,5,5,4,6,Quito
+100,132,22,male,Quito,English,1,0,M1,6,6,6,3,1,3,2,Cuenca
+100,132,22,male,Quito,English,1,0,F1,6,3,5,5,6,4,6,Quito
+100,132,22,male,Quito,English,1,1,M2,6,5,5,5,6,4,5,Loja
+100,132,22,male,Quito,English,1,1,M1,6,5,6,5,6,4,3,Cuenca
+100,132,22,male,Quito,English,1,0,F2,6,5,5,2,4,3,3,Quito
+100,133,30,male,Cuenca,,0,1,F2,6,4,4,4,2,3,2,Loja
+100,133,30,male,Cuenca,,0,0,M2,5,3,4,3,3,2,4,Cuenca
+100,133,30,male,Cuenca,,0,1,F1,3,3,3,3,1,1,6,Cuenca
+100,133,30,male,Cuenca,,0,0,M1,6,6,6,6,6,4,2,Quito
+100,133,30,male,Cuenca,,0,0,F1,4,3,3,3,3,1,4,Loja
+100,133,30,male,Cuenca,,0,1,M2,5,5,5,5,5,2,3,Cuenca
+100,133,30,male,Cuenca,,0,1,M1,5,5,5,5,5,2,1,Cuenca
+100,133,30,male,Cuenca,,0,0,F2,3,3,3,3,3,2,3,Cuenca
+100,134,28,female,Loja,English,1,1,F2,5,4,4,4,4,3,3,Quito
+100,134,28,female,Loja,English,1,0,M2,5,4,4,4,4,3,3,Other
+100,134,28,female,Loja,English,1,1,F1,5,4,4,4,4,3,3,Other
+100,134,28,female,Loja,English,1,0,M1,5,5,4,4,4,3,2,Loja
+100,134,28,female,Loja,English,1,0,F1,5,4,4,4,5,2,3,Other
+100,134,28,female,Loja,English,1,1,M2,5,4,4,4,5,3,3,Other
+100,134,28,female,Loja,English,1,1,M1,5,5,4,4,4,3,2,Loja
+100,134,28,female,Loja,English,1,0,F2,5,4,4,4,4,3,3,Quito
+100,135,23,female,Loja,English,1,1,F2,4,5,4,4,4,3,3,Loja
+100,135,23,female,Loja,English,1,0,M2,4,5,4,4,3,2,3,Quito
+100,135,23,female,Loja,English,1,1,F1,4,4,4,3,4,3,3,Cuenca
+100,135,23,female,Loja,English,1,0,M1,4,4,3,4,4,3,2,Quito
+100,135,23,female,Loja,English,1,0,F1,4,4,5,4,3,3,3,Quito
+100,135,23,female,Loja,English,1,1,M2,4,4,2,3,2,2,3,Cuenca
+100,135,23,female,Loja,English,1,1,M1,4,4,4,4,4,3,2,Cuenca
+100,135,23,female,Loja,English,1,0,F2,4,3,4,4,4,3,3,Quito
+100,136,35,female,Coast,"Portuguese, English",2,1,F2,4,4,4,3,4,2,3,Quito
+100,136,35,female,Coast,"Portuguese, English",2,0,M2,4,4,4,3,4,2,3,Loja
+100,136,35,female,Coast,"Portuguese, English",2,1,F1,4,4,4,3,4,2,4,Loja
+100,136,35,female,Coast,"Portuguese, English",2,0,M1,4,4,4,3,4,3,2,Cuenca
+100,136,35,female,Coast,"Portuguese, English",2,0,F1,4,4,4,3,4,2,4,Loja
+100,136,35,female,Coast,"Portuguese, English",2,1,M2,4,4,4,3,4,2,3,Loja
+100,136,35,female,Coast,"Portuguese, English",2,1,M1,4,4,4,4,4,3,2,Quito
+100,136,35,female,Coast,"Portuguese, English",2,0,F2,4,4,4,3,4,3,3,Cuenca
+100,137,21,female,Coast,,0,1,F2,2,4,4,4,3,3,3,Quito
+100,137,21,female,Coast,,0,0,M2,3,3,2,2,1,1,4,Cuenca
+100,137,21,female,Coast,,0,1,F1,3,3,3,3,4,2,4,Other
+100,137,21,female,Coast,,0,0,M1,3,3,3,3,3,2,3,Loja
+100,137,21,female,Coast,,0,0,F1,3,3,3,3,3,3,4,Other
+100,137,21,female,Coast,,0,1,M2,3,4,3,3,2,1,4,Other
+100,137,21,female,Coast,,0,1,M1,3,4,3,3,4,3,2,Other
+100,137,21,female,Coast,,0,0,F2,3,4,4,3,3,3,3,Loja
+100,138,23,male,Loja,,0,1,F2,4,3,3,2,3,2,3,Loja
+100,138,23,male,Loja,,0,0,M2,5,4,5,4,5,2,4,Loja
+100,138,23,male,Loja,,0,1,F1,4,3,3,4,4,3,4,Loja
+100,138,23,male,Loja,,0,0,M1,4,4,3,3,3,2,2,Loja
+100,138,23,male,Loja,,0,0,F1,4,3,4,4,5,3,4,Loja
+100,138,23,male,Loja,,0,1,M2,4,4,5,4,4,3,3,Loja
+100,138,23,male,Loja,,0,1,M1,5,3,3,3,4,2,3,Loja
+100,138,23,male,Loja,,0,0,F2,4,4,4,3,4,2,3,Quito
+100,139,27,male,Quito,,0,1,F2,3,2,1,2,5,2,1,Loja
+100,139,27,male,Quito,,0,0,M2,6,5,4,4,6,3,3,Loja
+100,139,27,male,Quito,,0,1,F1,4,5,6,5,6,4,4,Loja
+100,139,27,male,Quito,,0,0,M1,6,6,5,4,6,3,2,Loja
+100,139,27,male,Quito,,0,0,F1,6,5,3,4,6,2,4,Loja
+100,139,27,male,Quito,,0,1,M2,6,5,4,4,6,3,4,Loja
+100,139,27,male,Quito,,0,1,M1,5,1,1,4,6,2,3,Loja
+100,139,27,male,Quito,,0,0,F2,1,4,5,3,5,2,2,Loja
+100,140,24,female,Quito,English,1,1,F2,5,5,5,5,5,2,2,Loja
+100,140,24,female,Quito,English,1,0,M2,5,5,5,5,5,3,3,Loja
+100,140,24,female,Quito,English,1,1,F1,5,5,5,5,5,3,3,Quito
+100,140,24,female,Quito,English,1,0,M1,5,5,5,5,5,3,3,Quito
+100,140,24,female,Quito,English,1,0,F1,2,4,5,4,5,2,4,Cuenca
+100,140,24,female,Quito,English,1,1,M2,6,6,6,5,6,3,4,Quito
+100,140,24,female,Quito,English,1,1,M1,5,5,5,5,5,4,3,Quito
+100,140,24,female,Quito,English,1,0,F2,4,5,5,4,4,3,3,Loja
+100,141,27,female,Coast,English,1,1,F2,5,4,3,3,4,2,2,Quito
+100,141,27,female,Coast,English,1,0,M2,6,5,5,4,5,3,2,Cuenca
+100,141,27,female,Coast,English,1,1,F1,5,4,4,5,4,2,3,Other
+100,141,27,female,Coast,English,1,0,M1,5,4,3,3,3,2,2,Loja
+100,141,27,female,Coast,English,1,0,F1,4,4,4,4,4,3,2,Quito
+100,141,27,female,Coast,English,1,1,M2,5,5,5,4,4,3,2,Cuenca
+100,141,27,female,Coast,English,1,1,M1,3,4,3,3,3,2,2,Other
+100,141,27,female,Coast,English,1,0,F2,3,4,5,3,4,3,2,Cuenca
+100,142,23,female,Quito,English,1,1,F2,1,1,1,1,1,3,2,Loja
+100,142,23,female,Quito,English,1,0,M2,6,6,6,6,6,4,3,Quito
+100,142,23,female,Quito,English,1,1,F1,4,5,4,4,5,2,4,Quito
+100,142,23,female,Quito,English,1,0,M1,6,6,6,6,6,3,2,Quito
+100,142,23,female,Quito,English,1,0,F1,4,5,5,6,6,2,4,Quito
+100,142,23,female,Quito,English,1,1,M2,6,6,6,6,6,3,3,Quito
+100,142,23,female,Quito,English,1,1,M1,5,5,5,5,5,4,2,Quito
+100,142,23,female,Quito,English,1,0,F2,2,3,4,4,4,3,3,Other
+100,143,18,female,Loja,"English, German",2,1,F2,2,6,4,3,4,3,3,Loja
+100,143,18,female,Loja,"English, German",2,0,M2,2,3,3,5,4,3,3,Loja
+100,143,18,female,Loja,"English, German",2,1,F1,4,4,4,4,4,3,3,Cuenca
+100,143,18,female,Loja,"English, German",2,0,M1,3,5,2,3,4,2,1,Quito
+100,143,18,female,Loja,"English, German",2,0,F1,4,4,2,4,4,3,3,Cuenca
+100,143,18,female,Loja,"English, German",2,1,M2,1,1,3,6,2,3,3,Loja
+100,143,18,female,Loja,"English, German",2,1,M1,4,4,4,3,3,3,3,Quito
+100,143,18,female,Loja,"English, German",2,0,F2,4,4,3,3,4,3,3,Quito
+100,144,21,female,Coast,English,1,1,F2,3,3,3,3,3,3,1,Cuenca
+100,144,21,female,Coast,English,1,0,M2,4,4,4,4,4,3,3,Loja
+100,144,21,female,Coast,English,1,1,F1,4,4,4,4,4,2,3,Cuenca
+100,144,21,female,Coast,English,1,0,M1,4,4,4,4,4,3,2,Cuenca
+100,144,21,female,Coast,English,1,0,F1,5,5,5,5,5,2,3,Loja
+100,144,21,female,Coast,English,1,1,M2,5,5,5,5,5,2,3,Loja
+100,144,21,female,Coast,English,1,1,M1,5,5,5,5,5,3,2,Loja
+100,144,21,female,Coast,English,1,0,F2,4,4,4,4,4,3,2,Quito
+100,145,25,female,Cuenca,English,1,1,F2,6,4,5,2,2,3,2,Other
+100,145,25,female,Cuenca,English,1,0,M2,6,4,5,3,5,2,3,Quito
+100,145,25,female,Cuenca,English,1,1,F1,5,5,5,2,3,2,3,Other
+100,145,25,female,Cuenca,English,1,0,M1,4,5,6,3,5,3,2,Cuenca
+100,145,25,female,Cuenca,English,1,0,F1,5,5,6,5,3,2,5,Other
+100,145,25,female,Cuenca,English,1,1,M2,6,5,6,4,4,2,4,Cuenca
+100,145,25,female,Cuenca,English,1,1,M1,5,4,6,4,4,3,2,Quito
+100,145,25,female,Cuenca,English,1,0,F2,6,5,6,5,4,2,2,Other
+100,146,23,male,Loja,English,1,1,F2,5,5,4,4,4,2,3,Loja
+100,146,23,male,Loja,English,1,0,M2,6,5,4,4,4,2,4,Loja
+100,146,23,male,Loja,English,1,1,F1,5,4,5,4,4,1,5,Loja
+100,146,23,male,Loja,English,1,0,M1,5,5,4,4,4,3,3,Loja
+100,146,23,male,Loja,English,1,0,F1,5,5,5,3,2,1,5,Loja
+100,146,23,male,Loja,English,1,1,M2,5,4,4,3,5,2,4,Loja
+100,146,23,male,Loja,English,1,1,M1,5,5,6,5,5,3,3,Loja
+100,146,23,male,Loja,English,1,0,F2,4,5,5,3,3,2,3,Loja
+100,147,24,male,Cuenca,English,1,1,F2,3,2,1,3,3,3,2,Cuenca
+100,147,24,male,Cuenca,English,1,0,M2,1,1,1,4,4,1,4,Cuenca
+100,147,24,male,Cuenca,English,1,1,F1,2,1,2,2,2,2,4,Cuenca
+100,147,24,male,Cuenca,English,1,0,M1,2,1,2,3,2,2,2,Quito
+100,147,24,male,Cuenca,English,1,0,F1,1,1,3,4,4,1,4,Cuenca
+100,147,24,male,Cuenca,English,1,1,M2,1,1,2,3,3,2,4,Cuenca
+100,147,24,male,Cuenca,English,1,1,M1,2,2,2,3,3,3,2,Cuenca
+100,147,24,male,Cuenca,English,1,0,F2,2,2,1,2,3,3,2,Cuenca
+100,148,39,male,Cuenca,English,1,1,F2,2,3,3,5,4,2,3,Other
+100,148,39,male,Cuenca,English,1,0,M2,3,4,3,4,4,3,4,Loja
+100,148,39,male,Cuenca,English,1,1,F1,3,3,3,3,3,2,3,Cuenca
+100,148,39,male,Cuenca,English,1,0,M1,4,4,2,4,4,2,3,Cuenca
+100,148,39,male,Cuenca,English,1,0,F1,3,2,4,4,2,3,4,Loja
+100,148,39,male,Cuenca,English,1,1,M2,4,3,5,5,5,4,4,Quito
+100,148,39,male,Cuenca,English,1,1,M1,4,3,4,5,3,4,3,Loja
+100,148,39,male,Cuenca,English,1,0,F2,2,3,3,3,3,2,3,Quito
+100,149,20,female,Loja,English,1,1,F2,1,4,6,3,2,2,4,Other
+100,149,20,female,Loja,English,1,0,M2,5,5,4,3,1,2,5,Cuenca
+100,149,20,female,Loja,English,1,1,F1,3,5,3,2,1,1,5,Other
+100,149,20,female,Loja,English,1,0,M1,5,4,5,4,4,4,4,Quito
+100,149,20,female,Loja,English,1,0,F1,5,4,3,3,1,1,4,Quito
+100,149,20,female,Loja,English,1,1,M2,5,5,3,4,3,3,4,Other
+100,149,20,female,Loja,English,1,1,M1,4,3,5,4,3,3,3,Other
+100,149,20,female,Loja,English,1,0,F2,2,4,4,3,4,2,3,Cuenca
+100,150,47,male,Cuenca,"English, Hebrew",2,1,F2,5,4,5,3,4,2,3,Loja
+100,150,47,male,Cuenca,"English, Hebrew",2,0,M2,5,5,5,5,5,3,4,Loja
+100,150,47,male,Cuenca,"English, Hebrew",2,1,F1,5,5,5,5,5,3,4,Cuenca
+100,150,47,male,Cuenca,"English, Hebrew",2,0,M1,5,4,4,4,5,2,3,Quito
+100,150,47,male,Cuenca,"English, Hebrew",2,0,F1,6,5,6,5,6,3,4,Cuenca
+100,150,47,male,Cuenca,"English, Hebrew",2,1,M2,5,4,5,4,6,2,4,Other
+100,150,47,male,Cuenca,"English, Hebrew",2,1,M1,5,3,4,4,5,3,4,Loja
+100,150,47,male,Cuenca,"English, Hebrew",2,0,F2,5,4,5,4,4,2,2,Quito
+100,151,26,male,Cuenca,English,1,1,F2,4,4,4,4,4,3,2,Quito
+100,151,26,male,Cuenca,English,1,0,M2,5,5,6,3,6,3,3,Cuenca
+100,151,26,male,Cuenca,English,1,1,F1,5,5,5,5,5,2,4,Loja
+100,151,26,male,Cuenca,English,1,0,M1,5,6,6,3,3,3,2,Cuenca
+100,151,26,male,Cuenca,English,1,0,F1,3,4,3,3,1,2,4,Cuenca
+100,151,26,male,Cuenca,English,1,1,M2,5,5,3,3,3,2,3,Quito
+100,151,26,male,Cuenca,English,1,1,M1,3,3,3,3,3,2,3,Quito
+100,151,26,male,Cuenca,English,1,0,F2,2,4,3,2,2,1,2,Cuenca
+100,152,21,female,Loja,English,1,1,F2,4,4,2,3,3,3,2,Loja
+100,152,21,female,Loja,English,1,0,M2,4,5,4,4,5,4,4,Loja
+100,152,21,female,Loja,English,1,1,F1,5,5,5,4,4,3,4,Loja
+100,152,21,female,Loja,English,1,0,M1,4,1,4,4,5,3,3,Cuenca
+100,152,21,female,Loja,English,1,0,F1,5,5,3,4,4,3,4,Quito
+100,152,21,female,Loja,English,1,1,M2,5,5,5,4,5,4,4,Loja
+100,152,21,female,Loja,English,1,1,M1,4,5,3,4,5,3,2,Other
+100,152,21,female,Loja,English,1,0,F2,3,5,3,4,5,3,3,Quito
+100,153,19,female,Loja,English,1,1,F2,5,4,4,4,4,3,1,Quito
+100,153,19,female,Loja,English,1,0,M2,5,4,4,4,4,3,2,Quito
+100,153,19,female,Loja,English,1,1,F1,4,4,4,4,4,2,3,Loja
+100,153,19,female,Loja,English,1,0,M1,4,3,3,3,3,2,2,Cuenca
+100,153,19,female,Loja,English,1,0,F1,3,4,5,4,4,2,4,Quito
+100,153,19,female,Loja,English,1,1,M2,4,4,4,4,4,2,3,Loja
+100,153,19,female,Loja,English,1,1,M1,4,4,4,4,4,3,2,Loja
+100,153,19,female,Loja,English,1,0,F2,5,5,5,4,4,3,2,Quito
+100,154,29,male,Quito,"English, German, Quechua",3,1,F2,4,5,5,4,4,3,4,Cuenca
+100,154,29,male,Quito,"English, German, Quechua",3,0,M2,5,5,5,3,3,2,4,Cuenca
+100,154,29,male,Quito,"English, German, Quechua",3,1,F1,4,5,4,3,3,2,4,Loja
+100,154,29,male,Quito,"English, German, Quechua",3,0,M1,5,4,5,4,4,3,3,Cuenca
+100,154,29,male,Quito,"English, German, Quechua",3,0,F1,5,5,5,3,3,2,4,Loja
+100,154,29,male,Quito,"English, German, Quechua",3,1,M2,4,4,5,3,4,2,4,Quito
+100,154,29,male,Quito,"English, German, Quechua",3,1,M1,4,4,4,4,4,3,2,Loja
+100,154,29,male,Quito,"English, German, Quechua",3,0,F2,4,5,5,3,3,3,3,Loja
+100,155,26,male,Loja,English,1,1,F2,4,4,4,3,4,3,2,Loja
+100,155,26,male,Loja,English,1,0,M2,5,6,6,3,6,3,3,Loja
+100,155,26,male,Loja,English,1,1,F1,4,5,2,1,1,2,3,Quito
+100,155,26,male,Loja,English,1,0,M1,5,1,3,3,4,2,4,Quito
+100,155,26,male,Loja,English,1,0,F1,1,1,1,1,1,1,4,Quito
+100,155,26,male,Loja,English,1,1,M2,5,4,4,4,5,3,3,Loja
+100,155,26,male,Loja,English,1,1,M1,3,3,2,3,2,3,4,Quito
+100,155,26,male,Loja,English,1,0,F2,3,4,3,2,2,2,3,Loja
+100,156,20,female,Loja,"English, French",2,1,F2,3,4,3,3,3,2,4,Other
+100,156,20,female,Loja,"English, French",2,0,M2,4,4,4,4,4,4,3,Cuenca
+100,156,20,female,Loja,"English, French",2,1,F1,3,3,3,3,3,2,3,Other
+100,156,20,female,Loja,"English, French",2,0,M1,4,4,4,4,4,3,3,Cuenca
+100,156,20,female,Loja,"English, French",2,0,F1,4,4,3,3,3,2,3,Quito
+100,156,20,female,Loja,"English, French",2,1,M2,5,5,5,5,5,3,3,Cuenca
+100,156,20,female,Loja,"English, French",2,1,M1,5,5,5,5,5,4,3,Loja
+100,156,20,female,Loja,"English, French",2,0,F2,5,5,5,5,5,3,4,Other
+100,157,22,female,Loja,French,1,1,F2,3,5,5,2,2,3,2,Loja
+100,157,22,female,Loja,French,1,0,M2,6,6,4,5,6,3,5,Loja
+100,157,22,female,Loja,French,1,1,F1,6,2,3,5,5,3,5,Quito
+100,157,22,female,Loja,French,1,0,M1,5,4,3,4,3,3,2,Cuenca
+100,157,22,female,Loja,French,1,0,F1,6,4,4,5,5,4,6,Cuenca
+100,157,22,female,Loja,French,1,1,M2,6,4,4,5,5,3,5,Loja
+100,157,22,female,Loja,French,1,1,M1,6,5,5,5,5,3,3,Cuenca
+100,157,22,female,Loja,French,1,0,F2,3,4,3,3,3,3,3,Cuenca
+100,158,23,male,Loja,English,1,1,F2,3,3,2,1,1,2,2,Other
+100,158,23,male,Loja,English,1,0,M2,4,4,4,3,2,2,3,Other
+100,158,23,male,Loja,English,1,1,F1,3,3,3,2,2,1,3,Other
+100,158,23,male,Loja,English,1,0,M1,3,3,3,3,3,2,2,Loja
+100,158,23,male,Loja,English,1,0,F1,3,3,2,2,2,2,3,Other
+100,158,23,male,Loja,English,1,1,M2,3,3,3,3,3,2,3,Other
+100,158,23,male,Loja,English,1,1,M1,3,2,2,2,2,3,2,Other
+100,158,23,male,Loja,English,1,0,F2,3,3,3,3,2,2,3,Other
+100,159,22,female,Quito,"English, Italian, German, Portuguese, French",5,1,F2,2,4,5,2,2,2,3,Cuenca
+100,159,22,female,Quito,"English, Italian, German, Portuguese, French",5,0,M2,2,3,3,5,6,3,5,Loja
+100,159,22,female,Quito,"English, Italian, German, Portuguese, French",5,1,F1,2,4,5,5,5,3,4,Cuenca
+100,159,22,female,Quito,"English, Italian, German, Portuguese, French",5,0,M1,5,4,4,4,4,3,3,Cuenca
+100,159,22,female,Quito,"English, Italian, German, Portuguese, French",5,0,F1,5,4,3,4,3,4,3,Cuenca
+100,159,22,female,Quito,"English, Italian, German, Portuguese, French",5,1,M2,3,4,4,5,5,3,4,Loja
+100,159,22,female,Quito,"English, Italian, German, Portuguese, French",5,1,M1,5,4,4,4,5,3,2,Quito
+100,159,22,female,Quito,"English, Italian, German, Portuguese, French",5,0,F2,2,3,3,2,2,2,2,Cuenca
+100,160,39,male,Cuenca,English,1,1,F2,3,4,3,2,2,1,3,Cuenca
+100,160,39,male,Cuenca,English,1,0,M2,5,5,5,5,5,3,5,Loja
+100,160,39,male,Cuenca,English,1,1,F1,5,2,4,5,5,2,6,Quito
+100,160,39,male,Cuenca,English,1,0,M1,3,3,4,3,3,3,4,Cuenca
+100,160,39,male,Cuenca,English,1,0,F1,5,5,5,5,5,2,6,Cuenca
+100,160,39,male,Cuenca,English,1,1,M2,4,5,4,4,4,3,4,Loja
+100,160,39,male,Cuenca,English,1,1,M1,4,5,3,4,4,4,3,Quito
+100,160,39,male,Cuenca,English,1,0,F2,1,5,1,1,1,1,3,Cuenca
+100,161,21,male,Loja,,0,1,F2,4,3,4,4,4,2,3,Quito
+100,161,21,male,Loja,,0,0,M2,6,4,5,4,4,2,4,Quito
+100,161,21,male,Loja,,0,1,F1,3,4,1,4,4,2,4,Loja
+100,161,21,male,Loja,,0,0,M1,6,5,6,5,6,4,3,Loja
+100,161,21,male,Loja,,0,0,F1,4,4,3,3,3,2,4,Cuenca
+100,161,21,male,Loja,,0,1,M2,6,4,3,3,6,2,3,Loja
+100,161,21,male,Loja,,0,1,M1,6,5,6,4,6,4,3,Loja
+100,161,21,male,Loja,,0,0,F2,4,3,3,3,3,2,3,Cuenca
+100,162,20,female,Coast,Portuguese,1,1,F2,5,5,5,4,4,3,2,Cuenca
+100,162,20,female,Coast,Portuguese,1,0,M2,5,5,5,4,4,4,3,Loja
+100,162,20,female,Coast,Portuguese,1,1,F1,5,5,5,4,4,2,4,Cuenca
+100,162,20,female,Coast,Portuguese,1,0,M1,5,5,5,4,4,4,3,Quito
+100,162,20,female,Coast,Portuguese,1,0,F1,5,5,5,4,4,4,4,Cuenca
+100,162,20,female,Coast,Portuguese,1,1,M2,5,5,5,4,4,5,4,Loja
+100,162,20,female,Coast,Portuguese,1,1,M1,5,5,5,4,4,4,4,Quito
+100,162,20,female,Coast,Portuguese,1,0,F2,5,5,5,4,4,5,3,Cuenca
+100,163,27,female,Cuenca,English,1,1,F2,5,4,3,5,2,4,3,Loja
+100,163,27,female,Cuenca,English,1,0,M2,3,4,2,4,2,3,3,Cuenca
+100,163,27,female,Cuenca,English,1,1,F1,6,3,2,1,1,2,4,Loja
+100,163,27,female,Cuenca,English,1,0,M1,4,4,6,3,6,4,3,Cuenca
+100,163,27,female,Cuenca,English,1,0,F1,6,5,4,5,4,3,3,Quito
+100,163,27,female,Cuenca,English,1,1,M2,5,4,5,5,5,3,3,Loja
+100,163,27,female,Cuenca,English,1,1,M1,6,5,6,4,5,4,4,Loja
+100,163,27,female,Cuenca,English,1,0,F2,6,4,6,6,6,3,3,Cuenca
+100,164,43,female,Quito,English,2,1,F2,5,5,5,3,3,4,4,Loja
+100,164,43,female,Quito,English,2,0,M2,6,5,4,3,3,4,4,Loja
+100,164,43,female,Quito,English,2,1,F1,6,4,6,4,4,3,4,Loja
+100,164,43,female,Quito,English,2,0,M1,6,5,5,3,5,4,3,Other
+100,164,43,female,Quito,English,2,0,F1,6,5,5,4,6,3,4,Loja
+100,164,43,female,Quito,English,2,1,M2,6,5,6,4,4,3,3,Loja
+100,164,43,female,Quito,English,2,1,M1,6,6,6,4,6,3,2,Other
+100,164,43,female,Quito,English,2,0,F2,6,5,4,4,5,4,4,Loja
+100,165,43,female,Coast,,0,1,F2,4,4,4,2,2,2,3,Other
+100,165,43,female,Coast,,0,0,M2,5,4,5,6,6,3,4,Quito
+100,165,43,female,Coast,,0,1,F1,3,4,3,2,2,2,4,Other
+100,165,43,female,Coast,,0,0,M1,3,3,2,2,2,2,2,Quito
+100,165,43,female,Coast,,0,0,F1,3,4,2,2,2,2,4,Other
+100,165,43,female,Coast,,0,1,M2,4,4,4,4,5,3,4,Quito
+100,165,43,female,Coast,,0,1,M1,3,4,3,3,4,3,3,Quito
+100,165,43,female,Coast,,0,0,F2,4,4,4,3,3,2,4,Other
+100,166,37,male,Cuenca,,0,1,F2,3,5,3,4,3,3,2,Loja
+100,166,37,male,Cuenca,,0,0,M2,5,3,3,5,5,3,4,Cuenca
+100,166,37,male,Cuenca,,0,1,F1,3,5,2,3,3,2,3,Quito
+100,166,37,male,Cuenca,,0,0,M1,4,3,2,3,3,3,2,Quito
+100,166,37,male,Cuenca,,0,0,F1,3,2,3,4,3,2,4,Quito
+100,166,37,male,Cuenca,,0,1,M2,5,5,5,5,5,3,2,Loja
+100,166,37,male,Cuenca,,0,1,M1,5,3,4,5,3,3,3,Cuenca
+100,166,37,male,Cuenca,,0,0,F2,3,3,2,4,4,2,2,Quito
+100,167,44,female,Quito,,0,1,F2,4,4,4,4,3,3,3,Loja
+100,167,44,female,Quito,,0,0,M2,5,4,5,3,3,3,3,Cuenca
+100,167,44,female,Quito,,0,1,F1,5,4,3,3,3,3,5,Other
+100,167,44,female,Quito,,0,0,M1,5,3,3,3,3,3,4,Cuenca
+100,167,44,female,Quito,,0,0,F1,5,4,4,3,3,3,4,Other
+100,167,44,female,Quito,,0,1,M2,5,4,4,4,4,3,4,Cuenca
+100,167,44,female,Quito,,0,1,M1,5,4,4,3,4,3,3,Cuenca
+100,167,44,female,Quito,,0,0,F2,5,4,3,3,3,3,3,Loja
+100,168,59,female,Cuenca,,0,1,F2,4,5,5,3,2,2,2,Other
+100,168,59,female,Cuenca,,0,0,M2,5,5,5,5,6,2,4,Cuenca
+100,168,59,female,Cuenca,,0,1,F1,6,6,6,5,5,1,5,Loja
+100,168,59,female,Cuenca,,0,0,M1,6,6,6,5,6,3,3,Loja
+100,168,59,female,Cuenca,,0,0,F1,5,5,6,5,6,2,4,Cuenca
+100,168,59,female,Cuenca,,0,1,M2,6,5,6,5,6,2,4,Cuenca
+100,168,59,female,Cuenca,,0,1,M1,6,6,6,5,6,3,3,Loja
+100,168,59,female,Cuenca,,0,0,F2,4,5,5,4,4,1,2,Other
+100,169,20,female,Coast,,0,1,F2,5,4,3,4,4,2,2,Quito
+100,169,20,female,Coast,,0,0,M2,5,5,4,4,5,2,4,Other
+100,169,20,female,Coast,,0,1,F1,5,4,4,4,4,2,4,Cuenca
+100,169,20,female,Coast,,0,0,M1,5,4,4,4,3,2,3,Quito
+100,169,20,female,Coast,,0,0,F1,5,5,3,4,4,2,4,Cuenca
+100,169,20,female,Coast,,0,1,M2,3,3,1,3,5,2,3,Loja
+100,169,20,female,Coast,,0,1,M1,4,5,5,4,4,3,3,Other
+100,169,20,female,Coast,,0,0,F2,5,5,4,2,2,1,3,Quito
+100,170,23,female,Loja,,0,1,F2,5,5,4,5,4,2,2,Loja
+100,170,23,female,Loja,,0,0,M2,5,5,5,5,5,3,3,Loja
+100,170,23,female,Loja,,0,1,F1,5,5,4,5,4,2,3,Loja
+100,170,23,female,Loja,,0,0,M1,5,5,5,5,5,4,3,Loja
+100,170,23,female,Loja,,0,0,F1,5,5,5,5,5,2,3,Loja
+100,170,23,female,Loja,,0,1,M2,5,5,5,5,5,3,3,Loja
+100,170,23,female,Loja,,0,1,M1,5,5,6,5,5,4,3,Loja
+100,170,23,female,Loja,,0,0,F2,5,5,4,5,5,2,2,Loja
+100,171,21,female,Cuenca,,0,1,F2,5,1,6,3,3,3,3,Other
+100,171,21,female,Cuenca,,0,0,M2,6,1,6,4,4,3,4,Quito
+100,171,21,female,Cuenca,,0,1,F1,6,1,6,3,3,2,6,Other
+100,171,21,female,Cuenca,,0,0,M1,6,2,6,4,4,5,5,Loja
+100,171,21,female,Cuenca,,0,0,F1,5,5,3,4,3,2,6,Other
+100,171,21,female,Cuenca,,0,1,M2,5,2,6,4,4,4,4,Cuenca
+100,171,21,female,Cuenca,,0,1,M1,6,1,6,4,4,3,4,Cuenca
+100,171,21,female,Cuenca,,0,0,F2,6,1,6,2,2,2,4,Cuenca
+100,172,31,male,Cuenca,English,1,1,F2,3,4,3,2,2,3,2,Cuenca
+100,172,31,male,Cuenca,English,1,0,M2,6,4,4,4,4,3,4,Cuenca
+100,172,31,male,Cuenca,English,1,1,F1,5,5,5,4,5,2,5,Cuenca
+100,172,31,male,Cuenca,English,1,0,M1,4,2,3,2,2,3,3,Loja
+100,172,31,male,Cuenca,English,1,0,F1,4,4,4,5,5,2,6,Cuenca
+100,172,31,male,Cuenca,English,1,1,M2,5,5,5,5,5,4,3,Cuenca
+100,172,31,male,Cuenca,English,1,1,M1,5,5,4,3,3,3,2,Loja
+100,172,31,male,Cuenca,English,1,0,F2,4,4,2,2,1,1,3,Cuenca
+100,173,26,female,Cuenca,English,1,1,F2,4,4,4,4,4,3,3,Other
+100,173,26,female,Cuenca,English,1,0,M2,4,4,4,4,4,2,3,Cuenca
+100,173,26,female,Cuenca,English,1,1,F1,4,4,4,3,4,2,4,Cuenca
+100,173,26,female,Cuenca,English,1,0,M1,4,4,4,4,4,3,4,Other
+100,173,26,female,Cuenca,English,1,0,F1,4,3,3,3,5,2,4,Other
+100,173,26,female,Cuenca,English,1,1,M2,4,2,4,3,6,2,4,Cuenca
+100,173,26,female,Cuenca,English,1,1,M1,4,5,4,5,6,4,2,Cuenca
+100,173,26,female,Cuenca,English,1,0,F2,5,6,4,4,5,4,3,Cuenca
+100,174,27,female,Coast,"English, French, Quechua",3,1,F2,5,4,5,4,4,2,3,Loja
+100,174,27,female,Coast,"English, French, Quechua",3,0,M2,6,5,6,4,5,2,4,Cuenca
+100,174,27,female,Coast,"English, French, Quechua",3,1,F1,4,4,4,4,4,2,4,Cuenca
+100,174,27,female,Coast,"English, French, Quechua",3,0,M1,5,3,5,5,5,3,3,Loja
+100,174,27,female,Coast,"English, French, Quechua",3,0,F1,5,4,5,4,6,3,4,Cuenca
+100,174,27,female,Coast,"English, French, Quechua",3,1,M2,6,5,5,5,5,3,3,Quito
+100,174,27,female,Coast,"English, French, Quechua",3,1,M1,5,4,5,5,5,3,2,Cuenca
+100,174,27,female,Coast,"English, French, Quechua",3,0,F2,5,5,6,5,5,2,3,Loja
+100,175,47,female,Quito,,0,1,F2,4,4,6,3,1,3,2,Loja
+100,175,47,female,Quito,,0,0,M2,6,6,6,3,3,2,5,Other
+100,175,47,female,Quito,,0,1,F1,6,6,6,6,6,3,5,Cuenca
+100,175,47,female,Quito,,0,0,M1,6,4,6,4,6,4,2,Loja
+100,175,47,female,Quito,,0,0,F1,6,6,6,5,3,2,6,Other
+100,175,47,female,Quito,,0,1,M2,5,3,4,2,2,1,6,Other
+100,175,47,female,Quito,,0,1,M1,6,5,4,5,5,4,3,Loja
+100,175,47,female,Quito,,0,0,F2,1,2,2,1,1,1,4,Other
+100,176,21,male,Loja,English,1,1,F2,3,4,4,3,3,2,3,Other
+100,176,21,male,Loja,English,1,0,M2,4,3,4,4,5,4,3,Loja
+100,176,21,male,Loja,English,1,1,F1,5,4,3,4,5,4,4,Cuenca
+100,176,21,male,Loja,English,1,0,M1,5,4,3,5,4,3,2,Loja
+100,176,21,male,Loja,English,1,0,F1,3,4,4,5,5,4,4,Cuenca
+100,176,21,male,Loja,English,1,1,M2,5,5,4,3,5,4,3,Loja
+100,176,21,male,Loja,English,1,1,M1,5,3,4,4,5,3,3,Loja
+100,176,21,male,Loja,English,1,0,F2,4,5,3,3,2,2,2,Other
+100,177,23,male,Coast,English,1,1,F2,5,3,3,2,1,2,3,Loja
+100,177,23,male,Coast,English,1,0,M2,6,4,5,5,5,2,4,Loja
+100,177,23,male,Coast,English,1,1,F1,6,1,3,6,6,2,5,Cuenca
+100,177,23,male,Coast,English,1,0,M1,4,2,3,4,4,3,4,Cuenca
+100,177,23,male,Coast,English,1,0,F1,5,2,5,6,6,2,5,Quito
+100,177,23,male,Coast,English,1,1,M2,6,6,6,4,5,3,3,Loja
+100,177,23,male,Coast,English,1,1,M1,6,2,3,4,4,3,3,Other
+100,177,23,male,Coast,English,1,0,F2,6,4,4,2,1,1,3,Loja
+100,178,25,female,Loja,English,1,1,F2,5,5,5,5,5,3,3,Cuenca
+100,178,25,female,Loja,English,1,0,M2,6,6,6,6,6,4,4,Loja
+100,178,25,female,Loja,English,1,1,F1,3,3,3,3,3,2,2,Cuenca
+100,178,25,female,Loja,English,1,0,M1,3,3,3,3,3,2,3,Cuenca
+100,178,25,female,Loja,English,1,0,F1,3,4,2,3,3,3,3,Other
+100,178,25,female,Loja,English,1,1,M2,6,6,6,6,6,4,4,Quito
+100,178,25,female,Loja,English,1,1,M1,6,6,6,5,6,4,4,Loja
+100,178,25,female,Loja,English,1,0,F2,4,4,6,4,4,3,3,Other
+100,179,32,female,Cuenca,,0,1,F2,3,3,3,3,3,2,1,Loja
+100,179,32,female,Cuenca,,0,0,M2,5,4,5,4,5,4,5,Other
+100,179,32,female,Cuenca,,0,1,F1,4,5,5,4,4,3,4,Other
+100,179,32,female,Cuenca,,0,0,M1,3,2,3,3,3,3,5,Other
+100,179,32,female,Cuenca,,0,0,F1,4,4,4,4,4,3,4,Cuenca
+100,179,32,female,Cuenca,,0,1,M2,5,4,3,4,4,3,3,Loja
+100,179,32,female,Cuenca,,0,1,M1,4,3,5,4,4,3,3,Other
+100,179,32,female,Cuenca,,0,0,F2,3,3,3,3,3,2,2,Loja
+100,180,35,female,Cuenca,,0,1,F2,5,4,5,4,6,3,3,Quito
+100,180,35,female,Cuenca,,0,0,M2,5,3,3,4,5,3,3,Cuenca
+100,180,35,female,Cuenca,,0,1,F1,5,4,4,4,4,2,4,Other
+100,180,35,female,Cuenca,,0,0,M1,4,2,3,3,4,2,2,Cuenca
+100,180,35,female,Cuenca,,0,0,F1,4,3,3,4,6,3,3,Cuenca
+100,180,35,female,Cuenca,,0,1,M2,5,4,4,4,4,2,3,Loja
+100,180,35,female,Cuenca,,0,1,M1,5,4,5,4,4,3,2,Quito
+100,180,35,female,Cuenca,,0,0,F2,5,4,5,5,5,3,2,Loja
+100,181,33,female,Cuenca,English,1,1,F2,4,4,5,3,2,2,2,Loja
+100,181,33,female,Cuenca,English,1,0,M2,5,4,4,4,5,2,3,Quito
+100,181,33,female,Cuenca,English,1,1,F1,5,2,4,3,5,2,5,Cuenca
+100,181,33,female,Cuenca,English,1,0,M1,4,4,4,4,5,3,2,Cuenca
+100,181,33,female,Cuenca,English,1,0,F1,4,3,4,4,5,2,5,Cuenca
+100,181,33,female,Cuenca,English,1,1,M2,4,4,4,3,3,3,4,Quito
+100,181,33,female,Cuenca,English,1,1,M1,5,3,3,3,5,3,2,Cuenca
+100,181,33,female,Cuenca,English,1,0,F2,2,4,5,2,2,2,2,Quito
+100,182,24,female,Coast,English,1,1,F2,2,2,5,1,1,1,3,Loja
+100,182,24,female,Coast,English,1,0,M2,5,4,6,4,5,2,3,Other
+100,182,24,female,Coast,English,1,1,F1,4,5,2,2,6,1,4,Other
+100,182,24,female,Coast,English,1,0,M1,6,6,6,5,6,3,2,Quito
+100,182,24,female,Coast,English,1,0,F1,4,3,5,3,3,2,3,Other
+100,182,24,female,Coast,English,1,1,M2,6,4,6,4,4,2,4,Other
+100,182,24,female,Coast,English,1,1,M1,3,3,4,3,4,3,2,Other
+100,182,24,female,Coast,English,1,0,F2,1,3,6,2,2,3,2,Loja
+100,183,38,female,Quito,English,1,1,F2,5,5,5,4,5,2,3,Loja
+100,183,38,female,Quito,English,1,0,M2,4,4,4,4,4,3,3,Quito
+100,183,38,female,Quito,English,1,1,F1,3,3,3,3,4,2,3,Loja
+100,183,38,female,Quito,English,1,0,M1,4,4,4,4,4,2,2,Cuenca
+100,183,38,female,Quito,English,1,0,F1,4,4,3,3,3,2,4,Cuenca
+100,183,38,female,Quito,English,1,1,M2,4,4,6,5,6,4,4,Quito
+100,183,38,female,Quito,English,1,1,M1,4,4,4,4,4,3,3,Loja
+100,183,38,female,Quito,English,1,0,F2,5,5,5,4,4,2,3,Cuenca
+100,184,21,female,Coast,"English, French",2,1,F2,4,4,4,4,4,4,3,Cuenca
+100,184,21,female,Coast,"English, French",2,0,M2,5,4,5,4,3,3,5,Quito
+100,184,21,female,Coast,"English, French",2,1,F1,4,4,4,3,4,2,5,Other
+100,184,21,female,Coast,"English, French",2,0,M1,4,4,4,4,5,3,2,Cuenca
+100,184,21,female,Coast,"English, French",2,0,F1,4,4,4,4,4,2,5,Other
+100,184,21,female,Coast,"English, French",2,1,M2,5,4,5,4,5,3,4,Quito
+100,184,21,female,Coast,"English, French",2,1,M1,5,5,5,4,5,3,2,Other
+100,184,21,female,Coast,"English, French",2,0,F2,4,4,5,4,3,3,3,Cuenca
+100,185,23,female,Quito,"English, French, Italian",3,1,F2,4,4,6,2,1,3,2,Other
+100,185,23,female,Quito,"English, French, Italian",3,0,M2,5,4,4,4,2,3,4,Loja
+100,185,23,female,Quito,"English, French, Italian",3,1,F1,5,3,3,3,1,2,5,Other
+100,185,23,female,Quito,"English, French, Italian",3,0,M1,3,2,4,4,2,3,3,Other
+100,185,23,female,Quito,"English, French, Italian",3,0,F1,4,4,4,2,1,2,6,Other
+100,185,23,female,Quito,"English, French, Italian",3,1,M2,4,4,5,3,2,2,5,Loja
+100,185,23,female,Quito,"English, French, Italian",3,1,M1,5,4,4,4,2,3,3,Other
+100,185,23,female,Quito,"English, French, Italian",3,0,F2,5,2,5,2,1,3,4,Other
+100,186,44,male,Cuenca,,0,1,F2,4,4,4,4,4,3,2,Other
+100,186,44,male,Cuenca,,0,0,M2,5,4,5,4,5,3,4,Cuenca
+100,186,44,male,Cuenca,,0,1,F1,4,4,4,4,4,2,5,Cuenca
+100,186,44,male,Cuenca,,0,0,M1,4,4,4,4,4,3,2,Quito
+100,186,44,male,Cuenca,,0,0,F1,4,4,4,4,4,3,4,Cuenca
+100,186,44,male,Cuenca,,0,1,M2,4,4,4,4,4,3,4,Cuenca
+100,186,44,male,Cuenca,,0,1,M1,4,3,4,4,4,3,2,Quito
+100,186,44,male,Cuenca,,0,0,F2,4,4,4,3,3,3,3,Other
+100,187,22,female,Coast,"English, French",2,1,F2,5,6,5,4,4,3,3,Quito
+100,187,22,female,Coast,"English, French",2,0,M2,5,4,5,4,5,3,3,Quito
+100,187,22,female,Coast,"English, French",2,1,F1,5,5,4,4,4,2,4,Quito
+100,187,22,female,Coast,"English, French",2,0,M1,5,3,4,4,4,3,3,Quito
+100,187,22,female,Coast,"English, French",2,0,F1,5,4,5,4,4,2,4,Quito
+100,187,22,female,Coast,"English, French",2,1,M2,5,5,4,4,4,3,3,Quito
+100,187,22,female,Coast,"English, French",2,1,M1,5,4,4,5,5,3,3,Quito
+100,187,22,female,Coast,"English, French",2,0,F2,5,5,5,3,4,2,3,Quito
+100,188,36,female,Quito,English,1,1,F2,5,5,4,3,2,2,3,Loja
+100,188,36,female,Quito,English,1,0,M2,6,4,4,5,5,3,3,Loja
+100,188,36,female,Quito,English,1,1,F1,5,5,5,3,3,2,3,Cuenca
+100,188,36,female,Quito,English,1,0,M1,6,1,6,4,4,3,3,Cuenca
+100,188,36,female,Quito,English,1,0,F1,3,4,4,2,2,2,4,Cuenca
+100,188,36,female,Quito,English,1,1,M2,6,5,5,5,5,3,3,Loja
+100,188,36,female,Quito,English,1,1,M1,4,4,4,4,4,3,2,Loja
+100,188,36,female,Quito,English,1,0,F2,3,3,3,2,2,2,3,Cuenca
+100,189,35,female,Cuenca,English,1,1,F2,4,2,2,2,2,2,3,Cuenca
+100,189,35,female,Cuenca,English,1,0,M2,2,1,1,1,1,4,3,Other
+100,189,35,female,Cuenca,English,1,1,F1,2,2,1,2,2,2,4,Loja
+100,189,35,female,Cuenca,English,1,0,M1,1,1,1,1,1,3,4,Other
+100,189,35,female,Cuenca,English,1,0,F1,3,2,2,2,2,2,4,Other
+100,189,35,female,Cuenca,English,1,1,M2,1,1,2,2,2,3,5,Cuenca
+100,189,35,female,Cuenca,English,1,1,M1,2,2,2,3,2,3,4,Other
+100,189,35,female,Cuenca,English,1,0,F2,4,2,2,4,4,2,3,Quito
+100,190,24,female,Cuenca,,0,1,F2,2,4,4,3,4,2,4,Cuenca
+100,190,24,female,Cuenca,,0,0,M2,6,5,6,5,5,3,3,Other
+100,190,24,female,Cuenca,,0,1,F1,3,5,5,1,3,2,3,Cuenca
+100,190,24,female,Cuenca,,0,0,M1,5,5,5,3,4,2,3,Cuenca
+100,190,24,female,Cuenca,,0,0,F1,5,5,2,3,4,2,4,Cuenca
+100,190,24,female,Cuenca,,0,1,M2,6,6,6,6,6,3,3,Loja
+100,190,24,female,Cuenca,,0,1,M1,6,5,5,4,4,3,3,Loja
+100,190,24,female,Cuenca,,0,0,F2,5,4,2,3,4,2,3,Cuenca
+100,191,22,female,Coast,English,1,1,F2,5,5,5,2,2,3,3,Quito
+100,191,22,female,Coast,English,1,0,M2,5,5,5,5,5,3,4,Cuenca
+100,191,22,female,Coast,English,1,1,F1,5,6,1,6,6,3,3,Cuenca
+100,191,22,female,Coast,English,1,0,M1,3,2,3,5,4,1,4,Cuenca
+100,191,22,female,Coast,English,1,0,F1,6,6,5,6,6,4,4,Cuenca
+100,191,22,female,Coast,English,1,1,M2,6,2,6,3,6,4,4,Quito
+100,191,22,female,Coast,English,1,1,M1,4,5,2,4,5,2,1,Quito
+100,191,22,female,Coast,English,1,0,F2,3,4,4,3,3,2,3,Cuenca
+100,192,44,male,Quito,"English, Portuguese",2,1,F2,5,4,4,4,4,3,3,Loja
+100,192,44,male,Quito,"English, Portuguese",2,0,M2,6,4,4,4,4,3,3,Loja
+100,192,44,male,Quito,"English, Portuguese",2,1,F1,5,3,4,3,3,2,3,Cuenca
+100,192,44,male,Quito,"English, Portuguese",2,0,M1,5,3,5,4,5,3,3,Loja
+100,192,44,male,Quito,"English, Portuguese",2,0,F1,6,5,4,4,4,2,3,Loja
+100,192,44,male,Quito,"English, Portuguese",2,1,M2,6,4,4,5,6,2,3,Loja
+100,192,44,male,Quito,"English, Portuguese",2,1,M1,5,3,4,4,5,3,3,Cuenca
+100,192,44,male,Quito,"English, Portuguese",2,0,F2,6,5,6,4,5,3,2,Loja
