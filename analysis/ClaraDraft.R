@@ -58,8 +58,6 @@ t3$Num_Additional_Languages <- as.character(lang_replace_num[t3$Language])
 t3 <- t3 %>% select(-Language) %>% relocate(Languages_excluding_Spanish, .after = Region) %>% 
   relocate(Num_Additional_Languages, .after = Languages_excluding_Spanish)
 
-view(t3)
-
 
 ## Visualization 
 #Dumb down respondents and what region they're from so that it's not 8 sets for each respondent
@@ -89,8 +87,6 @@ gender_count <- respondents_gender %>%
   summarize(num_respondents = n()) %>%
   mutate(proportion = num_respondents / sum(num_respondents), percentage = scales::percent(proportion))
 
-view(gender_count)
-
 # Simple bar chart to show comparison
 gender_count %>% 
   ggplot(aes(x = Gender, y = num_respondents, fill = Gender)) + 
@@ -105,8 +101,6 @@ gender_by_region <- respondents_gender %>%
   mutate(region_total = sum(num_respondents),
          proportion = num_respondents / region_total,
          percentage = scales::percent(proportion))
-
-view(gender_by_region)
 
 gender_by_region %>%
   ggplot(aes(x = Region, y = proportion, fill = Gender)) +
@@ -126,7 +120,6 @@ age_count <- respondents_age %>%
          percentage = scales::percent(proportion)) %>%
   arrange(age_group)
 
-view(age_count)
 
 age_count %>% ggplot(aes(x = age_group, y = num_respondents, fill = age_group)) +
   geom_col() + labs(title = 'Respondents by Age', x = 'Age group', y = 'Count')
@@ -158,7 +151,6 @@ t4 <- t4 |> select(-fem)
 t4 <- t4 |> mutate(speakerID = Speaker, 
                    speaker_gender = ifelse(str_starts(Speaker, 'F'), 'female', 'male'))
 t4 <- t4 |> select(-Speaker)
-t4 <- t4 |> select(-Speaker_ID)
 
 # picking only numeric variables
 fadata <- t4 |> select(masculinity, nice, class, urban, edu, age)
@@ -179,11 +171,29 @@ fa
 # Factor 1: Status
 # Factor 2: "Gendered Affect" or something 
 
-t4 <- t4 |> mutate(status = rowMeans(scale(select(., class, urban, edu)), na.rm = TRUE))
+t4 <- t4 |> mutate(status = rowMeans(scale(select(t4, class, urban, edu)), na.rm = TRUE))
 
 # mixed effect/ random effect 
 # linear model (status ~ trill + listener_id)
 # 2 level logistic regression
 # glm(response ~ predictors, family = 'binomial')
 # create new variable that says if respondent correctly assigned speaker's origin 
+
+t5 <- t4 %>% select(c(Gender, trill, nice, conf, status, age, 
+                      predictedOrigin, masculinity, speakerID, speaker_gender))
+
+#A simply model describing nice in terms of trill, conf, and status and the interactions
+mod <- lm(nice ~ (trill + conf + status)^2 , data = t5)
+summary(mod)
+
+#Ran stepAIC to improve the model.
+mod2 <- MASS::stepAIC(mod, direction = "backward")
+summary(mod2)
+
+# mixed effects regression modeling
+trillmod <- glmer(trill ~ status + masculinity + nice + speaker_gender + Gender + Region + (1 | RespondentID) + (1 | speakerID), data = t4, family = binomial)
+n_distinct(t5$RespondentID)
+summary(trillmod)
+MASS::stepAIC(trillmod)
+
 
