@@ -24,46 +24,6 @@ Data → Cleaning → Visualization → Analysis
 
 ---
 
-## 📂 Repository Structure
-# 🎙️ Trilled vs. Assibilated /r/ Research
-
-> A data-driven analysis of linguistic perception in Ecuadorian Spanish.
-
----
-
-## 🌟 Highlights
-
-- 📊 Analyzes perception of **trilled vs. assibilated /r/**
-- 🌎 Explores **regional, gender, and age-based patterns**
-- 🎧 Combines **survey + audio data**
-- 🧹 Full pipeline: **data cleaning → visualization → analysis**
-- 📈 Built using **R + tidyverse**
-
----
-
-## 📖 Overview
-
-This project investigates how listeners perceive different pronunciations of /r/ in Ecuadorian Spanish. By combining survey responses, demographic data, and audio samples, we analyze how linguistic perception varies across **region, gender, and age**.
-
-The project follows a structured workflow:
-
-Data → Cleaning → Visualization → Analysis
-
----
-
-## 📂 Repository Structure
-.
-├── data/
-├── src/
-├── analysis/
-├── images/
-├── drafts/
-├── Capstone Presentation Files/
-└── README.md
-
-
----
-
 ## 🧹 Data Cleaning
 
 **Script:** `src/Data_Cleaning.R`
@@ -154,10 +114,7 @@ Scripts in `analysis/` explore:
 ## 🚀 Future Work
 
 - 📊 Statistical modeling (logistic regression)
-- 🤖 Machine learning classification
-- 🎧 Acoustic feature extraction
-- 🌐 Interactive dashboard (Shiny)
-
+- 🔎 Regression Evaluation and Interpretation
 ---
 
 ## ▶️ How to Run
