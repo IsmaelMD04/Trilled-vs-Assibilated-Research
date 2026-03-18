@@ -1,28 +1,57 @@
-🎙️ Trilled vs. Assibilated /r/ Research
+# 🎙️ Trilled vs. Assibilated /r/ Research
 
-A data-driven analysis of linguistic perception in Ecuadorian Spanish.
+> A data-driven analysis of linguistic perception in Ecuadorian Spanish.
 
-🌟 Highlights
+---
 
-📊 Analyzes perception of trilled vs. assibilated /r/
+## 🌟 Highlights
 
-🌎 Explores regional, gender, and age-based patterns
+- 📊 Analyzes perception of **trilled vs. assibilated /r/**
+- 🌎 Explores **regional, gender, and age-based patterns**
+- 🎧 Combines **survey + audio data**
+- 🧹 Full pipeline: **data cleaning → visualization → analysis**
+- 📈 Built using **R + tidyverse**
 
-🎧 Combines survey + audio data
+---
 
-🧹 Full pipeline: data cleaning → visualization → analysis
+## 📖 Overview
 
-📈 Built using R + tidyverse
-
-📖 Overview
-
-This project investigates how listeners perceive different pronunciations of /r/ in Ecuadorian Spanish. By combining survey responses, demographic data, and audio samples, we analyze how linguistic perception varies across region, gender, and age.
+This project investigates how listeners perceive different pronunciations of /r/ in Ecuadorian Spanish. By combining survey responses, demographic data, and audio samples, we analyze how linguistic perception varies across **region, gender, and age**.
 
 The project follows a structured workflow:
 
 Data → Cleaning → Visualization → Analysis
 
-📂 Repository Structure
+---
+
+## 📂 Repository Structure
+# 🎙️ Trilled vs. Assibilated /r/ Research
+
+> A data-driven analysis of linguistic perception in Ecuadorian Spanish.
+
+---
+
+## 🌟 Highlights
+
+- 📊 Analyzes perception of **trilled vs. assibilated /r/**
+- 🌎 Explores **regional, gender, and age-based patterns**
+- 🎧 Combines **survey + audio data**
+- 🧹 Full pipeline: **data cleaning → visualization → analysis**
+- 📈 Built using **R + tidyverse**
+
+---
+
+## 📖 Overview
+
+This project investigates how listeners perceive different pronunciations of /r/ in Ecuadorian Spanish. By combining survey responses, demographic data, and audio samples, we analyze how linguistic perception varies across **region, gender, and age**.
+
+The project follows a structured workflow:
+
+Data → Cleaning → Visualization → Analysis
+
+---
+
+## 📂 Repository Structure
 .
 ├── data/
 ├── src/
@@ -31,79 +60,118 @@ Data → Cleaning → Visualization → Analysis
 ├── drafts/
 ├── Capstone Presentation Files/
 └── README.md
-🧹 Data Cleaning
 
-Script: src/Data_Cleaning.R
+
+---
+
+## 🧹 Data Cleaning
+
+**Script:** `src/Data_Cleaning.R`
 
 Key steps:
 
-Reshaped dataset (wide → long)
+- Reshaped dataset (wide → long)
+- Separated compound attributes
+- Cleaned respondent-level inconsistencies
+- Standardized categorical variables
 
-Separated compound attributes
+---
 
-Cleaned respondent-level inconsistencies
+### 🔄 Transformation Example
 
-Standardized categorical variables
+![Data Wrangling](Capstone%20Presentation%20Files/Data_Wrangling_5_Pivoted_Values.png)
 
-🔄 Transformation Example
+---
 
-📊 Data Visualization
+## 📊 Data Visualization
 
-Script: src/Data_Visualization.R
+**Script:** `src/Data_Visualization.R`
 
-🌎 Regional Distribution
+---
 
-👥 Gender Distribution
+### 🌎 Regional Distribution
 
-🌍 Gender by Region
+![Regional](images/Pie_chart_of_region.png)
 
-📈 Age Distribution
+---
 
-🌐 Age by Region
+### 👥 Gender Distribution
 
-🧠 Perception vs Reality
+![Gender](images/Gender_distribution.png)
 
-🧠 Analysis
+---
 
-Scripts in analysis/ explore:
+### 🌍 Gender by Region
 
-Regional perception differences
+![Gender Region](images/Gender_distribution_by_region.png)
 
-Listener bias patterns
+---
 
-Demographic influences on interpretation
+### 📈 Age Distribution
 
-🔍 Key Insights
+![Age](images/Histogram_age_range.png)
 
-Regional identity strongly influences perception
+---
 
-Listener predictions do not always match actual speaker origin
+### 🌐 Age by Region
 
-Demographics (age, gender) shape interpretation patterns
+![Age Region](images/Histogram_age_by_region.png)
 
-🛠️ Tools & Technologies
+---
 
-R
+### 🧠 Perception vs Reality
 
-tidyverse (dplyr, ggplot2, tidyr)
+![Perception](images/Listener_Region_Compared_to_Predicted_Speaker_Origin.png)
 
-RStudio
+---
 
-🚀 Future Work
+## 🧠 Analysis
 
-📊 Statistical modeling (logistic regression)
+Scripts in `analysis/` explore:
 
-🤖 Machine learning classification
+- Regional perception differences
+- Listener bias patterns
+- Demographic influences on interpretation
 
-🎧 Acoustic feature extraction
+---
 
-🌐 Interactive dashboard (Shiny)
+## 🔍 Key Insights
 
-▶️ How to Run
+- Regional identity strongly influences perception  
+- Listener predictions do not always match the actual speaker's origin  
+- Demographics (age, gender) shape interpretation patterns  
+
+---
+
+## 🛠️ Tools & Technologies
+
+- R  
+- tidyverse (dplyr, ggplot2, tidyr)  
+- RStudio  
+
+---
+
+## 🚀 Future Work
+
+- 📊 Statistical modeling (logistic regression)
+- 🤖 Machine learning classification
+- 🎧 Acoustic feature extraction
+- 🌐 Interactive dashboard (Shiny)
+
+---
+
+## ▶️ How to Run
+
+```r
 install.packages("tidyverse")
 
 source("src/Data_Cleaning.R")
 source("src/Data_Visualization.R")
+```
+
 👥 Contributors
 
-Garcia Gang Research Team
+[Chris Lam](https://github.com/CtotheL89)
+[Clara Lederer](https://github.com/clederer)
+[Ismael Domin](https://github.com/IsmaelMD04)
+[Waleed Abdulla](https://github.com/Wabdulla04)
