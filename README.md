@@ -44,7 +44,7 @@ Key steps:
 
 | Original Dataset | Cleaned Dataset |
 |--------------------|------------------|
-| ![](Capstone%20Presentation%20Files/Data_Wrangling_1_Original_Dataset.mp4) | ![Data Wrangling](Capstone%20Presentation%20Files/Data_Wrangling_5_Pivoted_Values.png) |
+| ![](images/Data_Wrangling_1_Original_Dataset.gif) | ![Data Wrangling](Capstone%20Presentation%20Files/Data_Wrangling_5_Pivoted_Values.png) |
 
 ---
 
