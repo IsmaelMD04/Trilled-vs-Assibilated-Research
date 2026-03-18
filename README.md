@@ -39,7 +39,12 @@ Key steps:
 
 ### 🔄 Transformation Example
 
-![Data Wrangling](Capstone%20Presentation%20Files/Data_Wrangling_5_Pivoted_Values.png)
+
+### 👥 Gender Analysis
+
+| Original Dataset | Cleaned Dataset |
+|--------------------|------------------|
+| ![](Capstone%20Presentation%20Files/Data_Wrangling_1_Original_Dataset.mp4) | ![Data Wrangling](Capstone%20Presentation%20Files/Data_Wrangling_5_Pivoted_Values.png) |
 
 ---
 
@@ -49,15 +54,15 @@ Key steps:
 
 ---
 
-### 🌎 Regional Distribution
+### 🧠 Perception vs Reality
 
-![Regional](images/Pie_chart_of_region.png)
+![Perception](images/Listener_Region_Compared_to_Predicted_Speaker_Origin.png)
 
 ---
 
-### 👥 Gender Distribution
+### 🌎 Regional Distribution
 
-![Gender](images/Gender_distribution.png)
+![Regional](images/Pie_chart_of_region.png)
 
 ---
 
@@ -67,21 +72,9 @@ Key steps:
 
 ---
 
-### 📈 Age Distribution
-
-![Age](images/Histogram_age_range.png)
-
----
-
 ### 🌐 Age by Region
 
 ![Age Region](images/Histogram_age_by_region.png)
-
----
-
-### 🧠 Perception vs Reality
-
-![Perception](images/Listener_Region_Compared_to_Predicted_Speaker_Origin.png)
 
 ---
 
