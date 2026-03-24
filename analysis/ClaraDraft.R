@@ -179,21 +179,52 @@ t4 <- t4 |> mutate(status = rowMeans(scale(select(t4, class, urban, edu)), na.rm
 # glm(response ~ predictors, family = 'binomial')
 # create new variable that says if respondent correctly assigned speaker's origin 
 
+# Simpler dataset with base columns
 t5 <- t4 %>% select(c(Gender, trill, nice, conf, status, age, 
                       predictedOrigin, masculinity, speakerID, speaker_gender))
 
-#A simply model describing nice in terms of trill, conf, and status and the interactions
+# A simple model describing nice in terms of trill, conf, and status and the interactions
 mod <- lm(nice ~ (trill + conf + status)^2 , data = t5)
 summary(mod)
 
-#Ran stepAIC to improve the model.
+# Ran stepAIC to improve the model.
 mod2 <- MASS::stepAIC(mod, direction = "backward")
 summary(mod2)
+car::vif(mod2)
 
-# mixed effects regression modeling
-trillmod <- glmer(trill ~ status + masculinity + nice + speaker_gender + Gender + Region + (1 | RespondentID) + (1 | speakerID), data = t4, family = binomial)
-n_distinct(t5$RespondentID)
+mod <- lm(nice ~ (trill * speakerID), data = t4)
+summary(mod)
+
+mod2 <- MASS::stepAIC(mod, direction = "backward")
+summary(mod2)
+car::vif(mod2)
+
+
+mod <- lm(nice ~ trill, data = t5)
+summary(mod)
+
+# mixed effects regression modeling, corrected with scores update
+trillmod <- glmer(trill ~ 
+                    status + 
+                    masculinity + 
+                    nice + speaker_gender + 
+                    Gender + Region + 
+                    (1 | RespondentID) + 
+                    (1 | speakerID), data = t6, family = binomial)
+n_distinct(t6$RespondentID)
 summary(trillmod)
+drop1(trillmod, test = "Chisq")
 MASS::stepAIC(trillmod)
+
+# get scores from fa back into data 
+fa_scores <- factanal(fadata, factors = 2, rotation = 'varimax', scores = 'regression')
+scores_df <- as_tibble(fa_scores$scores) |> rename(fa_status = Factor1, fa_gendered = Factor2)
+# t6 new dataset with fa scores
+t6 <- t4 |> drop_na(masculinity, nice, class, urban, edu, age) |> bind_cols(scores_df)
+t6 <- t6 |> mutate(status = rowMeans(scale(select(t6, class, urban, edu)), na.rm = TRUE))
+
+# reduced model
+trillmod1 <- glmer(trill ~ status + (1 | RespondentID) + (1 | speakerID), data = t4, family = binomial)
+summary(trillmod1)
 
 
