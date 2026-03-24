@@ -63,3 +63,4 @@ ratings <- t3[, c("fem", "nice", "conf", "class", "urban", "edu", "age")]
 ratings_pca <- princomp(ratings, cor = TRUE)
 summary(ratings_pca, loadings =  T)
 screeplot(ratings_pca, type = 'lines', main = "Ratings Scree Plot")
+

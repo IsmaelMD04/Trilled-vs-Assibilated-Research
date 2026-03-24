@@ -1,70 +1,68 @@
-library(fpp3)
 library(tidyverse)
-library(stringr)
-m <- read.csv("Ecuador2017Results(in).csv")
+library(ggmosaic)
+library(fpp3)
+library(nnet)
+library(dplyr)
+library(lme4)
 
-t <- m %>% select(-c(Start.Date, End.Date, Finished, IP.Address, Duration..in.seconds., Location.Latitude, 
-                     Location.Longitude, ends_with(".eth"), Order)) %>% filter(Progress >= 74)
-#The "." character is associated as a character space in string notation, so a more distinct "_" is better
-names(t) <- str_replace_all(names(t), '[.]', "_")
+t3 <- read.csv("data/Spanish_Survey_Clean.csv")
 
+# Begin factor analysis 
+# Apply regression on all dependent variables (fem - age, origin is kept categorical), 
+# group/average based on sway towards the other variables, and assess the effect of trill or not 
 
-#Makes 1,752 entries with pivoted values! Nice
-#"[a-z]_[a-z]" = select columns that contains this pattern: lowerChar_lowerChar 
-#(like Daniel*a*_*f*em but NOT Longtitud*e*_*L*atitude [case sensitive])
-#Talker = The speakers (Daniela, Diego...)
-#.value = take the second part of the column name and use that as the value column(s)
-#names_sep = "_" = divides column names into Talker and .value --> "Daniela_fem" --> Talker: Daniela and value column: fem
-t2 <- t %>% pivot_longer(
-  cols = matches("[a-z]_[a-z]", ignore.case = FALSE),
-  names_to = c("Talker",".value"),
-  names_sep = "_") %>% 
-  mutate(Response_ID = match(Response_ID, Response_ID %>% unique())) %>%
-  relocate(Region, .after = last_col())
+# Invert femininity rating 
+# Split speaker into speaker and speaker gender variable 
 
-responder_Origins <- c("Espaí", "Cariamanga", "Loja", "Guayaquil", 
-                       "Honduras", "Machala", "Ambato", "Arenillas",
-                       "Huaquillas", "Argentina", "Cariamanga",
-                       "Catacocha", "Catamayo", "Zamora", "Quito", 
-                       "Cuenca", "Duran", "EEUU", "USA", "Puerto Rico",
-                       "Sucia", "San Juan Bosco", "Mexico", "Chile",
-                       "Inglaterra", "Colombia", "El Salvador",
-                       "Nicaragua", "Bolivia", "Pií", "Portovelo", 
-                       "Saraguro", "Esmeraldas", "Guachapala", "Palanda",
-                       "Gualaceo", "Guaranda", "Coimbra", "Ibarra", "Lago",
-                       "Agrio", "Santa Rosa", "El Oro", "Míçchala", 
-                       "Londres", "Macara", "Macas", "San Lucas", "Madrid",
-                       "Manta", "Portoviejo", "Jipijapa", "Canton",
-                       "Tulciç", "Puyo", "Riobamba",
-                       "Puerto el Carmen del Putumayo", "Gualaquiza",
-                       "Galíçpagos", "Latacunga", "Changaimina", "Oriente",
-                       "Tegucigalpa", "Alemania", "Holanda", 
-                       "Santo Domingo de los Tsíçchila", "Espana", "Costa",
-                       "Selva Alegre", "Shell", "Zapotillo", "Zaruma")
-t3 <- t2 %>% mutate(Origin = str_extract_all(Origin, 
-                                             regex(str_c(responder_Origins, collapse = "|"), 
-                                                   ignore_case = TRUE)) %>% sapply((function(x) paste(unique(x),
-                                                                                                      collapse = ", "))))
-t3 <- t3 %>%
-  mutate(Origin = na_if(Origin, ""))
-t3 %>% View()
+t4 <- t3 |> mutate(masculinity = 7 - fem)
+t4 <- t4 |> select(-fem)
+t4 <- t4 |> mutate(speakerID = Speaker, 
+                   speaker_gender = ifelse(str_starts(Speaker, 'F'), 'female', 'male'))
+t4 <- t4 |> select(-Speaker)
 
+# picking only numeric variables
+fadata <- t4 |> select(masculinity, nice, class, urban, edu, age)
+str(fadata)
+colSums(is.na(fadata))
+summary(fadata)
 
-#writing csv for unique values of language since there's so much of them since questions are in free response form (running this code resets the csv file so I commented it out)
-#write.csv(data.frame(language_old = unique(t3$Language)), "Educador_language_cols.csv", row.names = FALSE)
-Ecuador_lang_cols <- read.csv("Educador_language_cols.csv")
+# dropping na
+fadata <- fadata |> drop_na()
 
-#first parameter of setNames represent the content, second represents the value you want it to link to 
-lang_replace <- setNames(Ecuador_lang_cols$Languages_Excluding_Spanish, Ecuador_lang_cols$language_old)
+fa <- factanal(fadata, factors = 2, rotation = 'varimax')
+fa
+# class, urban, and edu are a status factor 
+# higher masculinity = lower nice
+# more feminine = higher nice
+# age isn't strong 
 
-#create copy of t3 in case I mess up badly in previous attempts 
-t4 <- t3 
+# Factor 1: Status
+# Factor 2: "Gendered Affect" or something 
 
-#imply that t4$language holds the names from lang_replace
-t4$Languages_excluding_Spanish <- as.character(lang_replace[t4$Language])
+t4 <- t4 |> mutate(status = rowMeans(scale(select(t4, class, urban, edu)), na.rm = TRUE))
+
+# mixed effect/ random effect 
+# linear model (status ~ trill + listener_id)
+# 2 level logistic regression
+# glm(response ~ predictors, family = 'binomial')
+# create new variable that says if respondent correctly assigned speaker's origin 
+
+#Created a new, simplier dataset with base columns
+t5 <- t4 %>% select(c(Gender, trill, nice, conf, status, age, 
+                      predictedOrigin, masculinity, speakerID, speaker_gender))
+
+#PCA Analysis
+ratings <- t5[, c("trill", "nice", "conf", "status", "age", "masculinity")]
+ratings_pca <- princomp(ratings, cor = TRUE)
+summary(ratings_pca, loadings =  T)
+screeplot(ratings_pca, type = 'lines', main = "Ratings Scree Plot")
+
+mod <- glm(trill ~ nice + conf + status + masculinity, family = "binomial", data = t5)
+summary(mod)
 
 
-#same steps but with quantity values
-lang_replace_num <- setNames(Ecuador_lang_cols$Num_Additional_Languages, Ecuador_lang_cols$language_old)
-t4$Num_Additional_Languages <- as.character(lang_replace_num[t4$Language])
-view(t4)
+t5$PC1 <- ratings_pca$scores[,1]
+t5$PC2 <- ratings_pca$scores[,2]
+
+mod2 <- glm(trill ~ PC1 + PC2, family = "binomial", data = t5)
+summary(mod2)
