@@ -73,3 +73,5 @@ summary(mod2)
 # PC2, which corresponds to a youth/style-related dimension of social perception, was the strongest predictor of trill realization. This suggests that trill is primarily associated with stylistic or age-related social meaning.
 # PC1, representing a prestige/competence dimension, showed a smaller positive effect, indicating that trill may also carry a weak association with prestige-related evaluations.
 
+#What to work on:
+
