@@ -66,3 +66,10 @@ t5$PC2 <- ratings_pca$scores[,2]
 
 mod2 <- glm(trill ~ PC1 + PC2, family = "binomial", data = t5)
 summary(mod2)
+
+##Analysis:
+# PC2 had a much strong effect on trill, PC1 is small, but significant
+# Trill is strongly associated with youth/style, and only weakly associated with prestige.
+# PC2, which corresponds to a youth/style-related dimension of social perception, was the strongest predictor of trill realization. This suggests that trill is primarily associated with stylistic or age-related social meaning.
+# PC1, representing a prestige/competence dimension, showed a smaller positive effect, indicating that trill may also carry a weak association with prestige-related evaluations.
+
