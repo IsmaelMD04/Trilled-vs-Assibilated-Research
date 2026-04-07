@@ -225,7 +225,7 @@ drop1(trillmod, test = "Chisq")
 MASS::stepAIC(trillmod)
 
 # reduced model
-trillmod1 <- glmer(trill ~ status + (1 | RespondentID) + (1 | speakerID), data = t4, family = binomial)
+trillmod1 <- glmer(trill ~ status + (1 | RespondentID) + (1 | speakerID), data = t6, family = binomial)
 summary(trillmod1)
 
 # status predicted by trill 
@@ -254,3 +254,37 @@ confint(nicemod, method = "Wald")
 mascmod <- lmer(masculinity ~ trill + status + (1 | RespondentID) + (1 | speakerID), data = t6)
 summary(mascmod)
 confint(mascmod, method = "Wald")
+
+# seeing if participants can correctly identify the speaker origin 
+# new data set with guessed quito variable 
+t7 <- t6 |> mutate(guessed_quito = as.integer(predictedOrigin == "Quito"))
+
+# proportion guessing quito by trill condition
+t7 |>
+  group_by(trill) |>
+  summarize(n = n(), pct_guessed_quito = mean(guessed_quito, na.rm = TRUE))
+
+# does trill affect guessing quito?
+quitomod <- glmer(
+  guessed_quito ~ trill + status + Gender + Region +
+    (1 | RespondentID) + (1 | speakerID),
+  data = t7, family = binomial)
+summary(quitomod)
+drop1(quitomod, test = "Chisq")
+
+exp(fixef(quitomod))
+exp(confint(quitomod, parm = "beta_", method = "Wald"))
+
+# Region effect: do Quito listeners more readily map trill to Quito?
+# Which listener regions most associate trill with Quito?
+origin_by_region <- t7 |>
+  group_by(Region, trill) |>
+  summarize(
+    n                = n(),
+    pct_quito        = mean(guessed_quito, na.rm = TRUE),
+    mean_status      = mean(status, na.rm = TRUE),
+    mean_nice        = mean(nice, na.rm = TRUE),
+    mean_masculinity = mean(masculinity, na.rm = TRUE),
+    .groups          = "drop"
+  )
+print(origin_by_region)
