@@ -5,7 +5,7 @@ library(ggmosaic)
 ### Cleaning
 
 
-m <- read.csv("Ecuador2017Results(in).csv")
+m <- read.csv('data/Ecuador2017Results(in).csv')
 
 t <- m %>% 
   select(-c(Start.Date, End.Date, Order, Origin, Finished, Speaker, IP.Address, Duration..in.seconds., 
@@ -39,7 +39,7 @@ t2 <- t %>% pivot_longer(
   ) %>% 
   relocate(trill, .before = Speaker)
 
-Ecuador_lang_cols <- read.csv("Ecuador_language_cols.csv")
+Ecuador_lang_cols <- read.csv("data/Ecuador_language_cols.csv")
 
 #first parameter of setNames represent the content, second represents the value you want it to link to 
 lang_replace <- setNames(Ecuador_lang_cols$Languages_Excluding_Spanish, Ecuador_lang_cols$language_old)
@@ -67,7 +67,7 @@ respondents <- t3 %>% group_by(RespondentID) %>% summarize(Region = Region) %>% 
 #calculate how many speakers from each region + proportions
 respondent_regions <- respondents %>% group_by(Region) %>% summarize(num_respondents = n()) %>% 
   mutate(proportion = (num_respondents/sum(num_respondents))) %>% arrange(proportion) %>%
-  mutate(percentage = scales::percent(proportion)) %>% view()
+  mutate(percentage = scales::percent(proportion))
 
 #Pie chart
 respondent_regions %>% ggplot(aes(x = '', y = proportion, fill = Region)) +
@@ -131,10 +131,8 @@ age_by_region <- respondents_age %>%
   summarize(num_respondents = n(), .groups = "drop") %>%
   group_by(Region) %>%
   mutate(region_total = sum(num_respondents),
-          proportion = num_respondents / region_total,
-          percentage = scales::percent(proportion))
-
-view(age_by_region)
+         proportion = num_respondents / region_total,
+         percentage = scales::percent(proportion))
 
 age_by_region %>% ggplot(aes(x = Region, y = proportion, fill = age_group)) + 
   geom_col(position = "fill") + labs(title = "Age distribution by region", x = "Region", y = "Proportion")
@@ -203,6 +201,14 @@ car::vif(mod2)
 mod <- lm(nice ~ trill, data = t5)
 summary(mod)
 
+# get scores from fa back into data 
+fa_scores <- factanal(fadata, factors = 2, rotation = 'varimax', scores = 'regression')
+scores_df <- as_tibble(fa_scores$scores) |> rename(fa_status = Factor1, fa_gendered = Factor2)
+
+# t6 new dataset with fa scores
+t6 <- t4 |> drop_na(masculinity, nice, class, urban, edu, age) |> bind_cols(scores_df)
+t6 <- t6 |> mutate(status = rowMeans(scale(select(t6, class, urban, edu)), na.rm = TRUE))
+
 # mixed effects regression modeling, corrected with scores update
 trillmod <- glmer(trill ~ 
                     status + 
@@ -216,15 +222,16 @@ summary(trillmod)
 drop1(trillmod, test = "Chisq")
 MASS::stepAIC(trillmod)
 
-# get scores from fa back into data 
-fa_scores <- factanal(fadata, factors = 2, rotation = 'varimax', scores = 'regression')
-scores_df <- as_tibble(fa_scores$scores) |> rename(fa_status = Factor1, fa_gendered = Factor2)
-# t6 new dataset with fa scores
-t6 <- t4 |> drop_na(masculinity, nice, class, urban, edu, age) |> bind_cols(scores_df)
-t6 <- t6 |> mutate(status = rowMeans(scale(select(t6, class, urban, edu)), na.rm = TRUE))
-
 # reduced model
 trillmod1 <- glmer(trill ~ status + (1 | RespondentID) + (1 | speakerID), data = t4, family = binomial)
 summary(trillmod1)
+
+# status predicted by trill 
+# linear fixed effects model with status
+# personality + status 
+# plots: percieved origin, choose significant variables 
+# box plots for linear models (percieved status, trill vs assibilated, maybe by speaker sex)
+
+
 
 
