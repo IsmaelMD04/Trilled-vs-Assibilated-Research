@@ -201,6 +201,8 @@ car::vif(mod2)
 mod <- lm(nice ~ trill, data = t5)
 summary(mod)
 
+library(lme4)
+
 # get scores from fa back into data 
 fa_scores <- factanal(fadata, factors = 2, rotation = 'varimax', scores = 'regression')
 scores_df <- as_tibble(fa_scores$scores) |> rename(fa_status = Factor1, fa_gendered = Factor2)
@@ -232,6 +234,23 @@ summary(trillmod1)
 # plots: percieved origin, choose significant variables 
 # box plots for linear models (percieved status, trill vs assibilated, maybe by speaker sex)
 
+# compare full vs reduced trillmod
+anova(trillmod1, trillmod)
 
+# odds 
+exp(fixef(trillmod1))
+exp(confint(trillmod1, parm = "beta_", method = "Wald"))
 
+# status ~ trill linear mixed model 
+statusmod <- lmer(status ~ trill + (1 | RespondentID) + (1 | speakerID), data = t6)
+summary(statusmod)
+confint(statusmod, method = "Wald")
 
+# personality ~ trill 
+nicemod <- lmer(nice ~ trill + status + (1 | RespondentID) + (1 | speakerID), data = t6)
+summary(nicemod)
+confint(nicemod, method = "Wald")
+
+mascmod <- lmer(masculinity ~ trill + status + (1 | RespondentID) + (1 | speakerID), data = t6)
+summary(mascmod)
+confint(mascmod, method = "Wald")
