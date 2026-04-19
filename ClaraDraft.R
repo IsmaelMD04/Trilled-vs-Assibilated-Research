@@ -4,13 +4,11 @@ library(ggmosaic)
 
 ### Cleaning
 
-
 m <- read.csv('data/Ecuador2017Results(in).csv')
 
 t <- m %>% 
   select(-c(Start.Date, End.Date, Order, Origin, Finished, Speaker, IP.Address, Duration..in.seconds., 
-            Location.Latitude, Location.Longitude, ends_with(".eth"))) %>% 
-  filter(Progress >= 74)
+            Location.Latitude, Location.Longitude), ends_with(".eth")) %>% filter(Progress >= 74)
 
 #The "." character is associated as a character space in string notation, so a more distinct "_" is better
 names(t) <- str_replace_all(names(t), '[.]', "_")
@@ -166,6 +164,11 @@ fa
 # more feminine = higher nice
 # age isn't strong 
 
+# try new model with confidence 
+fconf <- t4 |> select(masculinity, conf, nice, class, urban, edu, age)
+fconf <- fadata |> drop_na()
+cfa <- factanal(fconf, factors = 2, rotation = 'varimax')
+
 # Factor 1: Status
 # Factor 2: "Gendered Affect" or something 
 
@@ -275,6 +278,24 @@ drop1(quitomod, test = "Chisq")
 exp(fixef(quitomod))
 exp(confint(quitomod, parm = "beta_", method = "Wald"))
 
+# Does trill help listeners correctly identify Loja?
+t8 <- t7 |> mutate(guessed_loja = as.integer(predictedOrigin == "Loja"))
+guessed_loja = as.integer(t7$predictedOrigin == "Loja")
+t8 |>
+  group_by(trill) |>
+  summarize(n = n(), pct_guessed_loja = mean(guessed_loja, na.rm = TRUE))
+
+lojamod <- glmer(
+  guessed_loja ~ trill + status + Gender + Region +
+    (1 | RespondentID) + (1 | speakerID),
+  data = t8, family = binomial)
+summary(lojamod)
+drop1(lojamod, test = "Chisq")
+
+exp(fixef(lojamod))
+exp(confint(lojamod, parm = "beta_", method = "Wald"))
+
+
 # Region effect: do Quito listeners more readily map trill to Quito?
 # Which listener regions most associate trill with Quito?
 origin_by_region <- t7 |>
@@ -288,3 +309,54 @@ origin_by_region <- t7 |>
     .groups          = "drop"
   )
 print(origin_by_region)
+
+# More questions: if not already answered
+# What proportion of listeners accurately identify where the speakers are from?
+
+# Do listeners from different regions (Loja vs.non-Loja) evaluate trilled vs. assibilated speakers differently?
+
+# STATUS attitudes by trill × region
+statusmod_int <- lmer(
+  status ~ trill * Region + (1 | RespondentID) + (1 | speakerID),
+  data = t7)
+summary(statusmod_int)
+confint(statusmod_int, method = "Wald")
+
+# NICENESS attitudes by trill × region
+nicemod_int <- lmer(
+  nice ~ trill * Region + (1 | RespondentID) + (1 | speakerID),
+  data = t7)
+summary(nicemod_int)
+confint(nicemod_int, method = "Wald")
+
+# MASCULINITY attitudes by trill × region
+mascmod_int <- lmer(
+  masculinity ~ trill * Region + (1 | RespondentID) + (1 | speakerID),
+  data = t7)
+summary(mascmod_int)
+confint(mascmod_int, method = "Wald")
+
+# CORRECT LOJA IDENTIFICATION by trill × region
+# (lojamod already has Region as main effect — now test interaction)
+lojamod_int <- glmer(
+  guessed_loja ~ trill * Region + status +
+    (1 | RespondentID) + (1 | speakerID),
+  data = t7, family = binomial)
+summary(lojamod_int)
+drop1(lojamod_int, test = "Chisq")
+
+# SUMMARY TABLE: mean attitude ratings by region × trill condition
+# This feeds directly into your visualizations
+attitude_by_region <- t7 |>
+  group_by(Region, trill) |>
+  summarize(
+    n                = n(),
+    mean_status      = mean(status, na.rm = TRUE),
+    mean_nice        = mean(nice, na.rm = TRUE),
+    mean_masculinity = mean(masculinity, na.rm = TRUE),
+    pct_guessed_loja = mean(guessed_loja, na.rm = TRUE),
+    pct_guessed_quito = mean(guessed_quito, na.rm = TRUE),
+    .groups = "drop"
+  )
+print(attitude_by_region)
+
