@@ -359,4 +359,3 @@ attitude_by_region <- t7 |>
     .groups = "drop"
   )
 print(attitude_by_region)
-
