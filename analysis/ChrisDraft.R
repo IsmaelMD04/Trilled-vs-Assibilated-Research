@@ -4,6 +4,9 @@ library(fpp3)
 library(nnet)
 library(dplyr)
 library(lme4)
+library(randomForest)
+library(caret)
+library(pROC)
 
 t3 <- read.csv("data/Spanish_Survey_Clean.csv")
 
@@ -85,5 +88,34 @@ summary(mod2)
 library(lme4)
 mod3 <- lmer(status ~ trill + predictedOrigin + (1 | speakerID), data = t5)
 summary(mod3)
-#Box-plots
-#Make visuals 
+
+#t5 binary logistic regression
+t5 <- t5 |> mutate(
+  loja_or_non_loja = ifelse(predictedOrigin == "Loja", yes = "Loja", no = "Non-Loja"),
+  loja_or_non_loja = factor(loja_or_non_loja)
+)
+
+#train/test split
+t5_train <- t5 |> sample_frac(0.7)
+t5_test <- anti_join(t5, t5_train)
+
+#setting reference so that binary model predicts on first level(predicts on 2nd level by default)
+t5$loja_or_non_loja <- relevel(t5$loja_or_non_loja, ref = "Non-Loja")
+
+binary_mod <- glm(loja_or_non_loja ~ trill + nice + conf + status + age + masculinity, data = t5_train, family = "binomial")
+summary(binary_mod)
+
+predict_prob <- predict(binary_mod, t5_test, type = "response")
+head(predict_prob,10)
+
+pred_class <- ifelse(predict_prob > 0.62, "Loja", "Non-Loja")
+pred_class <- factor(pred_class, levels = levels(t5_test$loja_or_non_loja))
+
+confusionMatrix(pred_class, t5_test$loja_or_non_loja)
+
+#ROC Curve
+roc_curve <- roc(t5_test$loja_or_non_loja, predict_prob)
+plot(roc_curve, col = 'blue', print.auc = TRUE)
+coords(roc_curve, "best")
+
+#
