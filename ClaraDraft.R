@@ -359,3 +359,6 @@ attitude_by_region <- t7 |>
     .groups = "drop"
   )
 print(attitude_by_region)
+
+# Save objects needed for visualization script
+save(t7, fa, attitude_by_region, file = "data/viz_objects.RData")
