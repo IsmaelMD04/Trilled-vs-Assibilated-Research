@@ -1,7 +1,6 @@
 library(tidyverse)
 library(ggmosaic)
 library(fpp3)
-library(nnet)
 library(dplyr)
 
 spanish <- read.csv("data/Spanish_Survey_Clean.csv")
@@ -94,6 +93,8 @@ age_by_region <- respondents_age %>%
                                                   c("5" = "50-59", "1" = "15-19", "2" = "20-29",
                                                     "3" = "30-39", "4" = "40-49"))) %>%
   na.omit()
+
+
 
 
 plotAgeByRegion <- age_by_region %>% ggplot(aes(x = Region, y = proportion, fill = age_group)) + 
