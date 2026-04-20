@@ -89,11 +89,17 @@ age_by_region <- respondents_age %>%
   group_by(Region) %>%
   mutate(region_total = sum(num_respondents),
          proportion = num_respondents / region_total,
-         percentage = scales::percent(proportion))
+         percentage = scales::percent(proportion),
+         age_group = str_replace_all(age_group %>% as.character(), 
+                                                  c("5" = "50-59", "1" = "15-19", "2" = "20-29",
+                                                    "3" = "30-39", "4" = "40-49"))) %>%
+  na.omit()
 
 
 plotAgeByRegion <- age_by_region %>% ggplot(aes(x = Region, y = proportion, fill = age_group)) + 
-  geom_col(position = "fill") + labs(title = "Age distribution by region", x = "Region", y = "Proportion")
+  geom_col(position = "fill") + labs(title = "Age distribution by region", 
+                                     x = "Region", y = "Proportion")
+plotAgeByRegion
 ggsave("images/Histogram_age_by_region.png", plot = plotAgeByRegion)
 
 
