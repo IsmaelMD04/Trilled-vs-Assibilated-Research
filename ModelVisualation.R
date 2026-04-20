@@ -43,11 +43,11 @@ t7 |>
   scale_fill_manual(values = trill_colors, labels = trill_labels) +
   scale_x_discrete(labels = trill_labels) +
   labs(
-    title    = "Perceived Status by /r/ Variant",
+    title    = "Perceived Status by /r/ pronounciation",
     subtitle = "Trilled speakers rated as higher status across all listeners",
-    x        = "/r/ Variant",
+    x        = "/r/ pronounciation",
     y        = "Perceived Status (composite z-score)",
-    fill     = "/r/ Variant"
+    fill     = "/r/ pronounciation"
   ) +
   poster_theme +
   theme(legend.position = "none")
@@ -68,11 +68,11 @@ t7 |>
                color = "white", position = position_dodge(0.75)) +
   scale_fill_manual(values = trill_colors, labels = trill_labels) +
   labs(
-    title    = "Perceived Status by /r/ Variant and Listener Region",
+    title    = "Perceived Status by /r/ pronounciation and Listener Region",
     subtitle = "Status boost from trill is consistent across all regions",
     x        = "Listener Region",
     y        = "Perceived Status (composite z-score)",
-    fill     = "/r/ Variant"
+    fill     = "/r/ pronounciation"
   ) +
   poster_theme
 
@@ -102,11 +102,11 @@ loja_summary |>
   scale_y_continuous(labels = scales::percent_format(accuracy = 1),
                      limits = c(0, 0.65)) +
   labs(
-    title    = "Correct Loja Attribution by /r/ Variant and Listener Region",
+    title    = "Correct Loja Attribution by /r/ pronounciation and Listener Region",
     subtitle = "Trill nearly doubles odds of correct identification (OR = 1.73, p < .001)",
     x        = "Listener Region",
     y        = "% Guessing Loja",
-    fill     = "/r/ Variant"
+    fill     = "/r/ pronounciation"
   ) +
   poster_theme
 
@@ -133,11 +133,11 @@ t7 |>
   scale_y_continuous(labels = scales::percent_format(accuracy = 1),
                      limits = c(0, 0.5)) +
   labs(
-    title    = "Speaker Attribution: Loja vs. Quito by /r/ Variant",
+    title    = "Speaker Attribution: Loja vs. Quito by /r/ pronounciation",
     subtitle = "Trill increases Loja attribution but not Quito attribution",
     x        = "Attributed City",
     y        = "Proportion of Responses",
-    fill     = "/r/ Variant"
+    fill     = "/r/ pronounciation"
   ) +
   poster_theme
 
@@ -211,11 +211,11 @@ attitude_by_region |>
   scale_y_continuous(limits = c(0, 6)) +
   facet_wrap(~ Dimension, scales = "free_y") +
   labs(
-    title    = "Personality Ratings by /r/ Variant and Listener Region",
+    title    = "Personality Ratings by /r/ pronounciation and Listener Region",
     subtitle = "No significant trill effect on niceness or masculinity by region",
     x        = "Listener Region",
     y        = "Mean Rating (1-6 scale)",
-    fill     = "/r/ Variant"
+    fill     = "/r/ pronounciation"
   ) +
   poster_theme
 
@@ -223,73 +223,73 @@ ggsave("images/plot6_personality_by_region.png", width = 10, height = 5, dpi = 3
 
 # PLOT 7: MOSAIC PLOT — PREDICTED ORIGIN BY LISTENER REGION
 # Shows how each listener region distributes their origin guesses.
-# Mirrors García (2019) Figure 6. Column width reflects group size.
-# Accessible interpretation: wider columns = more listeners from that region.
-
-library(ggmosaic)
+# Interpretation: wider columns = more listeners from that region.
 
 t7 |>
+  group_by(Region, predictedOrigin) |>
+  summarize(n = n(), .groups = "drop") |>
+  group_by(Region) |>
   mutate(
-    trill          = factor(trill, labels = c("Assibilated", "Trilled")),
+    prop          = n / sum(n),
     predictedOrigin = factor(predictedOrigin,
-                             levels = c("Quito", "Cuenca", "Loja", "Other"))
+                             levels = c("Other", "Quito", "Cuenca", "Loja"))
   ) |>
-  ggplot() +
-  geom_mosaic(aes(x = product(predictedOrigin, Region),
-                  fill = predictedOrigin),
-              alpha = 0.85) +
+  ggplot(aes(x = Region, y = prop, fill = predictedOrigin)) +
+  geom_col(width = 0.85, alpha = 0.9) +
+  geom_text(aes(label = scales::percent(prop, accuracy = 1)),
+            position = position_stack(vjust = 0.5),
+            color = "white", fontface = "bold", size = 4) +
   scale_fill_manual(values = c(
     "Loja"   = "#6BAE75",
     "Quito"  = "#9B6BB5",
     "Cuenca" = "#C97C4A",
     "Other"  = "#B0B0B0"
   )) +
+  scale_y_continuous(labels = scales::percent_format()) +
   labs(
     title    = "Where Do Listeners Think Speakers Are From?",
-    subtitle = "Each column = one listener region. Height of each color = proportion guessing that city.",
+    subtitle = "Each bar = one listener region. Color height = proportion guessing that city.",
     x        = "Listener Region",
     y        = "Proportion",
     fill     = "Guessed Origin"
   ) +
-  poster_theme +
-  theme(axis.text.y = element_blank(),
-        axis.ticks.y = element_blank())
+  poster_theme
 
 ggsave("images/plot7_mosaic_origin_by_region.png", width = 8, height = 6, dpi = 300)
 
 
-# PLOT 8: MOSAIC PLOT — PREDICTED ORIGIN BY TRILL CONDITION × LISTENER REGION
-# Extends plot 7 by splitting each region into trill vs assibilated condition.
-# Shows that within each region, hearing a trill shifts guesses toward Loja.
-
+# PLOT 8: MOSAIC-STYLE — ORIGIN GUESSES BY TRILL × REGION
 t7 |>
+  mutate(trill = factor(trill, labels = c("Assibilated", "Trilled"))) |>
+  group_by(Region, trill, predictedOrigin) |>
+  summarize(n = n(), .groups = "drop") |>
+  group_by(Region, trill) |>
   mutate(
-    trill           = factor(trill, labels = c("Assibilated", "Trilled")),
+    prop            = n / sum(n),
     predictedOrigin = factor(predictedOrigin,
-                             levels = c("Quito", "Cuenca", "Loja", "Other")),
-    Region_Trill    = paste(Region, trill, sep = "\n")
+                             levels = c("Other", "Quito", "Cuenca", "Loja"))
   ) |>
-  ggplot() +
-  geom_mosaic(aes(x = product(predictedOrigin, trill),
-                  fill = predictedOrigin),
-              alpha = 0.85) +
-  facet_wrap(~ Region, nrow = 1) +
+  ggplot(aes(x = trill, y = prop, fill = predictedOrigin)) +
+  geom_col(width = 0.85, alpha = 0.9) +
+  geom_text(aes(label = scales::percent(prop, accuracy = 1)),
+            position = position_stack(vjust = 0.5),
+            color = "white", fontface = "bold", size = 4) +
   scale_fill_manual(values = c(
     "Loja"   = "#6BAE75",
     "Quito"  = "#9B6BB5",
     "Cuenca" = "#C97C4A",
     "Other"  = "#B0B0B0"
   )) +
+  scale_y_continuous(labels = scales::percent_format()) +
+  facet_wrap(~ Region, nrow = 1) +
   labs(
     title    = "Origin Guesses by Trill Condition Within Each Listener Region",
-    subtitle = "Left bar = Assibilated, Right bar = Trilled. Green (Loja) grows with trill.",
-    x        = "/r/ Variant",
+    subtitle = "Left = Assibilated, Right = Trilled. Green (Loja) grows with trill.",
+    x        = "/r/ pronounciation",
     y        = "Proportion",
     fill     = "Guessed Origin"
   ) +
-  poster_theme +
-  theme(axis.text.y  = element_blank(),
-        axis.ticks.y = element_blank())
+  poster_theme
 
 ggsave("images/plot8_mosaic_origin_trill_by_region.png", width = 12, height = 6, dpi = 300)
 
@@ -319,11 +319,11 @@ attitude_by_region |>
     "Quito"  = 18
   )) +
   labs(
-    title    = "Attitude Profiles by /r/ Variant and Listener Region",
+    title    = "Attitude Profiles by /r/ pronounciation and Listener Region",
     subtitle = "X = perceived status, Y = niceness, bubble size = masculinity",
     x        = "Mean Perceived Status (z-score)",
     y        = "Mean Niceness Rating",
-    color    = "/r/ Variant",
+    color    = "/r/ pronounciation",
     shape    = "Listener Region"
   ) +
   poster_theme
@@ -356,7 +356,7 @@ attitude_by_region |>
   labs(
     title    = "Status Shift: Assibilated vs. Trilled by Listener Region",
     subtitle = "All regions rate trilled speakers as higher status — lines slope upward",
-    x        = "/r/ Variant",
+    x        = "/r/ pronounciation",
     y        = "Mean Perceived Status (z-score)",
     color    = "Listener Region"
   ) +
